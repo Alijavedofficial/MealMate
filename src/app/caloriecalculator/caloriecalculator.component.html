@@ -1,49 +1,73 @@
-<h1>Calorie Calculator</h1>
+<h1 class="text-[40px] text-center">Calorie Calculator</h1>
 
-<form  [formGroup]="CalorieForm" >
+<form [formGroup]="CalorieForm" class="flex flex-col justify-center">
+  <div>
     <label>Enter Age:</label>
-    <input type="number" placeholder="Age" formControlName="age">
-    <label>Enter Weight:</label>
-    <input type="number" placeholder="Weight" formControlName="weight">
-    <label>Enter gender:</label>
+    <div *ngIf="CalorieForm.get('age')?.invalid && (CalorieForm.get('age')?.dirty || CalorieForm.get('age')?.touched)" >
+      <div *ngIf="CalorieForm.get('age')?.errors?.['required']" class="text-red-800">Age is required.</div>
+      <div *ngIf="CalorieForm.get('age')?.errors?.['min'] || CalorieForm.get('age')?.errors?.['max']" class="text-red-800">Age must be between 1 and 100.</div>
+    </div>
+    <input type="number" placeholder="Age" formControlName="age" />
+    
+  </div>
+  <div>
+    <label>Enter Weight(kg):</label>
+    <input type="number" placeholder="Weight" formControlName="weight" />
+  </div>
+  <div>
+    <label>Select gender:</label>
     <select name="gender" formControlName="gender">
-        <option value="" disabled>Enter Gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
+      <option value="" disabled>Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
     </select>
+  </div>
+  <div>
     <label>Enter height(cm):</label>
-    <input type="number" placeholder="height" formControlName="height">
+    <input type="number" placeholder="height" formControlName="height" />
+  </div>
+  <div>
     <label>Enter Activity Level:</label>
     <select name="level" id="" formControlName="activity">
-        <option disabled value="">Enter your Activity Level</option> 
-        <option value="sedentary">Sedentary (little to no exercise)</option>
-        <option value="light">Lightly active (light exercise/sports 1-3 days/week)</option>
-        <option value="moderate">Moderately active (moderate exercise/sports 3-5 days/week)</option>
-        <option value="very">Very active (hard exercise/sports 6-7 days/week)</option>
-        <option value="extra">Extra active (very hard exercise/sports & physical job)</option>
+      <option disabled value="">Select your Activity Level</option>
+      <option value="sedentary">Sedentary (little to no exercise)</option>
+      <option value="light">
+        Lightly active (light exercise/sports 1-3 days/week)
+      </option>
+      <option value="moderate">
+        Moderately active (moderate exercise/sports 3-5 days/week)
+      </option>
+      <option value="very">
+        Very active (hard exercise/sports 6-7 days/week)
+      </option>
+      <option value="extra">
+        Extra active (very hard exercise/sports & physical job)
+      </option>
     </select>
+  </div>
+  <div>
     <label>Enter Goal:</label>
     <select name="goals" id="" formControlName="goal">
-        <option disabled value="">Enter your Goal</option>
-    <optgroup label="Fat Lose">
+      <option disabled value="">Select your Goal</option>
+      <optgroup label="Fat Lose">
         <option value="lose-10">Cautious(-10% kcal)</option>
         <option value="lose-20">Recommended(-20% kcal)</option>
         <option value="lose-30">Aggressive(-30% kcal)</option>
         <option value="lose-40">Very Aggressive(-40% kcal)</option>
-    </optgroup>
-    <optgroup label="Maintain">
+      </optgroup>
+      <optgroup label="Maintain">
         <option value="maintain">Maintain</option>
-    </optgroup>
-    <optgroup label="Weight Gain">
+      </optgroup>
+      <optgroup label="Weight Gain">
         <option value="gain-10">Cautious(+10% kcal)</option>
         <option value="gain-20">Recommended(+20% kcal)</option>
         <option value="gain-30">Aggressive(+30% kcal)</option>
         <option value="gain-40">Very Aggressive(+40% kcal)</option>
-    </optgroup>
-      
-      
-        
+      </optgroup>
     </select>
-    <button type="button" (click)="calculateCalories()">Calculate Calories</button>
-    <h1>{{TotalCalorie}}</h1>
+  </div>
+  <button type="button" (click)="calculateCalories()" class="bg-orange-600 text-[#fff] p-3 rounded-xl">
+    Calculate Calories
+  </button>
+  <h1>Total Calories: {{ TotalCalorie | number }}</h1>
 </form>

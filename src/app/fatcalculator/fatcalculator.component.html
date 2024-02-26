@@ -1,1 +1,34 @@
-<p>fatcalculator works!</p>
+<h1 class="text-[40px] text-center">Body Fat Calculator</h1>
+
+<form [formGroup]="fatForm">
+    <div>
+        <label>Weight:</label>
+        <input type="number" placeholder="Enter Your Weight" formControlName="weight">
+    </div>
+    <div>
+        <label>Select gender:</label>
+        <select name="gender" formControlName=" gender">
+          <option value="" disabled>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+    </div>
+    <div>
+        <label>Enter Waist(cm):</label>
+    <input type="number" placeholder="Enter Waist" formControlName=" waist" />
+    </div>
+    <div>
+        <label>Enter Hip(cm):</label>
+    <input type="number" placeholder="Enter Hip" formControlName="hip" />
+    </div>
+    <div>
+        <label>Enter Neck(cm):</label>
+    <input type="number" placeholder="Enter Neck" formControlName="neck" />
+    </div>
+
+    <button (click)="calculateFat()" type="button" class="bg-orange-600 text-[#fff] p-3 rounded-xl">
+        Calculate Fat
+      </button>
+
+      <h1>Total Body Fat %: {{ totalFat | number }}</h1>
+</form>

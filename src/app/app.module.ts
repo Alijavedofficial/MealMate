@@ -12,6 +12,8 @@ import { MealPlannerComponent } from './meal-planner/meal-planner.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { ArticlesComponent } from './articles/articles.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { MatSelectModule } from '@angular/material/select';
     AppComponent,
     CaloriecalculatorComponent,
     FatcalculatorComponent,
-    MealPlannerComponent
+    MealPlannerComponent,
+    ArticlesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

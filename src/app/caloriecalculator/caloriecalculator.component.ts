@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder } from '@angular/forms';
+import { Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-caloriecalculator',
@@ -14,12 +15,12 @@ export class CaloriecalculatorComponent implements OnInit{
 
 ngOnInit(): void {
   this.CalorieForm = this.fb.group({
-    gender: [''],
-    age: [''],
-    height: [''],
-    weight: [''],
-    activity: [''],
-    goal: ['']
+    gender: ['', Validators.required],
+      age: ['', [Validators.required, Validators.min(1), Validators.max(100)]],
+      height: ['', [Validators.required, Validators.min(60), Validators.max(240)]],
+      weight: ['', [Validators.required, Validators.min(1), Validators.max(500)]],
+      activity: ['', Validators.required],
+      goal: ['', Validators.required]
 })
 }
 
@@ -34,11 +35,11 @@ ngOnInit(): void {
      
       let bmr: number = 0;
       if (gender === 'male') {
-        // Calculate BMR for males
-        bmr = 10 * weight + 6.25 * height - 5 * age + 5; // calculation using Mifflin-St Jeor equation
+        // BMR for males
+        bmr = 10 * weight + 6.25 * height - 5 * age + 5; // using Mifflin-St Jeor equation
       } else if (gender === 'female') {
-        // Calculate BMR for females
-        bmr = 10 * weight + 6.25 * height - 5 * age - 161; // calculation using Mifflin-St Jeor equation
+        // BMR for females
+        bmr = 10 * weight + 6.25 * height - 5 * age - 161; // using Mifflin-St Jeor equation
       }
   
       let tdee = 0;
