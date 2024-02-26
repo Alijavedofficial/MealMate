@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(244 247 254);
+    padding: 40px;
+ }
+ *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ input,select{
+     border: 1px solid #dfe1e6;
+     border-radius: 4px;
+     width: 100%;
+     padding: 8px;
+     background-color: #fff;
+     font-weight: 400;
+     box-shadow: 0 0 6px #172b4d0a;
+     font-size: 0.95rem;
+     outline: none;
+     margin-bottom: 15px;
+ }
+ input:focus,select:focus,textarea:focus{
+     border: 1px solid #0f172a;
+   }
+ 
+ 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
