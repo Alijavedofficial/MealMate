@@ -1,0 +1,33 @@
+/* articles.component.css */
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .article-card {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .article-details {
+    flex-grow: 1; /* Ensure the details section takes up remaining space */
+  }
+  
+  .loading, .error {
+    margin-top: 20px;
+  }
+  

@@ -1,1 +1,23 @@
-<p>articles works!</p>
+<!-- articles.component.html -->
+
+<div class="article-list" *ngIf="!loading && !error">
+    <div class="article-card" *ngFor="let article of articles">
+      <img [src]="article.imageUrl" alt="Article Image" class="article-image">
+      <div class="article-details">
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.description }}</p>
+        <p><strong>Source:</strong> {{ article.source.name }}</p>
+        <p><strong>Author:</strong> {{ article.author }}</p>
+        <a [href]="article.url" target="_blank">Read more</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="loading" *ngIf="loading">
+    Loading articles...
+  </div>
+  
+  <div class="error" *ngIf="error">
+    {{ error }}
+  </div>
+  
