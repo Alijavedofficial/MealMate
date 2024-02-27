@@ -1,1 +1,30 @@
-<p>meal-planner works!</p>
+<div>
+    <label for="calories">Enter Total Daily Calories:</label>
+    <input type="number" id="calories" [(ngModel)]="calories">
+  </div>
+  <div>
+    <label for="targetCalories">Enter Target Calories per Meal:</label>
+    <input type="number" id="targetCalories" [(ngModel)]="targetCalories">
+  </div>
+  <div>
+    <label for="diet">Select Diet:</label>
+    <select id="diet" [(ngModel)]="diet">
+      <option value="none">None</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="vegan">Vegan</option>
+      <option value="gluten free">Gluten Free</option>
+      <!-- Add more diet options as needed -->
+    </select>
+  </div>
+  <button (click)="generateMealPlan()" class="bg-black text-white">Generate Meal Plan</button>
+  
+  <div *ngIf="mealPlan">
+    <h3>Generated Meal Plan</h3>
+    <ul>
+      <li *ngFor="let meal of mealPlan">
+        <p>{{ meal.title }}</p>
+        <p></p>
+      </li>
+    </ul>
+  </div>
+  

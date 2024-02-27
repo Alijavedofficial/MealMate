@@ -8,6 +8,7 @@ interface Article {
   author: string;
   url: string;
   imageUrl: string;
+  publishedAt: string;
 }
 @Component({
   selector: 'app-articles',
@@ -30,7 +31,8 @@ ngOnInit(): void {
         source: article.source,
         author: article.author,
         url: article.url,
-        imageUrl: article.urlToImage
+        imageUrl: article.urlToImage,
+        publisedAt: article.publisedAt
       }));
       this.loading = false;
     },
@@ -40,5 +42,6 @@ ngOnInit(): void {
     }
   );
 }
+
 
 }

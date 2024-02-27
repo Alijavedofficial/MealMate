@@ -4,10 +4,11 @@
     <div class="article-card" *ngFor="let article of articles">
       <img [src]="article.imageUrl" alt="Article Image" class="article-image">
       <div class="article-details">
-        <h2>{{ article.title }}</h2>
-        <p>{{ article.description }}</p>
+        <h2><strong>Title:</strong>{{ article.title }}</h2>
+        <p><strong>Description:</strong>{{ article.description }}</p>
         <p><strong>Source:</strong> {{ article.source.name }}</p>
         <p><strong>Author:</strong> {{ article.author }}</p>
+        <p><strong>Published At:</strong> {{ article.publishedAt | date: 'medium' }}</p>
         <a [href]="article.url" target="_blank">Read more</a>
       </div>
     </div>
