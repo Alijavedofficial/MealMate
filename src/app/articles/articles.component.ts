@@ -19,6 +19,7 @@ export class ArticlesComponent implements OnInit{
   articles: Article[] = []; 
   loading: boolean = true;
   error: string = '';
+  
 
 constructor(private articlesService: ArticleService) {}
 

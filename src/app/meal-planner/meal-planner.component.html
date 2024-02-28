@@ -1,30 +1,44 @@
 <div>
-    <label for="calories">Enter Total Daily Calories:</label>
-    <input type="number" id="calories" [(ngModel)]="calories">
-  </div>
-  <div>
-    <label for="targetCalories">Enter Target Calories per Meal:</label>
-    <input type="number" id="targetCalories" [(ngModel)]="targetCalories">
-  </div>
-  <div>
-    <label for="diet">Select Diet:</label>
-    <select id="diet" [(ngModel)]="diet">
-      <option value="none">None</option>
-      <option value="vegetarian">Vegetarian</option>
+  <form [formGroup]="mealForm" (ngSubmit)="generateMealPlan()">
+    <label for="calories">Calories:</label>
+    <input type="number" formControlName="calories" id="calories">
+
+   
+
+    <!--<label for="diet">Diet:</label>
+    <select formControlName="diet" id="diet">
       <option value="vegan">Vegan</option>
-      <option value="gluten free">Gluten Free</option>
-      <!-- Add more diet options as needed -->
-    </select>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="paleo">Paleo</option>
+      <option value="Keto">Keto</option>
+      <option value="Glutenfree">Gluten free</option>
+      <option value="Pescatarian">Pescatarian</option>
+      <option value="Flexitarian">Flexitarian</option>
+    </select>-->
+
+    <label for="numberOfMeals">Number of Meals:</label>
+    <input type="number" formControlName="numberOfMeals" id="numberOfMeals">
+
+    <button type="submit" class="bg-slate-800 text-white p-2">Generate Meal Plan</button>
+  </form>
+</div>
+
+<div *ngIf="mealPlan">
+  <h3>Generated Meal Plan</h3>
+  <div *ngFor="let meal of mealPlan" >
+    <div>
+      <img [src]="'https://spoonacular.com/recipeImages/' + meal.id + '-556x370.' + meal.imageType" alt="{{ meal.title }}">
+      <h4>{{ meal.title }}</h4>
+      <p>Ready in: {{ meal.readyInMinutes }} minutes</p>
+      <p>Servings: {{ meal.servings }}</p>
+      <a href="{{ meal.sourceUrl }}" target="_blank">View Recipe</a>
+      <div *ngFor="let nutrient of nutrients">
+        <p>{{nutrient.name}}</p>
+        <p>{{nutrient.value}}</p>
+       
+      </div>
+    </div>
   </div>
-  <button (click)="generateMealPlan()" class="bg-black text-white">Generate Meal Plan</button>
-  
-  <div *ngIf="mealPlan">
-    <h3>Generated Meal Plan</h3>
-    <ul>
-      <li *ngFor="let meal of mealPlan">
-        <p>{{ meal.title }}</p>
-        <p></p>
-      </li>
-    </ul>
-  </div>
+</div>
+
   
