@@ -1,44 +1,34 @@
+<!-- meal.component.html -->
 <div>
-  <form [formGroup]="mealForm" (ngSubmit)="generateMealPlan()">
-    <label for="calories">Calories:</label>
-    <input type="number" formControlName="calories" id="calories">
-
-   
-
-    <!--<label for="diet">Diet:</label>
-    <select formControlName="diet" id="diet">
-      <option value="vegan">Vegan</option>
-      <option value="vegetarian">Vegetarian</option>
-      <option value="paleo">Paleo</option>
-      <option value="Keto">Keto</option>
-      <option value="Glutenfree">Gluten free</option>
-      <option value="Pescatarian">Pescatarian</option>
-      <option value="Flexitarian">Flexitarian</option>
-    </select>-->
-
-    <label for="numberOfMeals">Number of Meals:</label>
-    <input type="number" formControlName="numberOfMeals" id="numberOfMeals">
-
-    <button type="submit" class="bg-slate-800 text-white p-2">Generate Meal Plan</button>
-  </form>
+  <label for="maxCalories">Maximum Calories:</label>
+  <input type="number" id="maxCalories" [(ngModel)]="maxCalories">
+  <button (click)="filterMeals()">Filter Meals</button>
 </div>
 
-<div *ngIf="mealPlan">
-  <h3>Generated Meal Plan</h3>
-  <div *ngFor="let meal of mealPlan" >
-    <div>
-      <img [src]="'https://spoonacular.com/recipeImages/' + meal.id + '-556x370.' + meal.imageType" alt="{{ meal.title }}">
-      <h4>{{ meal.title }}</h4>
-      <p>Ready in: {{ meal.readyInMinutes }} minutes</p>
-      <p>Servings: {{ meal.servings }}</p>
-      <a href="{{ meal.sourceUrl }}" target="_blank">View Recipe</a>
-      <div *ngFor="let nutrient of nutrients">
-        <p>{{nutrient.name}}</p>
-        <p>{{nutrient.value}}</p>
-       
-      </div>
+<div *ngIf="filteredMeals.length > 0">
+  <ul>
+    <li *ngFor="let meal of filteredMeals" class="flex">
+     <img [src]="meal.image" class="rounded-full w-[100px]" />
+     <div class="flex flex-col">
+     <h1>{{ meal.name }}</h1>  
+     <table>
+      <thead>
+        <th>Calories</th>
+        <th>Protein</th>
+        <th>Carbs</th>
+        <th>Fat</th>
+      </thead>
+      <tbody>
+        <td>{{ meal.calories }}</td>
+        <td>{{meal.protein}}</td>
+        <td>{{meal.carbs}}</td>
+        <td>{{meal.fat}}</td>
+      </tbody>
+     </table>
+    
     </div>
-  </div>
+    </li>
+  </ul>
 </div>
 
   

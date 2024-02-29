@@ -6,21 +6,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MealPlanService {
-
-  private apiUrl = 'https://api.spoonacular.com/mealplanner/generate';
-  private apiKey = 'eaf4cec80a8947e286db86ceab08afa7'
+  private apiUrl = '../../assets/meals.json'; 
 
   constructor(private http: HttpClient) { }
 
-  generateMealPlan(calories: number, numberOfMeals: number): Observable<any> {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
+  getMeals(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl);
+  }
 
-    const queryParams = `?apiKey=${this.apiKey}&timeFrame=day&number=${numberOfMeals}`;
-
-    return this.http.get<any>(`${this.apiUrl}${queryParams}`, httpOptions);
+  filterMealsByCalories(meals: any[], maxCalories: number): any[] {
+    return meals.filter(meal => meal.calories <= maxCalories);
   }
 }

@@ -1,0 +1,163 @@
+[
+    {
+      "name": "Grilled Chicken Salad",
+      "calories": 350,
+      "protein": 25,
+      "fat": 15,
+      "carbs": 20,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Vegetable Stir-Fry",
+      "calories": 300,
+      "protein": 10,
+      "fat": 8,
+      "carbs": 45,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Salmon with Quinoa",
+      "calories": 400,
+      "protein": 30,
+      "fat": 18,
+      "carbs": 35,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Spaghetti Bolognese",
+      "calories": 450,
+      "protein": 20,
+      "fat": 12,
+      "carbs": 55,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Mediterranean Salad",
+      "calories": 320,
+      "protein": 15,
+      "fat": 10,
+      "carbs": 40,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Grilled Veggie Wrap",
+      "calories": 280,
+      "protein": 12,
+      "fat": 8,
+      "carbs": 35,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Tofu Stir-Fry",
+      "calories": 320,
+      "protein": 20,
+      "fat": 10,
+      "carbs": 30,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Chicken Caesar Salad",
+      "calories": 380,
+      "protein": 28,
+      "fat": 20,
+      "carbs": 15,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Quinoa Salad",
+      "calories": 310,
+      "protein": 18,
+      "fat": 10,
+      "carbs": 35,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Veggie Omelette",
+      "calories": 250,
+      "protein": 15,
+      "fat": 10,
+      "carbs": 20,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Black Bean Soup",
+      "calories": 280,
+      "protein": 14,
+      "fat": 8,
+      "carbs": 35,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Turkey Sandwich",
+      "calories": 320,
+      "protein": 22,
+      "fat": 12,
+      "carbs": 30,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Vegetarian Chili",
+      "calories": 350,
+      "protein": 20,
+      "fat": 15,
+      "carbs": 40,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Greek Yogurt Parfait",
+      "calories": 200,
+      "protein": 10,
+      "fat": 5,
+      "carbs": 30,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Hummus Wrap",
+      "calories": 270,
+      "protein": 12,
+      "fat": 10,
+      "carbs": 35,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Eggplant Parmesan",
+      "calories": 380,
+      "protein": 18,
+      "fat": 15,
+      "carbs": 45,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Sushi Roll",
+      "calories": 320,
+      "protein": 20,
+      "fat": 8,
+      "carbs": 40,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Berry Smoothie Bowl",
+      "calories": 250,
+      "protein": 8,
+      "fat": 5,
+      "carbs": 45,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Pasta Primavera",
+      "calories": 380,
+      "protein": 14,
+      "fat": 10,
+      "carbs": 50,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    },
+    {
+      "name": "Avocado Toast",
+      "calories": 300,
+      "protein": 10,
+      "fat": 15,
+      "carbs": 35,
+      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
+    }
+  ]
+  

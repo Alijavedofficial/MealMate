@@ -1,20 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MealPlanService } from '../Services/meal-plan.service';
 import { FormGroup,FormBuilder } from '@angular/forms';
+import { Validators } from '@angular/forms';
 
-interface Meal {
-  id: number;
-  imageType: string;
-  title: string;
-  readyInMinutes: number;
-  servings: number;
-  sourceUrl: string;
-}
 
-interface Nutrients {
- name: string,
- value: number
-}
+
 @Component({
   selector: 'app-meal-planner',
   templateUrl: './meal-planner.component.html',
@@ -22,34 +12,19 @@ interface Nutrients {
 })
 export class MealPlannerComponent implements OnInit{
  
-  mealPlan: Meal[] = [];
- nutrients: Nutrients[] = [
-  { name: 'Calories', value: 500 },
-  { name: 'Protein', value: 20 },
-  { name: 'Fat', value: 10 },
-  { name: 'Carbohydrates', value: 50 }
-];;
-  mealForm!: FormGroup;
+  meals: any[] = [];
+  filteredMeals: any[] = [];
+  maxCalories: number = 0;
 
-  constructor(
-    private mealPlanService: MealPlanService,
-    private fb: FormBuilder
-  ) { }
+  constructor(private mealService: MealPlanService) { }
 
   ngOnInit(): void {
-    this.mealForm = this.fb.group({
-      calories: [''],
-     
-      numberOfMeals: ['']
+    this.mealService.getMeals().subscribe(data => {
+      this.meals = data;
     });
   }
 
-  generateMealPlan() {
-    const { calories, diet, numberOfMeals } = this.mealForm.value;
-    this.mealPlanService.generateMealPlan(calories, numberOfMeals)
-      .subscribe(response => {
-        this.nutrients = response.nutrients;
-        this.mealPlan = response.meals;
-      });
+  filterMeals() {
+    this.filteredMeals = this.mealService.filterMealsByCalories(this.meals, this.maxCalories);
   }
 }
