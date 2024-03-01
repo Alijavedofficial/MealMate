@@ -6,15 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MealPlanService {
-  private apiUrl = '../../assets/meals.json'; 
+  private jsonData = '../../assets/meals.json'; 
 
   constructor(private http: HttpClient) { }
 
   getMeals(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
+    return this.http.get<any[]>(this.jsonData);
   }
 
-  filterMealsByCalories(meals: any[], maxCalories: number): any[] {
-    return meals.filter(meal => meal.calories <= maxCalories);
-  }
+  
 }

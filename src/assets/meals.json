@@ -1,163 +1,362 @@
 [
-    {
-      "name": "Grilled Chicken Salad",
-      "calories": 350,
-      "protein": 25,
-      "fat": 15,
-      "carbs": 20,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Vegetable Stir-Fry",
-      "calories": 300,
-      "protein": 10,
-      "fat": 8,
-      "carbs": 45,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Salmon with Quinoa",
-      "calories": 400,
-      "protein": 30,
-      "fat": 18,
-      "carbs": 35,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Spaghetti Bolognese",
-      "calories": 450,
-      "protein": 20,
-      "fat": 12,
-      "carbs": 55,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Mediterranean Salad",
-      "calories": 320,
-      "protein": 15,
-      "fat": 10,
-      "carbs": 40,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Grilled Veggie Wrap",
-      "calories": 280,
-      "protein": 12,
-      "fat": 8,
-      "carbs": 35,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Tofu Stir-Fry",
-      "calories": 320,
-      "protein": 20,
-      "fat": 10,
-      "carbs": 30,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Chicken Caesar Salad",
-      "calories": 380,
-      "protein": 28,
-      "fat": 20,
-      "carbs": 15,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Quinoa Salad",
-      "calories": 310,
-      "protein": 18,
-      "fat": 10,
-      "carbs": 35,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Veggie Omelette",
-      "calories": 250,
-      "protein": 15,
-      "fat": 10,
-      "carbs": 20,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Black Bean Soup",
-      "calories": 280,
-      "protein": 14,
-      "fat": 8,
-      "carbs": 35,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Turkey Sandwich",
-      "calories": 320,
-      "protein": 22,
-      "fat": 12,
-      "carbs": 30,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Vegetarian Chili",
-      "calories": 350,
-      "protein": 20,
-      "fat": 15,
-      "carbs": 40,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Greek Yogurt Parfait",
-      "calories": 200,
-      "protein": 10,
-      "fat": 5,
-      "carbs": 30,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Hummus Wrap",
-      "calories": 270,
-      "protein": 12,
-      "fat": 10,
-      "carbs": 35,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Eggplant Parmesan",
-      "calories": 380,
-      "protein": 18,
-      "fat": 15,
-      "carbs": 45,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Sushi Roll",
-      "calories": 320,
-      "protein": 20,
-      "fat": 8,
-      "carbs": 40,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Berry Smoothie Bowl",
-      "calories": 250,
-      "protein": 8,
-      "fat": 5,
-      "carbs": 45,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Pasta Primavera",
-      "calories": 380,
-      "protein": 14,
-      "fat": 10,
-      "carbs": 50,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    },
-    {
-      "name": "Avocado Toast",
-      "calories": 300,
-      "protein": 10,
-      "fat": 15,
-      "carbs": 35,
-      "image": "../assets/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg"
-    }
-  ]
-  
+  {
+    "name": "Grilled Chicken Salad",
+    "calories": 350,
+    "protein": 25,
+    "fat": 15,
+    "carbs": 20,
+    "sugar": 5,
+    "fiber": 3,
+    "sodium": 450,
+    "image": "../assets/Meal_Images/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg",
+    "dietaryPreference": ["Halal"]
+  },
+  {
+    "name": "Vegetable Stir-Fry",
+    "calories": 300,
+    "protein": 10,
+    "fat": 8,
+    "carbs": 45,
+    "sugar": 6,
+    "fiber": 6,
+    "sodium": 380,
+    "image": "../assets/Meal_Images/Vegetable Stir-Fry.webp",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Salmon with Quinoa",
+    "calories": 400,
+    "protein": 30,
+    "fat": 18,
+    "carbs": 35,
+    "sugar": 4,
+    "fiber": 5,
+    "sodium": 520,
+    "image": "../assets/Meal_Images/Salmon with Quinoa.jpg",
+    "dietaryPreference": ["Fish free"]
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "calories": 450,
+    "protein": 20,
+    "fat": 12,
+    "carbs": 55,
+    "sugar": 7,
+    "fiber": 4,
+    "sodium": 480,
+    "image": "../assets/Meal_Images/Spaghetti Bolognese.webp",
+    "dietaryPreference": ["Halal"]
+  },
+  {
+    "name": "Mediterranean Salad",
+    "calories": 320,
+    "protein": 15,
+    "fat": 10,
+    "carbs": 40,
+    "sugar": 5,
+    "fiber": 7,
+    "sodium": 420,
+    "image": "../assets/Mediterranean-salad.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Grilled Veggie Wrap",
+    "calories": 280,
+    "protein": 12,
+    "fat": 8,
+    "carbs": 35,
+    "sugar": 3,
+    "fiber": 6,
+    "sodium": 380,
+    "image": "../assets/Grilled-veggie-wrap.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Tofu Stir-Fry",
+    "calories": 320,
+    "protein": 20,
+    "fat": 10,
+    "carbs": 30,
+    "sugar": 4,
+    "fiber": 5,
+    "sodium": 410,
+    "image": "../assets/Tofu-stir-fry.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Chicken Caesar Salad",
+    "calories": 380,
+    "protein": 28,
+    "fat": 20,
+    "carbs": 15,
+    "sugar": 6,
+    "fiber": 4,
+    "sodium": 460,
+    "image": "../assets/Chicken-caesar-salad.jpg",
+    "dietaryPreference": ["Halal"]
+  },
+  {
+    "name": "Quinoa Salad",
+    "calories": 310,
+    "protein": 18,
+    "fat": 10,
+    "carbs": 35,
+    "sugar": 5,
+    "fiber": 4,
+    "sodium": 400,
+    "image": "../assets/Quinoa-salad.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Veggie Omelette",
+    "calories": 250,
+    "protein": 15,
+    "fat": 10,
+    "carbs": 20,
+    "sugar": 3,
+    "fiber": 3,
+    "sodium": 380,
+    "image": "../assets/Veggie-omelette.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Black Bean Soup",
+    "calories": 280,
+    "protein": 14,
+    "fat": 8,
+    "carbs": 35,
+    "sugar": 4,
+    "fiber": 6,
+    "sodium": 420,
+    "image": "../assets/Black-bean-soup.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Turkey Sandwich",
+    "calories": 320,
+    "protein": 22,
+    "fat": 12,
+    "carbs": 30,
+    "sugar": 5,
+    "fiber": 5,
+    "sodium": 400,
+    "image": "../assets/Turkey-sandwich.jpg",
+    "dietaryPreference": ["Halal"]
+  },
+  {
+    "name": "Vegetarian Chili",
+    "calories": 350,
+    "protein": 20,
+    "fat": 15,
+    "carbs": 40,
+    "sugar": 6,
+    "fiber": 7,
+    "sodium": 460,
+    "image": "../assets/Vegetarian-chili.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Greek Yogurt Parfait",
+    "calories": 200,
+    "protein": 10,
+    "fat": 5,
+    "carbs": 30,
+    "sugar": 4,
+    "fiber": 3,
+    "sodium": 300,
+    "image": "../assets/Greek-yogurt-parfait.jpg",
+    "dietaryPreference": ["Halal"]
+  },
+  {
+    "name": "Hummus Wrap",
+    "calories": 270,
+    "protein": 12,
+    "fat": 10,
+    "carbs": 35,
+    "sugar": 3,
+    "fiber": 5,
+    "sodium": 380,
+    "image": "../assets/Hummus-wrap.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Eggplant Parmesan",
+    "calories": 380,
+    "protein": 18,
+    "fat": 15,
+    "carbs": 45,
+    "sugar": 5,
+    "fiber": 6,
+    "sodium": 470,
+    "image": "../assets/Eggplant-parmesan.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Sushi Roll",
+    "calories": 320,
+    "protein": 20,
+    "fat": 8,
+    "carbs": 40,
+    "sugar": 4,
+    "fiber": 4,
+    "sodium": 430,
+    "image": "../assets/Sushi-roll.jpg",
+    "dietaryPreference": ["Shellfish free"]
+  },
+  {
+    "name": "Berry Smoothie Bowl",
+    "calories": 250,
+    "protein": 8,
+    "fat": 5,
+    "carbs": 45,
+    "sugar": 6,
+    "fiber": 6,
+    "sodium": 360,
+    "image": "../assets/Berry-smoothie-bowl.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Pasta Primavera",
+    "calories": 380,
+    "protein": 14,
+    "fat": 10,
+    "carbs": 50,
+    "sugar": 7,
+    "fiber": 5,
+    "sodium": 490,
+    "image": "../assets/Pasta-primavera.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Avocado Toast",
+    "calories": 300,
+    "protein": 10,
+    "fat": 15,
+    "carbs": 35,
+    "sugar": 5,
+    "fiber": 4,
+    "sodium": 420,
+    "image": "../assets/Avocado-toast.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Caprese Sandwich",
+    "calories": 340,
+    "protein": 18,
+    "fat": 12,
+    "carbs": 30,
+    "sugar": 6,
+    "fiber": 5,
+    "sodium": 440,
+    "image": "../assets/Caprese-sandwich.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Sweet Potato Bowl",
+    "calories": 310,
+    "protein": 12,
+    "fat": 10,
+    "carbs": 40,
+    "sugar": 5,
+    "fiber": 5,
+    "sodium": 380,
+    "image": "../assets/Sweet-potato-bowl.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Chicken Teriyaki",
+    "calories": 370,
+    "protein": 25,
+    "fat": 15,
+    "carbs": 30,
+    "sugar": 6,
+    "fiber": 4,
+    "sodium": 490,
+    "image": "../assets/Chicken-teriyaki.jpg",
+    "dietaryPreference": ["Halal"]
+  },
+  {
+    "name": "Tuna Salad",
+    "calories": 320,
+    "protein": 22,
+    "fat": 12,
+    "carbs": 25,
+    "sugar": 4,
+    "fiber": 3,
+    "sodium": 450,
+    "image": "../assets/Tuna-salad.jpg",
+    "dietaryPreference": ["Fish free"]
+  },
+  {
+    "name": "Mushroom Risotto",
+    "calories": 380,
+    "protein": 16,
+    "fat": 14,
+    "carbs": 45,
+    "sugar": 5,
+    "fiber": 4,
+    "sodium": 460,
+    "image": "../assets/Mushroom-risotto.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Broccoli Cheddar Soup",
+    "calories": 300,
+    "protein": 10,
+    "fat": 12,
+    "carbs": 35,
+    "sugar": 5,
+    "fiber": 4,
+    "sodium": 410,
+    "image": "../assets/Broccoli-cheddar-soup.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Fruit Salad",
+    "calories": 220,
+    "protein": 5,
+    "fat": 3,
+    "carbs": 50,
+    "sugar": 10,
+    "fiber": 7,
+    "sodium": 320,
+    "image": "../assets/Fruit-salad.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  },
+  {
+    "name": "Chicken Noodle Soup",
+    "calories": 340,
+    "protein": 18,
+    "fat": 10,
+    "carbs": 40,
+    "sugar": 6,
+    "fiber": 5,
+    "sodium": 470,
+    "image": "../assets/Chicken-noodle-soup.jpg",
+    "dietaryPreference": ["Halal"]
+  },
+  {
+    "name": "Egg Salad Sandwich",
+    "calories": 280,
+    "protein": 15,
+    "fat": 10,
+    "carbs": 30,
+    "sugar": 4,
+    "fiber": 4,
+    "sodium": 390,
+    "image": "../assets/Egg-salad-sandwich.jpg",
+    "dietaryPreference": ["Egg free"]
+  },
+  {
+    "name": "Lentil Soup",
+    "calories": 320,
+    "protein": 16,
+    "fat": 8,
+    "carbs": 40,
+    "sugar": 5,
+    "fiber": 6,
+    "sodium": 430,
+    "image": "../assets/Lentil-soup.jpg",
+    "dietaryPreference": ["Vegetarian"]
+  }
+]

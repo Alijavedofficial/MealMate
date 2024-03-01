@@ -1,28 +1,57 @@
 <!-- meal.component.html -->
-<div>
+<form [formGroup]="mealform">
   <label for="maxCalories">Maximum Calories:</label>
-  <input type="number" id="maxCalories" [(ngModel)]="maxCalories">
-  <button (click)="filterMeals()">Filter Meals</button>
-</div>
+  <input type="number" id="maxCalories" formControlName="TotalCalories">
+  <label for="no.ofMeals">Number of Meals:</label>
+  <input type="number" id="numberOfMeals" formControlName="numberOfMeals">
+  <label>Dietry Preference:</label>
+  <select formControlName="dietaryPreference">
+    <option value="Soy free">Soy free</option>
+    <option value="Dairy free">Dairy free</option>
+    <option value="Egg free">Egg free</option>
+    <option value="Fish free">Fish free</option>
+    <option value="Vegetarian">Vegetarian</option>
+    <option value="Vegan">Vegan</option>
+    <option value="Halal">Halal</option>
+    <option value="Gluten free"> Gluten free</option>
+    <option value="Kosher">Kosher</option>
+    <option value=" Nut free"> Nut free</option>
+    <option value="Paleo">Paleo</option>
+    <option value="Pescetarian">Pescetarian</option>
+    <option value="Shellfish free">Shellfish free</option>
+  </select>
+  
+  <button (click)="generateMealPlan()" class="bg-slate-700 text-white p-3">Filter Meals</button>
+</form>
 
 <div *ngIf="filteredMeals.length > 0">
   <ul>
-    <li *ngFor="let meal of filteredMeals" class="flex">
-     <img [src]="meal.image" class="rounded-full w-[100px]" />
-     <div class="flex flex-col">
-     <h1>{{ meal.name }}</h1>  
-     <table>
+    <li *ngFor="let meal of filteredMeals" class="flex rounded-xl bg-white p-4 shadow-lg mb-6 gap-5 justify-start w-[50%]">
+     <img [src]="meal.image" class="rounded-xl w-[100px] h-[100px] object-cover" />
+     <div class="flex flex-col text-start">
+     <h1 class="pl-2 text-[20px] font-medium pb-2">{{ meal.name }}</h1>  
+     <table class="w-full table-auto border-collapse">
       <thead>
+        <tr>
         <th>Calories</th>
         <th>Protein</th>
         <th>Carbs</th>
         <th>Fat</th>
+        <th>Sugar</th>
+        <th>Fibre</th>
+        <th>Sodium</th>
+      </tr>
       </thead>
       <tbody>
+        <tr>
         <td>{{ meal.calories }}</td>
-        <td>{{meal.protein}}</td>
-        <td>{{meal.carbs}}</td>
-        <td>{{meal.fat}}</td>
+        <td class="text-green-600">{{meal.protein}}g</td>
+        <td class="text-orange-700">{{meal.carbs}}g</td>
+        <td class="text-purple-600">{{meal.fat}}g</td>
+        <td class="text-red-600">{{meal.sugar}}g</td>
+        <td class="text-yellow-600">{{meal.fiber}}g</td>
+        <td class="text-indigo-500">{{meal.sodium}}g</td>
+      </tr>
       </tbody>
      </table>
     

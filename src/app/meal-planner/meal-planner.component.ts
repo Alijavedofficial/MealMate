@@ -11,20 +11,66 @@ import { Validators } from '@angular/forms';
   styleUrl: './meal-planner.component.css'
 })
 export class MealPlannerComponent implements OnInit{
- 
+ mealform: FormGroup;
   meals: any[] = [];
   filteredMeals: any[] = [];
-  maxCalories: number = 0;
+  
 
-  constructor(private mealService: MealPlanService) { }
+  constructor(private mealService: MealPlanService, private fb: FormBuilder) {
+    this.mealform = this.fb.group({
+      TotalCalories: [0],
+      numberOfMeals: [0],
+      dietaryPreference: [''] 
+    })
+   }
+   
+ 
 
   ngOnInit(): void {
     this.mealService.getMeals().subscribe(data => {
       this.meals = data;
     });
   }
+  
+  generateMealPlan() {
+    const totalCalories = this.mealform.get('TotalCalories')?.value;
+    const numberOfMeals = this.mealform.get('numberOfMeals')?.value;
+    const dietaryPreference = this.mealform.get('dietaryPreference')?.value; 
 
-  filterMeals() {
-    this.filteredMeals = this.mealService.filterMealsByCalories(this.meals, this.maxCalories);
+    if (totalCalories && numberOfMeals) {
+      const desiredCaloriesPerMeal = Math.round(totalCalories / numberOfMeals);
+  
+      // Filter meals based on dietary preference if selected
+      let filteredMeals = this.meals;
+      if (dietaryPreference) {
+        filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
+      }
+
+      const sortedMeals = filteredMeals.slice().sort((meal1, meal2) => {
+        const diff1 = Math.abs(meal1.calories - desiredCaloriesPerMeal);
+        const diff2 = Math.abs(meal2.calories - desiredCaloriesPerMeal);
+        return diff1 - diff2;
+      });
+  
+      let selectedMeals: any[] = [];
+      let totalSelectedCalories = 0;
+  
+      for (const meal of sortedMeals) {
+        if (selectedMeals.length < numberOfMeals) {
+          selectedMeals.push(meal);
+          totalSelectedCalories += meal.calories;
+        } else {
+          break;
+        }
+      }
+  
+      this.filteredMeals = selectedMeals;
+    }
   }
+
+  filterMealsByDietaryPreference(preference: string) {
+    return this.meals.filter(meal => meal.dietaryPreference.includes(preference));
+  }
+  
+  
 }
