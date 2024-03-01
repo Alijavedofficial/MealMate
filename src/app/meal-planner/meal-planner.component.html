@@ -1,10 +1,22 @@
 <!-- meal.component.html -->
 <form [formGroup]="mealform">
   <label for="maxCalories">Maximum Calories:</label>
+  <div *ngIf="mealform.get('TotalCalories')?.invalid && mealform.get('TotalCalories')?.dirty || mealform.get('TotalCalories')?.touched">
+    <div *ngIf="mealform.get('TotalCalories')?.errors?.['required']" class="text-red-800">Calories are Required</div>
+    <div *ngIf="mealform.get('TotalCalories')?.errors?.['min']" class="text-red-800">Calories cannot be less than 300</div>
+  </div>
   <input type="number" id="maxCalories" formControlName="TotalCalories">
   <label for="no.ofMeals">Number of Meals:</label>
+  <div *ngIf="mealform.get('numberOfMeals')?.invalid && mealform.get('numberOfMeals')?.dirty || mealform.get('numberOfMeals')?.touched">
+    <div *ngIf="mealform.get('numberOfMeals')?.errors?.['required']" class="text-red-800">No. of Meals are Required</div>
+    <div *ngIf="mealform.get('numberOfMeals')?.errors?.['min']" class="text-red-800">Meals cannot be less than 1</div>
+  </div>
   <input type="number" id="numberOfMeals" formControlName="numberOfMeals">
   <label>Dietry Preference:</label>
+  <div *ngIf="mealform.get('dietaryPreference')?.invalid && mealform.get('dietaryPreference')?.dirty || mealform.get('dietaryPreference')?.touched">
+    <div *ngIf="mealform.get('dietaryPreference')?.errors?.['required']" class="text-red-800">Preference is Required</div>
+    
+  </div>
   <select formControlName="dietaryPreference">
     <option value="Soy free">Soy free</option>
     <option value="Dairy free">Dairy free</option>
