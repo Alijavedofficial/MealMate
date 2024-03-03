@@ -1,13 +1,13 @@
 [
   {
     "name": "Grilled Chicken Salad",
-    "calories": 350,
-    "protein": 25,
-    "fat": 15,
+    "calories": 502,
+    "protein": 32.6,
+    "fat": 25,
     "carbs": 20,
     "sugar": 5,
     "fiber": 3,
-    "sodium": 450,
+    "sodium": 210,
     "image": "../assets/Meal_Images/Grilled-chicken-salad-1x1-228-a7f2948441384115bbf5c3f8bcddf053.jpg",
     "dietaryPreference": ["Halal"]
   },
@@ -56,7 +56,7 @@
     "sugar": 5,
     "fiber": 7,
     "sodium": 420,
-    "image": "../assets/Mediterranean-salad.jpg",
+    "image": "../assets/Meal_Images/Mediterranean Salad.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -68,7 +68,7 @@
     "sugar": 3,
     "fiber": 6,
     "sodium": 380,
-    "image": "../assets/Grilled-veggie-wrap.jpg",
+    "image": "../assets/Meal_Images/Grilled Veggie Wrap.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -80,7 +80,7 @@
     "sugar": 4,
     "fiber": 5,
     "sodium": 410,
-    "image": "../assets/Tofu-stir-fry.jpg",
+    "image": "../assets/Meal_Images/Tofu Stir-Fry.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -92,7 +92,7 @@
     "sugar": 6,
     "fiber": 4,
     "sodium": 460,
-    "image": "../assets/Chicken-caesar-salad.jpg",
+    "image": "../assets/Meal_Images/Chicken Caesar Salad.avif",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -104,7 +104,7 @@
     "sugar": 5,
     "fiber": 4,
     "sodium": 400,
-    "image": "../assets/Quinoa-salad.jpg",
+    "image": "../assets/Meal_Images/Quinoa Salad.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -116,7 +116,7 @@
     "sugar": 3,
     "fiber": 3,
     "sodium": 380,
-    "image": "../assets/Veggie-omelette.jpg",
+    "image": "../assets/Meal_Images/Veggie Omelette.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -128,7 +128,7 @@
     "sugar": 4,
     "fiber": 6,
     "sodium": 420,
-    "image": "../assets/Black-bean-soup.jpg",
+    "image": "../assets/Meal_Images/Black Bean Soup.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -140,7 +140,7 @@
     "sugar": 5,
     "fiber": 5,
     "sodium": 400,
-    "image": "../assets/Turkey-sandwich.jpg",
+    "image": "../assets/Meal_Images/Turkey Sandwich.avif",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -152,7 +152,7 @@
     "sugar": 6,
     "fiber": 7,
     "sodium": 460,
-    "image": "../assets/Vegetarian-chili.jpg",
+    "image": "../assets/Meal_Images/Vegetarian Chili.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -164,7 +164,7 @@
     "sugar": 4,
     "fiber": 3,
     "sodium": 300,
-    "image": "../assets/Greek-yogurt-parfait.jpg",
+    "image": "../assets/Meal_Images/Greek Yogurt Parfait.avif",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -176,7 +176,7 @@
     "sugar": 3,
     "fiber": 5,
     "sodium": 380,
-    "image": "../assets/Hummus-wrap.jpg",
+    "image": "../assets/Meal_Images/Hummus Wrap.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -188,7 +188,7 @@
     "sugar": 5,
     "fiber": 6,
     "sodium": 470,
-    "image": "../assets/Eggplant-parmesan.jpg",
+    "image": "../assets/Meal_Images/Eggplant Parmesan.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -200,7 +200,7 @@
     "sugar": 4,
     "fiber": 4,
     "sodium": 430,
-    "image": "../assets/Sushi-roll.jpg",
+    "image": "../assets/Meal_Images/Sushi Roll.avif",
     "dietaryPreference": ["Shellfish free"]
   },
   {
@@ -212,7 +212,7 @@
     "sugar": 6,
     "fiber": 6,
     "sodium": 360,
-    "image": "../assets/Berry-smoothie-bowl.jpg",
+    "image": "../assets/Meal_Images/Berry Smoothie Bowl.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -224,7 +224,7 @@
     "sugar": 7,
     "fiber": 5,
     "sodium": 490,
-    "image": "../assets/Pasta-primavera.jpg",
+    "image": "../assets/Meal_Images/Pasta Primavera.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -236,7 +236,7 @@
     "sugar": 5,
     "fiber": 4,
     "sodium": 420,
-    "image": "../assets/Avocado-toast.jpg",
+    "image": "../assets/Meal_Images/Avocado Toast.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -248,7 +248,7 @@
     "sugar": 6,
     "fiber": 5,
     "sodium": 440,
-    "image": "../assets/Caprese-sandwich.jpg",
+    "image": "../assets/Meal_Images/Caprese Sandwich.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -260,7 +260,7 @@
     "sugar": 5,
     "fiber": 5,
     "sodium": 380,
-    "image": "../assets/Sweet-potato-bowl.jpg",
+    "image": "../assets/Meal_Images/Sweet Potato Bowl.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -272,7 +272,7 @@
     "sugar": 6,
     "fiber": 4,
     "sodium": 490,
-    "image": "../assets/Chicken-teriyaki.jpg",
+    "image": "../assets/mea",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -289,14 +289,14 @@
   },
   {
     "name": "Mushroom Risotto",
-    "calories": 380,
+    "calories": 445,
     "protein": 16,
-    "fat": 14,
-    "carbs": 45,
+    "fat": 17,
+    "carbs": 63,
     "sugar": 5,
     "fiber": 4,
     "sodium": 460,
-    "image": "../assets/Mushroom-risotto.jpg",
+    "image": "../assets/Meal_Images/Mushroom Risotto.jpeg",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -308,7 +308,7 @@
     "sugar": 5,
     "fiber": 4,
     "sodium": 410,
-    "image": "../assets/Broccoli-cheddar-soup.jpg",
+    "image": "../assets/Meal_Images/Broccoli Cheddar Soup.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -320,7 +320,7 @@
     "sugar": 10,
     "fiber": 7,
     "sodium": 320,
-    "image": "../assets/Fruit-salad.jpg",
+    "image": "../assets/Meal_Images/Fruit Salad.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -332,7 +332,7 @@
     "sugar": 6,
     "fiber": 5,
     "sodium": 470,
-    "image": "../assets/Chicken-noodle-soup.jpg",
+    "image": "../assets/Meal_Images/Chicken Noodle Soup.avif",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -344,7 +344,7 @@
     "sugar": 4,
     "fiber": 4,
     "sodium": 390,
-    "image": "../assets/Egg-salad-sandwich.jpg",
+    "image": "../assets/Meal_Images/Egg Salad Sandwich.avif",
     "dietaryPreference": ["Egg free"]
   },
   {
@@ -356,7 +356,7 @@
     "sugar": 5,
     "fiber": 6,
     "sodium": 430,
-    "image": "../assets/Lentil-soup.jpg",
+    "image": "../assets/Meal_Images/Lentil Soup.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -368,7 +368,7 @@
     "sugar": 7,
     "fiber": 4,
     "sodium": 460,
-    "image": "../assets/BBQ-chicken-pizza.jpg",
+    "image": "../assets/Meal_Images/BBQ Chicken Pizza.avif",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -380,7 +380,7 @@
     "sugar": 6,
     "fiber": 5,
     "sodium": 480,
-    "image": "../assets/Caesar-wrap.jpg",
+    "image": "../assets/Meal_Images/Caesar Wrap.avif",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -392,7 +392,7 @@
     "sugar": 4,
     "fiber": 6,
     "sodium": 410,
-    "image": "../assets/Chickpea-salad.jpg",
+    "image": "../assets/Meal_Images/Chickpea Salad.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -404,7 +404,7 @@
     "sugar": 5,
     "fiber": 7,
     "sodium": 450,
-    "image": "../assets/Falafel-plate.jpg",
+    "image": "../assets/Meal_Images/Falafel Plate.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -416,7 +416,7 @@
     "sugar": 4,
     "fiber": 5,
     "sodium": 370,
-    "image": "../assets/Garden-salad.jpg",
+    "image": "../assets/Meal_Images/Garden Salad.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -428,7 +428,7 @@
     "sugar": 6,
     "fiber": 3,
     "sodium": 430,
-    "image": "../assets/Macaroni-and-cheese.jpg",
+    "image": "../assets/Meal_Images/Macaroni and Cheese.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -440,8 +440,8 @@
     "sugar": 8,
     "fiber": 5,
     "sodium": 380,
-    "image": "../assets/Peanut-butter-and-jelly-sandwich.jpg",
-    "dietaryPreference": ["Vegetarian"]
+    "image": "../assets/Meal_Images/Peanut Butter and Jelly Sandwich.avif",
+    "dietaryPreference": ["Vegetarian","Halal"]
   },
   {
     "name": "Ratatouille",
@@ -452,7 +452,7 @@
     "sugar": 5,
     "fiber": 6,
     "sodium": 390,
-    "image": "../assets/Ratatouille.jpg",
+    "image": "../assets/Meal_Images/Ratatouille.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -464,7 +464,7 @@
     "sugar": 7,
     "fiber": 4,
     "sodium": 420,
-    "image": "../assets/Shakshuka.jpg",
+    "image": "../assets/Meal_Images/Shakshuka.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -476,7 +476,7 @@
     "sugar": 4,
     "fiber": 5,
     "sodium": 400,
-    "image": "../assets/Tofu-scramble.jpg",
+    "image": "../assets/Meal_Images/Tofu Scramble.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -488,8 +488,8 @@
     "sugar": 6,
     "fiber": 5,
     "sodium": 430,
-    "image": "../assets/Veggie-burger.jpg",
-    "dietaryPreference": ["Vegetarian"]
+    "image": "../assets/Meal_Images/Veggie Burger.avif",
+    "dietaryPreference": ["Vegetarian","Halal"]
   },
   {
     "name": "Waldorf Salad",
@@ -500,7 +500,7 @@
     "sugar": 5,
     "fiber": 4,
     "sodium": 380,
-    "image": "../assets/Waldorf-salad.jpg",
+    "image": "../assets/Meal_Images/Waldorf Salad.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -512,7 +512,7 @@
     "sugar": 4,
     "fiber": 6,
     "sodium": 410,
-    "image": "../assets/Zucchini-noodles-with-pesto.jpg",
+    "image": "../assets/Meal_Images/Zucchini Noodles with Pesto.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -524,8 +524,8 @@
     "sugar": 3,
     "fiber": 4,
     "sodium": 360,
-    "image": "../assets/Baked-potato.jpg",
-    "dietaryPreference": ["Vegetarian"]
+    "image": "../assets/Meal_Images/Baked Potato.avif",
+    "dietaryPreference": ["Vegetarian","Halal"]
   },
   {
     "name": "Cauliflower Rice Bowl",
@@ -536,8 +536,8 @@
     "sugar": 3,
     "fiber": 5,
     "sodium": 380,
-    "image": "../assets/Cauliflower-rice-bowl.jpg",
-    "dietaryPreference": ["Vegetarian"]
+    "image": "../assets/Meal_Images/Cauliflower Rice Bowl.avif",
+    "dietaryPreference": ["Vegetarian","Halal"]
   },
   {
     "name": "Fajita Wrap",
@@ -548,7 +548,7 @@
     "sugar": 5,
     "fiber": 6,
     "sodium": 420,
-    "image": "../assets/Fajita-wrap.jpg",
+    "image": "../assets/Meal_Images/Fajita Wrap.avif",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -560,7 +560,7 @@
     "sugar": 5,
     "fiber": 3,
     "sodium": 320,
-    "image": "../assets/Gazpacho.jpg",
+    "image": "../assets/Meal_Images/Gazpacho.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -572,7 +572,7 @@
     "sugar": 6,
     "fiber": 4,
     "sodium": 450,
-    "image": "../assets/Nicoise-salad.jpg",
+    "image": "../assets/Meal_Images/Nicoise Salad.avif",
     "dietaryPreference": ["Fish free"]
   },
   {
@@ -584,7 +584,7 @@
     "sugar": 8,
     "fiber": 6,
     "sodium": 470,
-    "image": "../assets/Pad-thai.jpg",
+    "image": "../assets/Meal_Images/Pad Thai.avif",
     "dietaryPreference": ["Halal"]
   },
   {
@@ -596,7 +596,7 @@
     "sugar": 4,
     "fiber": 6,
     "sodium": 420,
-    "image": "../assets/Rice-and-beans.jpg",
+    "image": "../assets/Meal_Images/Rice and Beans.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -608,7 +608,7 @@
     "sugar": 5,
     "fiber": 5,
     "sodium": 390,
-    "image": "../assets/Stuffed-bell-peppers.jpg",
+    "image": "../assets/Meal_Images/Stuffed Bell Peppers.jpeg",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -620,7 +620,7 @@
     "sugar": 4,
     "fiber": 4,
     "sodium": 350,
-    "image": "../assets/Tomato-soup.jpg",
+    "image": "../assets/Meal_Images/Tomato Soup.avif",
     "dietaryPreference": ["Vegetarian"]
   },
   {
@@ -632,7 +632,7 @@
     "sugar": 6,
     "fiber": 5,
     "sodium": 430,
-    "image": "../assets/Veggie-pizza.jpg",
+    "image": "../assets/Meal_Images/Veggie Pizza.avif",
     "dietaryPreference": ["Vegetarian"]
   }
 ]

@@ -15,8 +15,8 @@ export class MealPlannerComponent implements OnInit {
 
   constructor(private mealService: MealPlanService, private fb: FormBuilder) {
     this.mealform = this.fb.group({
-      TotalCalories: [0,[Validators.required, Validators.min(300)]],
-      numberOfMeals: [0,[Validators.required, Validators.min(1)]],
+      TotalCalories: [,[Validators.required, Validators.min(300)]],
+      numberOfMeals: [,[Validators.required, Validators.min(1)]],
       dietaryPreference: ['', Validators.required],
     });
   }
@@ -59,6 +59,7 @@ export class MealPlannerComponent implements OnInit {
       }
 
       this.filteredMeals = selectedMeals;
+      this.mealform.reset();
     }
   }
 

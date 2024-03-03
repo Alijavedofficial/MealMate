@@ -14,3 +14,6 @@ table tr th {
     font-weight: 500;
     padding-left: 30px;
   }
+  form label{
+    color: white;
+  }

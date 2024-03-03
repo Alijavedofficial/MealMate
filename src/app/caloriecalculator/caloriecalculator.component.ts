@@ -94,6 +94,7 @@ ngOnInit(): void {
   
       // Display or store the calculated total calories
      this.TotalCalorie = tdee
+     this.CalorieForm.reset()
     } 
   }
 
