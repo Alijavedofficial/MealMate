@@ -17,3 +17,18 @@ table tr th {
   form label{
     color: white;
   }
+  .Total-vals{
+    display: flex;
+    flex-direction: row;
+  }
+  .Total-vals h2{
+    border-right: 1px solid black;
+    width: 50%;
+    text-align: start;
+    padding: 15px;
+  }
+  .Total-vals span{
+    width: 50%;
+    text-align: end;
+    padding: 15px;
+  }

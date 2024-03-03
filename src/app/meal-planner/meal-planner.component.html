@@ -92,8 +92,8 @@
 
 <!--Meal are displayed here depending on user's preference-->
 
-<div *ngIf="filteredMeals.length > 0" class="mt-10 px-20">
-  <ul>
+<div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10">
+  <ul class="w-[60%]">
     <li
       *ngFor="let meal of filteredMeals"
       class="flex rounded-xl bg-white p-4 shadow-lg mb-6 gap-5 justify-start"
@@ -129,6 +129,35 @@
       </div>
     </li>
   </ul>
+  <div class="flex flex-col w-[30%]">
+  <h1 class="text-[#000000] text-[1.5rem] font-semibold pb-4">Total Nutrition Value</h1>
+  <div class="bg-white ">
+    <div class="Total-vals">
+      <h2>Total Calories</h2>
+      <span>2000 Kcal</span>
+    </div>
+    <div class="Total-vals">
+      <h2>Total Protein</h2>
+      <span>2000 g</span>
+    </div>
+    <div class="Total-vals">
+      <h2>Total Carbs</h2>
+      <span>2000 g</span>
+    </div>
+    <div class="Total-vals">
+      <h2>Total Fat</h2>
+      <span>2000 g</span>
+    </div>
+    <div class="Total-vals">
+      <h2>Total Sugar</h2>
+      <span>2000 g</span>
+    </div>
+    <div class="Total-vals">
+      <h2>Total Fiber</h2>
+      <span>2000 g</span>
+    </div>
+  </div>
+</div>
 </div>
 
 
