@@ -1,16 +1,19 @@
 .btn {
     width: 140px;
     height: 43px;
-    border-radius: 5px;
-    border: none;
     transition: all 0.5s ease-in-out;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     display: flex;
     align-items: center;
-    background: #040f16;
-    color: #f5f5f5;
+    background: #dde1e7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #babecc,
+                -5px -5px 10px #ffffff73;
   }
   
   .btn:hover {
@@ -41,7 +44,9 @@
   }
   
   .btn:focus {
-    outline: none;
+    color: #3498db;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
   }
   
   .btn:active .icon {
@@ -61,3 +66,4 @@
   cursor: pointer;
   opacity: 1;
 }
+

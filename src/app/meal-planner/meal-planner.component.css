@@ -5,17 +5,14 @@ table tr th {
     padding: 4px;;
     font-weight: 500;
     font-size: 13px;
-    padding-left: 30px;
+    padding-left: 50px;
   }
   table tr td {
     padding: 4px;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    padding-left: 30px;
-  }
-  form label{
-    color: white;
+    padding-left: 50px;
   }
   .Total-vals{
     display: flex;
@@ -26,9 +23,121 @@ table tr th {
     width: 50%;
     text-align: start;
     padding: 15px;
+    border-bottom: 1px solid black;
+    font-weight: 500;
   }
   .Total-vals span{
     width: 50%;
     text-align: end;
     padding: 15px;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+  }
+  form{
+    background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+  inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+  }
+
+
+  .field{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  .field input,select{
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: #595959;
+    background: #dde1e7;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px #babecc,
+                -5px -5px 10px #ffffff73;
+  }
+  
+  .field input:focus ~ label{
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -1px -1px 2px #ffffff73;
+  }
+  .field select:focus ~ label{
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -1px -1px 2px #ffffff73;
+  }
+  
+  .field input:focus{
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+  }
+  
+  
+  .field span{
+    position: absolute;
+    width: 50px;
+    margin-left: 14px;
+    line-height: 50px;
+    color: #595959;
+  }
+  .field span i{
+    font-size: 18px;
+  }
+  
+  .field label{
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    pointer-events: none;
+    color: #666666;
+    transform: translateY(-50%);
+  }
+  
+  
+  .field input:focus ~ label{
+    opacity: 0;
+  }
+  .field input::after ~ label{
+    opacity: 0;
+  }
+  .field select:focus ~ label{
+    opacity: 0;
+  }
+
+  button{
+    margin: 25px 0 0 0;
+    width: 100%;
+    height: 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    background: #dde1e7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px #babecc,
+                -5px -5px 10px #ffffff73;
+  }
+  
+  button:focus{
+    color: #3498db;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+  }
+  .meals{
+    background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+   inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+  }
+  .total-table{
+    background: #dde1e7;
+    border-radius: 10px;
+    box-shadow: inset -3px -3px 7px #ffffff73,
+     inset 2px 2px 5px rgba(94, 104, 121, 0.288);
   }

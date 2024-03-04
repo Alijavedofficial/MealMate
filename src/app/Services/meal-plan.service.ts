@@ -6,12 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MealPlanService {
-  private jsonData = '../../assets/meals.json'; 
+  private MealapiUrl = 'https://raw.githubusercontent.com/Alijavedofficial/Meals_Api/main/meals.json'; 
 
   constructor(private http: HttpClient) { }
 
   getMeals(): Observable<any[]> {
-    return this.http.get<any[]>(this.jsonData);
+    return this.http.get<any[]>(this.MealapiUrl);
   }
 
   

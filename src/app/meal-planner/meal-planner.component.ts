@@ -12,7 +12,12 @@ export class MealPlannerComponent implements OnInit {
   mealform: FormGroup;
   meals: any[] = [];
   filteredMeals: any[] = [];
-
+  totalCalories: number = 0;
+  totalProtein: number = 0;
+  totalCarbs: number = 0;
+  totalFat: number = 0;
+  TotalSugar: number  = 0 ;
+  TotalFiber: number = 0;
   constructor(private mealService: MealPlanService, private fb: FormBuilder) {
     this.mealform = this.fb.group({
       TotalCalories: [,[Validators.required, Validators.min(300)]],
@@ -25,6 +30,25 @@ export class MealPlannerComponent implements OnInit {
     this.mealService.getMeals().subscribe((data) => {
       this.meals = data;
     });
+  }
+
+  calculateTotals() {
+    this.totalCalories = 0;
+    this.totalProtein = 0;
+    this.TotalFiber = 0;
+    this.TotalSugar = 0;
+    this.totalCarbs = 0;
+    this.totalFat = 0;
+    
+  
+    for (const meal of this.filteredMeals) {
+      this.totalCalories += meal.calories;
+      this.totalProtein += meal.protein;
+      this.TotalFiber += meal.fiber;
+      this.TotalSugar += meal.sugar;
+      this.totalFat += meal.fat;
+      this.totalCarbs += meal.carbs;
+    }
   }
 
   generateMealPlan() {
@@ -59,7 +83,7 @@ export class MealPlannerComponent implements OnInit {
       }
 
       this.filteredMeals = selectedMeals;
-      this.mealform.reset();
+      this.calculateTotals()
     }
   }
 

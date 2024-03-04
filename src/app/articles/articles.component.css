@@ -4,17 +4,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 50px;
   }
   
   .article-card {
     width: 30%;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    background: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73,
+     2px 2px 5px rgba(94, 104, 121, 0.288);
   }
   
   .article-image {

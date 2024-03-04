@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    background-color: rgb(244 247 254);
+    background-color: #dde1e7;
     padding: 10px 40px;
  }
  *{
@@ -26,7 +26,10 @@ body{
  input:focus,select:focus,textarea:focus{
      border: 1px solid #0f172a;
    }
- 
+   .shadow-custom {
+    box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, .08);
+  }
+  
  
 
 html, body { height: 100%; }

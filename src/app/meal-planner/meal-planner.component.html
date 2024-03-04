@@ -1,74 +1,39 @@
 <div class="px-20 py-10">
 
   <!--Meal Form for entering calories,meals and user's preference-->
-<form [formGroup]="mealform" class="bg-green-900 px-20 py-6 rounded-2xl " >
+<form [formGroup]="mealform" class="px-20 py-6"  >
   <div class="py-4 text-center">
-  <h1 class="text-[35px] text-white font-semibold">Stay In Shape Perfect With MealMate</h1>
-  <h6 class="text-[20px] text-white font-medium">Elevate Your Meals: Try Our Meal Planner Today!</h6>
+  <h1 class="text-[35px] text-[#000] font-semibold">Stay In Shape Perfect With MealMate</h1>
+  <h6 class="text-[20px] text-[#000] font-medium">Elevate Your Meals: Try Our Meal Planner Today!</h6>
 </div>
-  <label for="maxCalories">Calories:</label>
+<div class="grid grid-cols-2 gap-5">
 
-  <div
-    *ngIf="
-      (mealform.get('TotalCalories')?.invalid &&
-        mealform.get('TotalCalories')?.dirty) ||
-      mealform.get('TotalCalories')?.touched">
-    <div
-      *ngIf="mealform.get('TotalCalories')?.errors?.['required']"
-      class="text-red-800">
-      Calories are Required
-    </div>
-    <div
-      *ngIf="mealform.get('TotalCalories')?.errors?.['min']"
-      class="text-red-800">
-      Calories cannot be less than 300
-    </div>
+  <div class="field">
+    <span><i class="fa-solid fa-cookie-bite"></i></span>
+     <input type="number" id="maxCalories" formControlName="TotalCalories"/>
+  <label>Calories</label>
+  <div *ngIf="(mealform.get('TotalCalories')?.invalid && mealform.get('TotalCalories')?.dirty) || mealform.get('TotalCalories')?.touched">
+    <div *ngIf="mealform.get('TotalCalories')?.errors?.['required']" class="text-red-800">Calories are Required</div>
+    <div *ngIf="mealform.get('TotalCalories')?.errors?.['min']" class="text-red-800"> Calories cannot be less than 300</div>
   </div>
-  <input
-    type="number"
-    id="maxCalories"
-    formControlName="TotalCalories"
-    placeholder="Enter Calories..."
-  />
-  <label for="no.ofMeals">Number of Meals:</label>
-  <div
-    *ngIf="
-      (mealform.get('numberOfMeals')?.invalid &&
-        mealform.get('numberOfMeals')?.dirty) ||
-      mealform.get('numberOfMeals')?.touched">
-    <div
-      *ngIf="mealform.get('numberOfMeals')?.errors?.['required']"
-      class="text-red-800">
-      No. of Meals are Required
-    </div>
-    <div
+</div>
+<div class="field">
+  <span><i class="fa-solid fa-ruler"></i></span>
+  <input type="number" id="numberOfMeals" formControlName="numberOfMeals"/>
+  <label>Number of Meals</label>
+  <div *ngIf="(mealform.get('numberOfMeals')?.invalid && mealform.get('numberOfMeals')?.dirty) ||  mealform.get('numberOfMeals')?.touched">
+  <div *ngIf="mealform.get('numberOfMeals')?.errors?.['required']" class="text-red-800">No. of Meals are Required</div>
+   <div
       *ngIf="mealform.get('numberOfMeals')?.errors?.['min']"
       class="text-red-800">
       Meals cannot be less than 1
     </div>
   </div>
-  <input
-    type="number"
-    id="numberOfMeals"
-    formControlName="numberOfMeals"
-    placeholder="Enter Meals..."
-  />
-  <label>Dietry Preference:</label>
-  <div
-    *ngIf="
-      (mealform.get('dietaryPreference')?.invalid &&
-        mealform.get('dietaryPreference')?.dirty) ||
-      mealform.get('dietaryPreference')?.touched
-    "
-  >
-    <div
-      *ngIf="mealform.get('dietaryPreference')?.errors?.['required']"
-      class="text-red-800"
-    >
-      Preference is Required
-    </div>
-  </div>
-  <select formControlName="dietaryPreference">
+</div>
+
+<div class="field">
+  <span><i class="fa-solid fa-utensils"></i></span>
+  <select formControlName="dietaryPreference"> 
     <option value="Soy free">Soy free</option>
     <option value="Dairy free">Dairy free</option>
     <option value="Egg free">Egg free</option>
@@ -83,9 +48,25 @@
     <option value="Pescetarian">Pescetarian</option>
     <option value="Shellfish free">Shellfish free</option>
   </select>
-
-  <button (click)="generateMealPlan()" class="bg-slate-700 text-white p-3">
-    Filter Meals
+  <label>Dietry Preference</label>
+  <div
+    *ngIf="
+      (mealform.get('dietaryPreference')?.invalid &&
+        mealform.get('dietaryPreference')?.dirty) ||
+      mealform.get('dietaryPreference')?.touched
+    "
+  >
+    <div
+      *ngIf="mealform.get('dietaryPreference')?.errors?.['required']"
+      class="text-red-800"
+    >
+      Preference is Required
+    </div>
+  </div>
+</div>
+</div>
+  <button (click)="generateMealPlan()" class="p-3 px-5 rounded-lg">
+    Generate Meals
   </button>
 </form>
 
@@ -96,14 +77,17 @@
   <ul class="w-[60%]">
     <li
       *ngFor="let meal of filteredMeals"
-      class="flex rounded-xl bg-white p-4 shadow-lg mb-6 gap-5 justify-start"
+      class="flex p-4 mb-6 gap-5 justify-start meals"
     >
       <img
         [src]="meal.image"
         class="rounded-xl w-[100px] h-[100px] object-cover"
       />
       <div class="flex flex-col text-start">
-        <h1 class="pl-2 text-[20px] font-medium pb-2">{{ meal.name }}</h1>
+        <div class="pb-2 flex justify-between">
+        <h1 class="pl-2 text-[20px] font-medium">{{ meal.name }}</h1>
+        <h2 class="text-[16px] font-medium">{{ meal.perServing}}</h2>
+      </div>
         <table class="w-full table-auto border-collapse">
           <thead>
             <tr>
@@ -112,7 +96,7 @@
               <th>Carbs</th>
               <th>Fat</th>
               <th>Sugar</th>
-              <th>Fibre</th>
+              <th style="padding-right: 50px;">Fibre</th>
             </tr>
           </thead>
           <tbody>
@@ -122,7 +106,7 @@
               <td class="text-orange-700">{{ meal.carbs }}g</td>
               <td class="text-purple-600">{{ meal.fat }}g</td>
               <td class="text-red-600">{{ meal.sugar }}g</td>
-              <td class="text-yellow-600">{{ meal.fiber }}g</td>
+              <td class="text-yellow-600" style="padding-right: 50px;">{{ meal.fiber }}g</td>
             </tr>
           </tbody>
         </table>
@@ -131,30 +115,30 @@
   </ul>
   <div class="flex flex-col w-[30%]">
   <h1 class="text-[#000000] text-[1.5rem] font-semibold pb-4">Total Nutrition Value</h1>
-  <div class="bg-white ">
+  <div class="total-table">
     <div class="Total-vals">
       <h2>Total Calories</h2>
-      <span>2000 Kcal</span>
+      <span>{{totalCalories}} Kcal</span>
     </div>
     <div class="Total-vals">
       <h2>Total Protein</h2>
-      <span>2000 g</span>
+      <span>{{totalProtein}} g</span>
     </div>
     <div class="Total-vals">
       <h2>Total Carbs</h2>
-      <span>2000 g</span>
+      <span>{{totalCarbs}} g</span>
     </div>
     <div class="Total-vals">
       <h2>Total Fat</h2>
-      <span>2000 g</span>
+      <span>{{totalFat}} 93g</span>
     </div>
     <div class="Total-vals">
       <h2>Total Sugar</h2>
-      <span>2000 g</span>
+      <span>{{TotalSugar}} g</span>
     </div>
     <div class="Total-vals">
       <h2>Total Fiber</h2>
-      <span>2000 g</span>
+      <span>{{TotalFiber}} g</span>
     </div>
   </div>
 </div>
