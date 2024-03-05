@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Apple Slices",
+      "calories": 52,
+      "protein": 0.3,
+      "carbs": 13.8,
+      "fat": 0.2,
+      "fiber": 2.4,
+      "sugar": 10.4,
+      "dietaryPreference": ["vegetarian", "vegan", "gluten-free"]
+    },
+    {
+      "name": "Almonds",
+      "calories": 160,
+      "protein": 6,
+      "carbs": 6,
+      "fat": 14,
+      "fiber": 3.5,
+      "sugar": 1.2,
+      "dietaryPreference": ["vegetarian", "vegan", "gluten-free"]
+    },
+    {
+      "name": "Greek Yogurt",
+      "calories": 100,
+      "protein": 10,
+      "carbs": 7,
+      "fat": 3.5,
+      "fiber": 0,
+      "sugar": 7,
+      "dietaryPreference": ["vegetarian", "gluten-free"]
+    },
+    {
+      "name": "Carrot Sticks",
+      "calories": 25,
+      "protein": 0.6,
+      "carbs": 5.8,
+      "fat": 0.1,
+      "fiber": 1.6,
+      "sugar": 3,
+      "dietaryPreference": ["vegetarian", "vegan", "gluten-free"]
+    },
+    {
+      "name": "Cheese Cubes",
+      "calories": 110,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 9,
+      "fiber": 0,
+      "sugar": 0,
+      "dietaryPreference": ["vegetarian", "gluten-free"]
+    }
+  ]
+  

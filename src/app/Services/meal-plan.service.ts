@@ -7,11 +7,16 @@ import { Observable } from 'rxjs';
 })
 export class MealPlanService {
   private MealapiUrl = 'https://raw.githubusercontent.com/Alijavedofficial/Meals_Api/main/meals.json'; 
+  private SnackapiUrl = '../../assets/Snacks.json'
 
   constructor(private http: HttpClient) { }
 
   getMeals(): Observable<any[]> {
     return this.http.get<any[]>(this.MealapiUrl);
+  }
+
+  getSnacks(): Observable<any[]> {
+    return this.http.get<any[]>(this.SnackapiUrl);
   }
 
   

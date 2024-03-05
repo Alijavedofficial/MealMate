@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    background-color: #dde1e7;
+    background-color: #e6e7ee;
     padding: 10px 40px;
  }
  *{
@@ -12,24 +12,23 @@ body{
    box-sizing: border-box;
  }
  input,select{
-     border: 1px solid #dfe1e6;
-     border-radius: 4px;
-     width: 100%;
-     padding: 8px;
-     background-color: #fff;
-     font-weight: 400;
-     box-shadow: 0 0 6px #172b4d0a;
-     font-size: 0.95rem;
-     outline: none;
-     margin-bottom: 15px;
- }
- input:focus,select:focus,textarea:focus{
-     border: 1px solid #0f172a;
-   }
-   .shadow-custom {
-    box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, .08);
-  }
-  
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  color: #595959;
+  background: #e6e7ee;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;
+}
+ input:focus{
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+}
+   
  
 
 html, body { height: 100%; }
