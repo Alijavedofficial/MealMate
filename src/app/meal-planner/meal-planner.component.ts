@@ -28,10 +28,11 @@ private unsubscribe$ = new Subject<void>();
 
   constructor(private mealService: MealPlanService, private fb: FormBuilder) {
     this.mealform = this.fb.group({
-      TotalCalories: [,[Validators.required, Validators.min(150)]],
-      numberOfMeals: [,[Validators.required, Validators.min(1)]],
+      TotalCalories: [,[Validators.required, Validators.min(1200)]],
+      numberOfMeals: [,[Validators.required, Validators.min(1), Validators.max(5)]],
       dietaryPreference: ['', Validators.required],
-      numberOfSnacks: [,[Validators.required, Validators.max(3)]]
+      numberOfSnacks: [,[Validators.required, Validators.max(2)]],
+      Region: ['', Validators.required]
     });
   }
 
@@ -111,6 +112,7 @@ private unsubscribe$ = new Subject<void>();
       });
 
       let selectedMeals: any[] = [];
+      
       let selectedSnacks: any[] = [];
       let totalSelectedCalories = 0;
 

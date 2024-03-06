@@ -67,3 +67,43 @@
   opacity: 1;
 }
 
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-toggle {
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: 1px solid #ccc;
+  z-index: 1;
+  background-color: #e6e7ee;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  
+}
+
+.dropdown-item:hover {
+  
+}
+

@@ -7,8 +7,15 @@
     <div class="flex">
       <ul class="nav-ul">
         <li routerLink="/planner"><a>Meal Planner</a></li>
-        <li routerLink="/calorie"><a>Calorie Calc</a></li>
-        <li routerLink="/fat"><a>Fat Calc</a></li>
+        <div class="dropdown" (mouseover)="showDropdown = true" (mouseleave)="showDropdown = false">
+          <button class="dropdown-toggle">Calculators</button>
+          <div class="dropdown-menu" [ngClass]="{'show': showDropdown}">
+           <li routerLink="/calorie" class="dropdown-item border-b border-[#d1d9e6]"><span><i class="fa-solid fa-calculator"></i></span><a>Calorie Calculator</a></li>
+           <li routerLink="/fat" class="dropdown-item"><span><i class="fa-solid fa-calculator"></i></span><a>Fat Calculator</a></li>
+          </div>
+        </div>
+        
+        
         <li routerLink="/articles"><a>Articles</a></li>
         <li>
           <a

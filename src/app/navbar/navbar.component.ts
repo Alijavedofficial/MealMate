@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  showDropdown: boolean = false;
 
+  toggleDropdown() {
+    this.showDropdown = !this.showDropdown;
+  }
+
+  hideDropdown() {
+    this.showDropdown = false;
+  }
 }

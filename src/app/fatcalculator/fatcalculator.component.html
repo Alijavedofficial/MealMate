@@ -1,35 +1,41 @@
-<h1 class="text-[40px] text-center">Body Fat Calculator</h1>
+<div class="px-20 py-10">
 
-<form [formGroup]="fatForm" class="flex flex-col justify-center">
-    
-    
-    <div>
-        <label>Select gender:</label>
+<form [formGroup]="fatForm" class="px-20 py-6">
+    <div class="py-4 text-center">
+        <h1 class="text-[35px] font-semibold">Gauge Your Fat Consumption with Precision</h1>
+      </div>
+    <div class="grid grid-cols-2 gap-6">
+    <div class="field">
+        <span><i class="fa-solid fa-venus-mars"></i></span>
         <select name="gender" formControlName="gender">
-          <option value="" disabled>Select Gender</option>
+          <option value="" disabled selected>Select Gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
     </div>
-    <div>
-        <label>Enter Waist(cm):</label>
-    <input type="number" placeholder="Enter Waist" formControlName="waist" />
+    <div class="field">
+       <span><i class="fa-solid fa-ruler"></i></span>
+    <input type="number" placeholder="Waist(cm)" formControlName="waist" />
     </div>
-    <div>
-        <label>Enter height</label>
-    <input type="number" placeholder="Enter height" formControlName="height" />
+    <div class="field">
+       <span><i class="fa-solid fa-ruler-vertical"></i></span>
+    <input type="number" placeholder="Height(cm)" formControlName="height" />
     </div>
-    <div>
-        <label>Enter Neck(cm):</label>
-    <input type="number" placeholder="Enter Neck" formControlName="neck" />
+    <div class="field">
+        <span><i class="fa-solid fa-ruler-vertical"></i></span>
+    <input type="number" placeholder="Neck(cm)" formControlName="neck" />
     </div>
-    <div *ngIf="fatForm.get('gender')?.value ==='female'">
-        <label>Enter Hip:</label>
-        <input type="number" placeholder="Enter Your Hip" formControlName="hip">
+    <div *ngIf="fatForm.get('gender')?.value ==='female'" class="field">
+        <span><i class="fa-solid fa-ruler"></i></span>
+        <input type="number" placeholder="Hip(cm)" formControlName="hip">
     </div>
-    <button (click)="calculateFat()" type="button" class="bg-[#040f16] text-[#fff] p-3 rounded-xl">
+</div>
+    <button (click)="calculateFat()" type="submit">
         Calculate Fat
       </button>
 
-    <h1>Body's Fat Percentage:{{totalFat | number}}</h1>
 </form>
+<div *ngIf="!fatForm.invalid" class="text-center py-5">
+<h1>Body's Fat:{{totalFat | number}} %</h1>
+</div>
+</div>
