@@ -118,3 +118,9 @@ table tr th {
     box-shadow: inset -3px -3px 7px #ffffff73,
      inset 2px 2px 5px rgba(94, 104, 121, 0.288);
   }
+  .table-inner{
+    background: #e6e7ee;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73,
+      2px 2px 5px rgba(94, 104, 121, 0.288);
+  }

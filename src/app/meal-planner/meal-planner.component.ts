@@ -23,7 +23,7 @@ export class MealPlannerComponent implements OnInit,OnDestroy {
   totalFat: number = 0;
   TotalSugar: number  = 0 ;
   TotalFiber: number = 0;
-
+  meallabel: string = '';
 private unsubscribe$ = new Subject<void>();
 
   constructor(private mealService: MealPlanService, private fb: FormBuilder) {
@@ -39,7 +39,7 @@ private unsubscribe$ = new Subject<void>();
     this.mealService.getMeals().pipe(takeUntil(this.unsubscribe$)).subscribe((data) => {
       this.meals = data;
     });
-    this.mealService.getSnacks().subscribe((data) => {
+    this.mealService.getSnacks().pipe(takeUntil(this.unsubscribe$)).subscribe((data) => {
       this.snacks = data;
     })
   }
@@ -66,6 +66,15 @@ private unsubscribe$ = new Subject<void>();
       this.totalFat += meal.fat;
       this.totalCarbs += meal.carbs;
     }
+
+    for(const snack of this.filteredSnacks){
+      this.totalCalories += snack.calories;
+      this.totalProtein += snack.protein;
+      this.TotalFiber += snack.fiber;
+      this.TotalSugar += snack.sugar;
+      this.totalFat += snack.fat;
+      this.totalCarbs += snack.carbs;
+    }
   }
 
   generateMealPlan() {
@@ -74,72 +83,82 @@ private unsubscribe$ = new Subject<void>();
     const numberOfSnacks = this.mealform.get('numberOfSnacks')?.value;
     const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
 
-    if (totalCalories && numberOfMeals && numberOfSnacks) {
-        const desiredCaloriesPerMeal = Math.round(totalCalories / numberOfMeals);
-        const desiredCaloriesPerSnack = Math.round(totalCalories / numberOfSnacks);
+    const mealCalories = totalCalories * 1;
+    const snackCalories = totalCalories * 0.20;
 
-        let filteredMeals = this.meals;
-        if (dietaryPreference) {
-            filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
+    if (totalCalories && numberOfMeals) {
+      const desiredCaloriesPerMeal = Math.round(mealCalories / numberOfMeals);
+      const desiredCaloriesPerSnack = Math.round(snackCalories / numberOfSnacks);
+
+      let filteredMeals = this.meals;
+      if (dietaryPreference) {
+        filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
+      }
+
+      let filteredSnacks = this.snacks;
+      
+
+      const sortedMeals = filteredMeals.slice().sort((meal1, meal2) => {
+        const diff1 = Math.abs(meal1.calories - desiredCaloriesPerMeal);
+        const diff2 = Math.abs(meal2.calories - desiredCaloriesPerMeal);
+        return diff1 - diff2;
+      });
+
+      const sortedSnacks = filteredSnacks.slice().sort((snack1, snack2) => {
+      const diff1 = Math.abs(snack1.calories - desiredCaloriesPerSnack );
+      const diff2 = Math.abs(snack2.calories - desiredCaloriesPerSnack);
+      return diff1 - diff2;
+      });
+
+      let selectedMeals: any[] = [];
+      let selectedSnacks: any[] = [];
+      let totalSelectedCalories = 0;
+
+      for (const meal of sortedMeals) {
+        if (selectedMeals.length < numberOfMeals) {
+          selectedMeals.push(meal);
+          totalSelectedCalories += meal.calories;
+        } else {
+          break;
         }
+      }
 
-        const sortedMeals = filteredMeals.slice().sort((meal1, meal2) => {
-            const diff1 = Math.abs(meal1.calories - desiredCaloriesPerMeal);
-            const diff2 = Math.abs(meal2.calories - desiredCaloriesPerMeal);
-            return diff1 - diff2;
-        });
-
-        let selectedMeals: any[] = [];
-        let totalSelectedCalories = 0;
-
-        for (const meal of sortedMeals) {
-            if (selectedMeals.length < numberOfMeals) {
-                selectedMeals.push(meal);
-                totalSelectedCalories += meal.calories;
-            } else {
-                break;
-            }
+      for(const snack of sortedSnacks) {
+        if(selectedSnacks.length < numberOfSnacks) {
+          selectedSnacks.push(snack);
+          totalSelectedCalories += snack.calories;
+        } else {
+          break;
         }
-
-        let filteredSnacks = this.snacks;
-        if (dietaryPreference) {
-            filteredSnacks = this.filterSnacksByDietaryPreference(dietaryPreference);
+      }
+      for (let i = 0; i < selectedMeals.length; i++) {
+        const meal = selectedMeals[i];
+      
+        if (i === 0) {
+          meal.label = 'Breakfast';
+        } else if (i === 1) {
+          meal.label = 'Lunch';
+        } else if (i === 2) {
+          meal.label = 'Dinner';
+        } else if (i === 3) {
+          meal.label = 'Supper';
+        } else {
+          meal.label = 'Meal ' + (i + 1);
         }
+      }
+      
 
-        const sortedSnacks = filteredSnacks.slice().sort((snack1, snack2) => {
-            const diff1 = Math.abs(snack1.calories - desiredCaloriesPerSnack);
-            const diff2 = Math.abs(snack2.calories - desiredCaloriesPerSnack);
-            return diff1 - diff2;
-        });
-
-        let selectedSnacks: any[] = [];
-        let totalSelectedSnackCalories = 0;
-
-        for (const snack of sortedSnacks) {
-            if (selectedSnacks.length < numberOfSnacks) {
-                selectedSnacks.push(snack);
-                totalSelectedSnackCalories += snack.calories;
-            } else {
-                break;
-            }
-        }
-
-        this.filteredMeals = selectedMeals;
-        this.filteredSnacks = selectedSnacks;
-        this.calculateTotals();
+      this.filteredMeals = selectedMeals;
+      this.filteredSnacks = selectedSnacks;
+      this.calculateTotals()
     }
-}
+  }
 
-filterMealsByDietaryPreference(preference: string) {
-  return this.meals.filter((meal) =>
+  filterMealsByDietaryPreference(preference: string) {
+    return this.meals.filter((meal) =>
       meal.dietaryPreference.includes(preference)
-  );
-}
-filterSnacksByDietaryPreference(preference: string) {
-  return this.snacks.filter((snack) =>
-      snack.dietaryPreference.includes(preference)
-  );
-}
-
-
+    );
+  }
+  
+ 
 }

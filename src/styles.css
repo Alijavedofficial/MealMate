@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,7 @@
 body{
     background-color: #e6e7ee;
     padding: 10px 40px;
+    font-family: "Quicksand", sans-serif;
  }
  *{
    padding: 0;
@@ -29,7 +31,51 @@ body{
               inset -5px -5px 10px #ffffff73;
 }
    
- 
+.field{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.field input,select{
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  color: #595959;
+  background: #e6e7ee;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;
+}
+
+
+
+.field input:focus{
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+}
+
+
+.field span{
+  position: absolute;
+  width: 50px;
+  margin-left: 14px;
+  line-height: 50px;
+  color: #595959;
+}
+.field span i{
+  font-size: 18px;
+}
+
+.field input::placeholder {
+  color: #666666; 
+  font-size: 16px;
+}
+
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; }
