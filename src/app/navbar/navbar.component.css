@@ -71,22 +71,18 @@
 
 .dropdown {
   position: relative;
-  display: inline-block;
-  
 }
 
 .dropdown-toggle {
   border: none;
   padding: 10px 25px;
-  cursor: pointer;
-  
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 40px;
+  padding: 7px 0;
   border: 1px solid #ccc;
   z-index: 1;
   background-color: #e6e7ee;
@@ -100,10 +96,18 @@
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .dropdown-item:hover {
-  
+  background: #e6e7ee;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+   inset 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
-
+span i{
+  font-size: 22px;
+}

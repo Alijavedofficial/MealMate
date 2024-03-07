@@ -1,6 +1,6 @@
 <div class="px-20 py-10">
 
-<form [formGroup]="fatForm" class="px-20 py-6">
+<form [formGroup]="fatForm" class="px-20 py-6" (submit)="calculateFat()">
     <div class="py-4 text-center">
         <h1 class="text-[35px] font-semibold">Gauge Your Fat Consumption with Precision</h1>
       </div>
@@ -30,12 +30,12 @@
         <input type="number" placeholder="Hip(cm)" formControlName="hip">
     </div>
 </div>
-    <button (click)="calculateFat()" type="submit">
+    <button type="submit">
         Calculate Fat
       </button>
 
 </form>
-<div *ngIf="!fatForm.invalid" class="text-center py-5">
-<h1>Body's Fat:{{totalFat | number}} %</h1>
+<div class="text-center py-5">
+<h1>Body's Fat:  {{totalFat | number}} %</h1>
 </div>
 </div>

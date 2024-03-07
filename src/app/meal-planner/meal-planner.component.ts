@@ -24,7 +24,16 @@ export class MealPlannerComponent implements OnInit,OnDestroy {
   TotalSugar: number  = 0 ;
   TotalFiber: number = 0;
   meallabel: string = '';
+  isLoading: boolean = false;
 private unsubscribe$ = new Subject<void>();
+
+ showLoader() {
+  this.isLoading = true;
+  setTimeout(() => {
+    this.generateMealPlan()
+    this.isLoading = false;
+  }, 2000);
+ }
 
   constructor(private mealService: MealPlanService, private fb: FormBuilder) {
     this.mealform = this.fb.group({
@@ -147,6 +156,19 @@ private unsubscribe$ = new Subject<void>();
         } else {
           meal.label = 'Meal ' + (i + 1);
         }
+      }
+
+      for(let i = 0; i < selectedSnacks.length; i++) {
+         const snack = selectedSnacks[i];
+
+         if(i === 0) {
+          snack.label = 'Snack 1';
+         } else if(i === 1) {
+          snack.label = 'Snack 2';
+         } else {
+          snack.label = 'Snack 3';
+         }
+
       }
       
 

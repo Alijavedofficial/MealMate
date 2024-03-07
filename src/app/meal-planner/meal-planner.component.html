@@ -1,7 +1,7 @@
 <div class="px-20 py-10">
 
   <!--Meal Form for entering calories,meals and user's preference-->
-<form [formGroup]="mealform" class="px-20 py-6"  >
+<form [formGroup]="mealform" class="px-20 py-6" (submit)="generateMealPlan()"  >
   <div class="py-4 text-center">
   <h1 class="text-[35px] font-semibold">Stay In Perfect Shape With MealMate</h1>
   
@@ -115,14 +115,19 @@
     </div>
 </div>
 </div>
-  <button (click)="generateMealPlan()" class="p-3 px-5 rounded-lg">
+  <button class="p-3 px-5 rounded-lg" (click)="showLoader()">
     Generate Meals
   </button>
 </form>
 
+<div *ngIf="isLoading; else loadedContent">
+  
+  Generating Meals.......
+</div>
+
 
 <!--Meal are displayed here depending on user's preference-->
-
+<ng-template #loadedContent>
 <div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10">
   <ul class="w-[60%] flex flex-col">
     <li
@@ -171,6 +176,7 @@
     <div class="flex flex-col text-start">
       <div class="pb-2 flex justify-between">
       <h1 class="pl-2 text-[20px] font-medium">{{ snack.name }}</h1>
+      <h3>{{snack.label}}</h3>
       <h2 class="text-[16px] font-medium">{{ snack.servingSize}}</h2>
     </div>
       <table class="w-full table-auto border-collapse table-inner">
@@ -229,6 +235,7 @@
   </div>
 </div>
 </div>
+</ng-template>
 
 
 

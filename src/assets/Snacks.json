@@ -20,7 +20,7 @@
       "fiber": 3.5,
       "sugar": 1.2,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "Halal"],
-      "servingSize": "28g (about 23 almonds)",
+      "servingSize": "28g (23 almonds)",
       "image": "../assets/Snack_Images/Almonds.avif"
   },
   {
@@ -44,7 +44,7 @@
       "fiber": 1.6,
       "sugar": 3,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "Halal"],
-      "servingSize": "85g (about 10 sticks)",
+      "servingSize": "85g (10 sticks)",
       "image": "../assets/Snack_Images/Carrot Sticks.jpeg"
   },
   {
@@ -56,7 +56,7 @@
       "fiber": 0,
       "sugar": 0,
       "dietaryPreference": ["vegetarian", "gluten-free", "Halal"],
-      "servingSize": "28g (about 4 cubes)",
+      "servingSize": "28g (4 cubes)",
       "image": "../assets/Snack_Images/Cheese Cubes.jpeg"
   },
   {
@@ -68,7 +68,7 @@
       "fiber": 1,
       "sugar": 1,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "85g (about 4 sticks)",
+      "servingSize": "85g (4 sticks)",
       "image": "../assets/Snack_Images/Celery Sticks.jpeg"
   },
   {
@@ -80,7 +80,7 @@
       "fiber": 1.6,
       "sugar": 9.8,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "40g (about 1 small box)",
+      "servingSize": "40g (1 small box)",
       "image": "../assets/Snack_Images/Raisins.jpeg"
   },
   {
@@ -176,7 +176,7 @@
       "fiber": 2,
       "sugar": 0.5,
       "dietaryPreference": ["vegetarian"],
-      "servingSize": "28g (about 10 chips)",
+      "servingSize": "28g (10 chips)",
       "image": "../assets/Snack_Images/Pita Chips.jpeg"
   },
   {
@@ -200,7 +200,7 @@
       "fiber": 1.1,
       "sugar": 0.9,
       "dietaryPreference": ["vegetarian", "vegan"],
-      "servingSize": "28g (about 14 pretzels)",
+      "servingSize": "28g (14 pretzels)",
       "image": "../assets/Snack_Images/Pretzels.avif"
   },
   {
@@ -212,7 +212,7 @@
       "fiber": 2,
       "sugar": 9,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "40g (about 1/4 cup)",
+      "servingSize": "40g (1/4 cup)",
       "image": "../assets/Snack_Images/Trail Mix.jpeg"
   },
   {
@@ -224,7 +224,7 @@
       "fiber": 2,
       "sugar": 18,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "40g (about 1/4 cup)",
+      "servingSize": "40g (1/4 cup)",
       "image": "../assets/Snack_Images/Dried Mango.jpeg"
   },
   {
@@ -260,7 +260,7 @@
       "fiber": 2,
       "sugar": 3,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "85g (about 10 carrots)",
+      "servingSize": "85g (10 carrots)",
       "image": "../assets/Snack_Images/Baby Carrots.jpeg"
   },
   {
@@ -272,7 +272,7 @@
       "fiber": 1,
       "sugar": 1,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "28g (about 18 cashews)",
+      "servingSize": "28g (18 cashews)",
       "image": "../assets/Snack_Images/Cashews.avif"
   },
   {
@@ -320,7 +320,7 @@
       "fiber": 1,
       "sugar": 14,
       "dietaryPreference": ["vegetarian"],
-      "servingSize": "40g (about 10 pretzels)",
+      "servingSize": "40g (10 pretzels)",
       "image": "../assets/Snack_Images/Yogurt-covered Pretzels.jpeg"
   },
   {
@@ -332,7 +332,7 @@
       "fiber": 0.8,
       "sugar": 12.4,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "100g (about 1 cup)",
+      "servingSize": "100g (1 cup)",
       "image": "../assets/Snack_Images/Grapes.jpeg"
   },
   {
@@ -368,7 +368,7 @@
       "fiber": 1.1,
       "sugar": 0,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "28g (about 85 seeds)",
+      "servingSize": "28g (85 seeds)",
       "image": "../assets/Snack_Images/Pumpkin Seeds.avif"
   },
   {
@@ -392,7 +392,7 @@
       "fiber": 2,
       "sugar": 1,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "28g (about 2 tablespoons)",
+      "servingSize": "28g (2 tablespoons)",
       "image": "../assets/Snack_Images/Mixed Nuts.avif"
   },
   {
@@ -404,7 +404,7 @@
       "fiber": 2.2,
       "sugar": 17,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "40g (about 6 pieces)",
+      "servingSize": "40g (6 pieces)",
       "image": "../assets/Snack_Images/Dried Apricots.jpeg"
   },
   {
@@ -428,7 +428,7 @@
       "fiber": 3,
       "sugar": 2,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "28g (about 49 nuts)",
+      "servingSize": "28g (49 nuts)",
       "image": "../assets/Snack_Images/Pistachios.avif"
   },
   {
@@ -440,7 +440,7 @@
       "fiber": 1,
       "sugar": 25,
       "dietaryPreference": ["vegetarian"],
-      "servingSize": "40g (about 30 raisins)",
+      "servingSize": "40g (30 raisins)",
       "image": "../assets/Snack_Images/Yogurt-covered Raisins.jpeg"
   },
   {
@@ -452,7 +452,7 @@
       "fiber": 0.3,
       "sugar": 0.9,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "104g (about 1 cup)",
+      "servingSize": "104g (1 cup)",
       "image": "../assets/Snack_Images/Cucumber Slices.jpeg"
   },
   {
@@ -464,7 +464,7 @@
       "fiber": 2,
       "sugar": 6,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "30g (about 1/4 cup)",
+      "servingSize": "30g (1/4 cup)",
       "image": "../assets/Snack_Images/Granola.jpeg"
   },
   {
@@ -488,7 +488,7 @@
       "fiber": 4,
       "sugar": 1,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "46g (about 1/4 cup)",
+      "servingSize": "46g (1/4 cup)",
       "image": "../assets/Snack_Images/Sunflower Seeds.jpeg"
   },
   {
@@ -500,7 +500,7 @@
       "fiber": 8,
       "sugar": 14,
       "dietaryPreference": ["vegetarian", "vegan"],
-      "servingSize": "85g (about 1/2 cup)",
+      "servingSize": "85g (1/2 cup)",
       "image": "../assets/Snack_Images/Muesli.jpeg"
   },
   {
@@ -512,7 +512,7 @@
       "fiber": 2.5,
       "sugar": 18,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "40g (about 1/4 cup)",
+      "servingSize": "40g (1/4 cup)",
       "image": "../assets/Snack_Images/Banana Chips.jpeg"
   },
   {
@@ -524,7 +524,7 @@
       "fiber": 3,
       "sugar": 5,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "28g (about 10 chips)",
+      "servingSize": "28g (10 chips)",
       "image": "../assets/Snack_Images/Sweet Potato Chips.jpeg"
   },
   {
@@ -536,7 +536,7 @@
       "fiber": 0.7,
       "sugar": 3.9,
       "dietaryPreference": ["vegetarian", "vegan", "gluten-free", "halal"],
-      "servingSize": "35g (about 2 apricots)",
+      "servingSize": "35g (2 apricots)",
       "image": "../assets/Snack_Images/Apricots.jpeg"
   }
 ]

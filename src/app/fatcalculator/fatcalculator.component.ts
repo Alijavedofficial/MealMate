@@ -39,6 +39,6 @@ export class FatcalculatorComponent implements OnInit {
     bodyFatPercentage = 163.205 * Math.log10(waist + (hip || 0) - neck) - 97.684 * Math.log10(height) - 78.387;
   }
     this.totalFat=  bodyFatPercentage;
-    this.fatForm.reset()
+   
   }
 }
