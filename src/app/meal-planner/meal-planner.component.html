@@ -55,16 +55,19 @@
   <span><i class="fa-solid fa-earth-americas"></i></span>
   <select formControlName="Region"> 
     <option value="" disabled selected>Select Region</option>
-    <option value="">North America</option>
-    <option value="">Europe</option>
-    <option value="">Asia</option>
-    <option value="">South America</option>
-    <option value="">Africa</option>
-    <option value="">Oceania</option>
-    <option value="">Middle East</option>
-    <option value="">Central America</option>
-    <option value="">Caribbean</option>
-    <option value="">Nordic Countries</option>
+    <option value="Global">Global</option>
+    <option value="Mediterranean">Mediterranean</option>
+    <option value="Asian">Asian</option>
+    <option value="Thai">Thai</option>
+    <option value="Spanish">Spanish</option>
+    <option value="French">French</option>
+    <option value="Mexican">Mexican</option>
+    <option value="Italian">Italian</option>
+    <option value="American">American</option>
+    <option value="Middle Eastern">Middle Eastern</option>
+    <option value="Japanese">Japanese</option>
+    <option value="Greek">Greek</option>
+    <option value="Turkish">Turkish</option>
   </select> 
   <div
     *ngIf="
@@ -128,80 +131,91 @@
 
 <!--Meal are displayed here depending on user's preference-->
 <ng-template #loadedContent>
-<div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10">
+<div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10 max-sm:flex-col">
   <ul class="w-[60%] flex flex-col">
-    <li
-      *ngFor="let meal of filteredMeals"
-      class="flex p-4 mb-6 gap-5 justify-start meals"
-    >
+    <li *ngFor="let meal of filteredMeals">
+       <h3 class="text-[20px] font-semibold">{{ meal.label }}:</h3>
+    <div class="flex p-4 mb-6 gap-5 justify-start meals">
       <img
         [src]="meal.image"
         class="rounded-xl w-[100px] h-[100px] object-cover"
       />
-      <div class="flex flex-col text-start">
+      <div class="flex flex-col text-start w-full">
         <div class="pb-2 flex justify-between">
         <h1 class="pl-2 text-[20px] font-medium">{{ meal.name }}</h1>
-         <h3>{{ meal.label }}</h3>
+        
         <h2 class="text-[16px] font-medium">{{ meal.perServing}}</h2>
       </div>
-        <table class="w-auto table-auto border-collapse table-inner">
-          <thead>
-            <tr>
-              <th>Calories</th>
-              <th>Protein</th>
-              <th>Carbs</th>
-              <th>Fat</th>
-              <th>Sugar</th>
-              <th style="padding-right: 50px;">Fibre</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{{ meal.calories }}</td>
-              <td class="text-green-600">{{ meal.protein }}g</td>
-              <td class="text-orange-700">{{ meal.carbs }}g</td>
-              <td class="text-purple-600">{{ meal.fat }}g</td>
-              <td class="text-red-600">{{ meal.sugar }}g</td>
-              <td class="text-yellow-600" style="padding-right: 50px;">{{ meal.fiber }}g</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-6 2xl:grid-cols-6 3xl:grid-cols-6 w-full">
+        <div class="nutrients-Containers">
+          <h3 class="text-[16px] font-medium">Calories</h3>
+          <h2 class="text-[16px] font-medium">{{ meal.calories }}</h2>
+        </div>
+        <div class="nutrients-Containers">
+          <h3 class="text-[16px] font-medium">Proteins</h3>
+          <h2 class="text-[16px] font-medium text-green-600">{{ meal.protein }} g</h2>
+        </div>
+        <div class="nutrients-Containers">
+          <h3 class="text-[16px] font-medium">Carbs</h3>
+          <h2 class="text-[16px] font-medium text-orange-700">{{ meal.carbs }} g</h2>
+        </div>
+        <div class="nutrients-Containers">
+          <h3 class="text-[16px] font-medium">Fat</h3>
+          <h2 class="text-[16px] font-medium text-purple-600">{{ meal.fat }} g</h2>
+        </div>
+        <div class="nutrients-Containers">
+          <h3 class="text-[16px] font-medium">Sugar</h3>
+          <h2 class="text-[16px] font-medium text-red-600">{{ meal.sugar }} g</h2>
+        </div>
+        <div class="nutrients-Containers">
+          <h3 class="text-[16px] font-medium">Fibre</h3>
+          <h2 class="text-[16px] font-medium text-yellow-600">{{ meal.fiber }} g</h2>
+        </div>
+      </div>
+    </div>
       </div>
     </li>
-    <li *ngFor="let snack of filteredSnacks" class="flex p-4 mb-6 gap-5 justify-start meals">
+    <li *ngFor="let snack of filteredSnacks" > 
+      <h3 class="text-[20px] font-semibold">{{snack.label}}:</h3>
+      <div class="flex p-4 mb-6 gap-5 justify-start meals">
       <img
       [src]="snack.image"
       class="rounded-xl w-[100px] h-[100px] object-cover"
     />
-    <div class="flex flex-col text-start">
+    <div class="flex flex-col text-start w-full">
       <div class="pb-2 flex justify-between">
       <h1 class="pl-2 text-[20px] font-medium">{{ snack.name }}</h1>
-      <h3>{{snack.label}}</h3>
       <h2 class="text-[16px] font-medium">{{ snack.servingSize}}</h2>
     </div>
-      <table class="w-full table-auto border-collapse table-inner">
-        <thead>
-          <tr>
-            <th>Calories</th>
-            <th>Protein</th>
-            <th>Carbs</th>
-            <th>Fat</th>
-            <th>Sugar</th>
-            <th style="padding-right: 50px;">Fibre</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ snack.calories }}</td>
-            <td class="text-green-600">{{ snack.protein }}g</td>
-            <td class="text-orange-700">{{ snack.carbs }}g</td>
-            <td class="text-purple-600">{{ snack.fat }}g</td>
-            <td class="text-red-600">{{ snack.sugar }}g</td>
-            <td class="text-yellow-600" style="padding-right: 50px;">{{ snack.fiber }}g</td>
-          </tr>
-        </tbody>
-      </table>
+
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-6 2xl:grid-cols-6 3xl:grid-cols-6 w-full">
+      <div class="nutrients-Containers">
+        <h3 class="text-[16px] font-medium">Calories</h3>
+        <h2 class="text-[16px] font-medium">{{ snack.calories }}</h2>
+      </div>
+      <div class="nutrients-Containers">
+        <h3 class="text-[16px] font-medium">Proteins</h3>
+        <h2 class="text-[16px] font-medium text-green-600">{{ snack.protein }} g</h2>
+      </div>
+      <div class="nutrients-Containers">
+        <h3 class="text-[16px] font-medium">Carbs</h3>
+        <h2 class="text-[16px] font-medium text-orange-700">{{ snack.carbs }} g</h2>
+      </div>
+      <div class="nutrients-Containers">
+        <h3 class="text-[16px] font-medium">Fat</h3>
+        <h2 class="text-[16px] font-medium text-purple-600">{{ snack.fat }} g</h2>
+      </div>
+      <div class="nutrients-Containers">
+        <h3 class="text-[16px] font-medium">Sugar</h3>
+        <h2 class="text-[16px] font-medium text-red-600">{{ snack.sugar }} g</h2>
+      </div>
+      <div class="nutrients-Containers">
+        <h3 class="text-[16px] font-medium">Fibre</h3>
+        <h2 class="text-[16px] font-medium text-yellow-600">{{ snack.fiber }} g</h2>
+      </div>
     </div>
+    </div>
+  </div>
     </li>  
   </ul>
   <div class="flex flex-col w-[30%]">
