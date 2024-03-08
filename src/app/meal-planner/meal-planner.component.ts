@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject, max, takeUntil } from 'rxjs';
 import { MealPlanService } from '../Services/meal-plan.service';
 @Component({
   selector: 'app-meal-planner',
@@ -26,11 +26,11 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
 
   constructor(private mealService: MealPlanService, private fb: FormBuilder) {
     this.mealform = this.fb.group({
-      TotalCalories: [, [Validators.required, Validators.min(1200)]],
+      TotalCalories: [, [Validators.required, Validators.min(1200),Validators.max(3000)]],
       numberOfMeals: [,[Validators.required, Validators.min(1), Validators.max(5)],],
       dietaryPreference: ['', Validators.required],
       numberOfSnacks: [, [Validators.required, Validators.max(2)]],
-      Region: ['', Validators.required],
+      region: ['', Validators.required],
     });
   }
 
@@ -98,8 +98,8 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
     const numberOfSnacks = this.mealform.get('numberOfSnacks')?.value;
     const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
     const region = this.mealform.get('region')?.value;
-    const mealCalories = totalCalories * 1;
-    const snackCalories = totalCalories * 0.165;
+    const mealCalories = totalCalories * 0.8;
+    const snackCalories = totalCalories * 0.2;
 
     if (totalCalories && numberOfMeals) {
       const desiredCaloriesPerMeal = Math.round(mealCalories / numberOfMeals);
@@ -108,14 +108,15 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
       );
 
       let filteredMeals = this.meals;
+       
       
       if (dietaryPreference) {
         filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
       }
       if(region) {
-        this.filteredMeals.filter(meal => meal.region.includes(region));
+        filteredMeals = filteredMeals.filter(meal => meal.region.includes(region));
       }
-
+     
       let filteredSnacks = this.snacks;
 
       const sortedMeals = filteredMeals.slice().sort((meal1, meal2) => {
@@ -179,7 +180,9 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
           snack.label = 'Snack 3';
         }
       }
-
+      
+      
+      
       this.filteredMeals = selectedMeals;
       this.filteredSnacks = selectedSnacks;
       this.calculateTotals();
@@ -191,5 +194,6 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
       meal.dietaryPreference.includes(preference)
     );
   }
+  
   
 }

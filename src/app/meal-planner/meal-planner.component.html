@@ -15,6 +15,7 @@
   <div *ngIf="(mealform.get('TotalCalories')?.invalid && mealform.get('TotalCalories')?.dirty) || mealform.get('TotalCalories')?.touched">
     <div *ngIf="mealform.get('TotalCalories')?.errors?.['required']" class="text-red-800">Enter Calories</div>
     <div *ngIf="mealform.get('TotalCalories')?.errors?.['min']" class="text-red-800"> Calories can't be less than 1200</div>
+    <div *ngIf="mealform.get('TotalCalories')?.errors?.['max']" class="text-red-700">Calories can't be more than 3000</div>
   </div>
 </div>
 <div class="field">
@@ -27,10 +28,10 @@
     <option value="Fish free">Fish free</option>
     <option value="Vegetarian">Vegetarian</option>
     <option value="Vegan">Vegan</option>
-    <option value="Halal">Halal</option>
+    <option value="Chicken">Chicken</option>
     <option value="Gluten free">Gluten free</option>
     <option value="Kosher">Kosher</option>
-    <option value=" Nut free">Nut free</option>
+    <option value="Nut free">Nut free</option>
     <option value="Paleo">Paleo</option>
     <option value="Pescetarian">Pescetarian</option>
     <option value="Shellfish free">Shellfish free</option>
@@ -53,7 +54,7 @@
 
 <div class="field">
   <span><i class="fa-solid fa-earth-americas"></i></span>
-  <select formControlName="Region"> 
+  <select formControlName="region"> 
     <option value="" disabled selected>Select Region</option>
     <option value="Global">Global</option>
     <option value="Mediterranean">Mediterranean</option>
@@ -71,13 +72,13 @@
   </select> 
   <div
     *ngIf="
-      (mealform.get('Region')?.invalid &&
-        mealform.get('Region')?.dirty) ||
-      mealform.get('Region')?.touched
+      (mealform.get('region')?.invalid &&
+        mealform.get('region')?.dirty) ||
+      mealform.get('region')?.touched
     "
   >
     <div
-      *ngIf="mealform.get('Region')?.errors?.['required']"
+      *ngIf="mealform.get('region')?.errors?.['required']"
       class="text-red-800"
     >
       Select Region
