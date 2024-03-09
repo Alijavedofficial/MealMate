@@ -36,8 +36,7 @@ table tr th {
   form{
     background: #e6e7ee;
   border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffff73,
-  inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: inset 3px 3px 6px #b8b9be,inset -3px -3px 6px #fff;
   }
 
 
@@ -58,15 +57,13 @@ table tr th {
     color: #31344b;
     background: #e6e7ee;
     border-radius: 25px;
-    box-shadow: 2px 2px 5px #babecc,
-                -5px -5px 10px #ffffff73;
+    box-shadow:4px 4px 8px #b8b9be,-4px -4px 8px #fff;
   }
   
   
   
   .field input:focus{
-    box-shadow: inset 2px 2px 5px #babecc,
-                inset -5px -5px 10px #ffffff73;
+    box-shadow: inset 4px 4px 8px #b8b9be,inset -4px -4px 8px #fff;
   }
   
   
@@ -97,32 +94,27 @@ table tr th {
     outline: none;
     cursor: pointer;
     border-radius: 25px;
-    box-shadow: 2px 2px 5px #babecc,
-                -5px -5px 10px #ffffff73;
+    box-shadow: 4px 4px 8px #b8b9be,-4px -4px 8px #fff;
   }
   
   button:focus{
     color: #3498db;
-    box-shadow: inset 2px 2px 5px #babecc,
-                inset -5px -5px 10px #ffffff73;
+    box-shadow: inset 4px 4px 8px #b8b9be,inset -4px -4px 8px #fff;
   }
   .meals{
     background: #e6e7ee;
   border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffff73,
-   inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: inset 3px 3px 6px #b8b9be,inset -3px -3px 6px #fff;
   }
   .total-table{
     background: #e6e7ee;
     border-radius: 10px;
-    box-shadow: inset -3px -3px 7px #ffffff73,
-     inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+    box-shadow:inset 4px 4px 8px #b8b9be,inset -4px -4px 8px #fff;
   }
   .table-inner{
     background: #e6e7ee;
     border-radius: 10px;
-    box-shadow: -3px -3px 7px #ffffff73,
-      2px 2px 5px rgba(94, 104, 121, 0.288);
+    box-shadow:4px 4px 8px #b8b9be,-4px -4px 8px #fff;
   }
 
 .nutrients-Containers{
@@ -131,11 +123,10 @@ table tr th {
   align-items: center;
   text-align: center;
   font-size: 15px;
-  padding: 8px 16px;
-  border-radius: 30px;
+  padding: 8px;
+  border-radius: 100px;
   background: #e6e7ee;
-    box-shadow: -3px -3px 7px #ffffff73,
-      2px 2px 5px rgba(94, 104, 121, 0.288);
+  box-shadow:4px 4px 8px #b8b9be,-4px -4px 8px #fff;;
 }
 .nutrients-Containers > h3{
   font-size: 14px;
@@ -153,22 +144,22 @@ table tr th {
 }
 
 .pl__ring--a {
-  stroke: #f42f25;
+  stroke: #31344b;
 }
 
 .pl__ring--b {
   animation-name: ringB;
-  stroke: #f49725;
+  stroke: #31344b;
 }
 
 .pl__ring--c {
   animation-name: ringC;
-  stroke: #255ff4;
+  stroke: #31344b;
 }
 
 .pl__ring--d {
   animation-name: ringD;
-  stroke: #f42582;
+  stroke: #31344b;
 }
 
 /* Animations */
@@ -356,11 +347,11 @@ table tr th {
     position: relative;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     background: #e6e7ee;
     border-radius: 50%;
     transition:  200ms ease-out;
-    box-shadow: 2px 2px 5px #babecc,
-                -5px -5px 10px #ffffff73;
+    box-shadow: 4px 4px 8px #b8b9be,-4px -4px 8px #fff;
 }
 .neumorphism-input:hover{
   cursor: pointer;
@@ -409,6 +400,7 @@ table tr th {
 .neumorphism-input input[type="radio"]:checked + label {
      background-color: #31344b;
      color: white;
+     
 }
 
 

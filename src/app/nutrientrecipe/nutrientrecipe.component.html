@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Nutrition Analyzer</h1>
+    <div>
+      <label for="ingredients">Enter Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" [(ngModel)]="ingredientsInput" rows="4"></textarea>
+      <button (click)="analyzeNutrition()">Analyze</button>
+    </div>
+  
+    <div *ngIf="errorMessage" class="error">
+      {{ errorMessage }}
+    </div>
+  
+    <div *ngIf="suggestedRecipes.length > 0">
+      <h2>Suggested Recipes</h2>
+      <div *ngFor="let recipe of suggestedRecipes" class="recipe">
+        <h3>{{ recipe.title }}</h3>
+        <p>Ready in: {{ recipe.readyInMinutes }} minutes</p>
+        <p>Servings: {{ recipe.servings }}</p>
+        <img *ngIf="recipe.image" [src]="recipe.image" alt="{{ recipe.title }}" width="150">
+        <!-- Display additional recipe details as needed -->
+      </div>
+    </div>
+  </div>
+  

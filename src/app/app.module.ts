@@ -17,6 +17,8 @@ import { ArticlesComponent } from './articles/articles.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { LoginComponent } from './login/login.component';
+import { RecipeFinderComponent } from './recipe-finder/recipe-finder.component';
+import { NutrientrecipeComponent } from './nutrientrecipe/nutrientrecipe.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { LoginComponent } from './login/login.component';
     MealPlannerComponent,
     ArticlesComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    RecipeFinderComponent,
+    NutrientrecipeComponent
   ],
   imports: [
     BrowserModule,

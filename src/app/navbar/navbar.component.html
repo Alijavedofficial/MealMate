@@ -6,7 +6,7 @@
    </div>
     <div class="flex">
       <ul class="nav-ul">
-        <li routerLink="/planner"><a>Meal Planner</a></li>
+        <li routerLink="/planner"><a>MealPlanner</a></li>
         <div class="dropdown" (mouseover)="showDropdown = true" (mouseleave)="showDropdown = false">
           <button class="dropdown-toggle">Calculators</button>
           <div class="dropdown-menu" [ngClass]="{'show': showDropdown}">
@@ -17,6 +17,8 @@
         
         
         <li routerLink="/articles"><a>Articles</a></li>
+        <li routerLink="/recipe"><a>RecipeFinder</a></li>
+        <li routerLink="/ingredient"><a>By Ingredients</a></li>
         <li>
           <a
             ><button class="btn" routerLink="/login">

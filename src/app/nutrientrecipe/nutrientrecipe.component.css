@@ -1,0 +1,59 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  .recipe {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .recipe h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .recipe p {
+    margin-bottom: 5px;
+  }
+  
+  .recipe img {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .recipe ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .recipe ul li {
+    margin-bottom: 5px;
+  }
+  
