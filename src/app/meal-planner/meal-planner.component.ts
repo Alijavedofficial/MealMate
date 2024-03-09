@@ -54,13 +54,13 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
     this.unsubscribe$.complete();
   }
 
-  //This method allows to wait for 2s for showing the meal plan
+  //This method allows to wait  for showing the meal plan
   showLoader() {
     this.isLoading = true;
     setTimeout(() => {
       this.generateMealPlan();
       this.isLoading = false;
-    }, 2000);
+    }, 5000);
   }
 
   //This method calculates total for all the nutrients and calories of the generated meal plan
