@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   showDropdown: boolean = false;
+  showDropdown2: boolean = false;
 }

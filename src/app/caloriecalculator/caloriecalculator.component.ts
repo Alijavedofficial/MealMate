@@ -9,8 +9,8 @@ import { Validators } from '@angular/forms';
 })
 export class CaloriecalculatorComponent implements OnInit{
   CalorieForm!: FormGroup;
-  TotalCalorie: number = 0;
-
+  upperBound: number = 0;
+  lowerBound: number = 0;
   constructor(private fb: FormBuilder) {}
 
 ngOnInit(): void {
@@ -18,7 +18,7 @@ ngOnInit(): void {
     gender: ['', Validators.required],
       age: ['', [Validators.required, Validators.min(1), Validators.max(100)]],
       height: ['', [Validators.required, Validators.min(60), Validators.max(240)]],
-      weight: ['', [Validators.required, Validators.min(1), Validators.max(500)]],
+      weight: ['', [Validators.required, Validators.min(10), Validators.max(300)]],
       activity: ['', Validators.required],
       goal: ['', Validators.required]
 })
@@ -92,8 +92,8 @@ ngOnInit(): void {
           break;
       }
   
-      // Display or store the calculated total calories
-     this.TotalCalorie = tdee
+     this.upperBound = tdee * 1.05;
+     this.lowerBound = tdee * 0.95
     
     } 
   }

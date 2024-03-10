@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { ArticleService } from '../Services/article.service';
 
 interface Article {
@@ -13,36 +13,61 @@ interface Article {
 @Component({
   selector: 'app-articles',
   templateUrl: './articles.component.html',
-  styleUrl: './articles.component.css'
+  styleUrl: './articles.component.css',
 })
-export class ArticlesComponent implements OnInit{
-  articles: Article[] = []; 
+export class ArticlesComponent implements OnInit {
+  articles: Article[] = [];
   loading: boolean = true;
   error: string = '';
-  
+  currentPage: number = 1;
+  articlesPerPage: number = 9;
 
-constructor(private articlesService: ArticleService) {}
+  constructor(
+    private articlesService: ArticleService,
+    private renderer: Renderer2
+  ) {}
 
-ngOnInit(): void {
-  this.articlesService.getDietArticles().subscribe(
-    data => {
-      this.articles = data.articles.map((article: any) => ({
-        title: article.title,
-        description: article.description,
-        source: article.source,
-        author: article.author,
-        url: article.url,
-        imageUrl: article.urlToImage,
-        publisedAt: article.publisedAt
-      }));
+  ngOnInit(): void {
+    this.loadArticles();
+  }
+
+  loadArticles(): void {
+    this.articlesService.getDietArticles().subscribe(
+      (data) => {
+        this.articles = data.articles.map((article: any) => ({
+          title: article.title,
+          description: article.description,
+          source: article.source,
+          author: article.author,
+          url: article.url,
+          imageUrl: article.urlToImage,
+          publishedAt: article.publishedAt,
+        }));
+        this.loading = false;
+      },
+      (error) => {
+        this.error = 'Error fetching articles. Please try again later.';
+        this.loading = false;
+      }
+    );
+  }
+
+  nextPage(): void {
+    this.loading = true;
+    setTimeout(() => {
+      this.currentPage++;
+      this.renderer.setProperty(document.documentElement, 'scrollTop', 0);
       this.loading = false;
-    },
-    error => {
-      this.error = 'Error fetching articles. Please try again later.';
-      this.loading = false;
-    }
-  );
-}
+    }, 1000);
+  }
 
+  previousPage(): void {
+    this.currentPage--;
+  }
 
+  get pagedArticles(): Article[] {
+    const startIndex = (this.currentPage - 1) * this.articlesPerPage;
+    const endIndex = startIndex + this.articlesPerPage;
+    return this.articles.slice(startIndex, endIndex);
+  }
 }

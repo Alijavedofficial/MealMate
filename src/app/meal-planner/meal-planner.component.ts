@@ -195,5 +195,32 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
     );
   }
   
+
+  changeMeals() {
+    const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
+    const region = this.mealform.get('region')?.value;
+    this.shuffleArray(this.meals);
+    this.shuffleArray(this.snacks);
+    
+    this.filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference)
+    this.filteredMeals = this.filteredMeals.filter(meal => meal.region.includes(region));
+    this.filteredMeals = this.meals.slice(0, this.mealform.get('numberOfMeals')?.value);
+    this.filteredSnacks = this.snacks.slice(0, this.mealform.get('numberOfSnacks')?.value);
+    this.calculateTotals();
+  }
   
+  shuffleArray(array: any[]) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  showLoader2() {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.changeMeals()
+      this.isLoading = false;
+    }, 5000);
+  }
 }

@@ -17,8 +17,14 @@
         
         
         <li routerLink="/articles"><a>Articles</a></li>
-        <li routerLink="/recipe"><a>RecipeFinder</a></li>
-        <li routerLink="/ingredient"><a>By Ingredients</a></li>
+        <div class="dropdown" (mouseover)="showDropdown2 = true" (mouseleave)="showDropdown2 = false">
+          <button class="dropdown-toggle">RecipeFinder</button>
+          <div class="dropdown-menu" [ngClass]="{'show': showDropdown2}">
+           <li routerLink="/recipe" class="dropdown-item border-b border-[#d1d9e6]"><span><i class="fa-solid fa-calculator"></i></span><a>Recipe</a></li>
+           <li routerLink="/ingredient" class="dropdown-item"><span><i class="fa-solid fa-calculator"></i></span><a>Ingredients</a></li>
+          </div>
+        </div>
+        
         <li>
           <a
             ><button class="btn" routerLink="/login">

@@ -1,6 +1,6 @@
 <div class="px-20 py-10">
 
-<form [formGroup]="CalorieForm" class="px-20 py-6" (submit)="calculateCalories()">
+<form [formGroup]="CalorieForm" class="px-20 py-6">
   <div class="py-4 text-center">
     <h1 class="text-[35px] font-semibold">Unveil Your Nutritional Destiny</h1>
   </div>
@@ -16,7 +16,7 @@
 
   <div class="field">
     <span><i class="fa-solid fa-weight-scale"></i></span>
-   <input type="number" placeholder="Weight" formControlName="weight(kg)" />
+   <input type="number" placeholder="Weight" formControlName="weight" />
   </div>
   <div class="field">
     <span><i class="fa-solid fa-venus-mars"></i></span>
@@ -71,12 +71,12 @@
     </select>
   </div>
 </div>
-  <button type="submit">
+  <button (click)="calculateCalories()">
     Calculate Calories
   </button>
  
 </form> 
-<div *ngIf="!CalorieForm.invalid" class="text-center py-5">
-<h1>Total Calories: {{ TotalCalorie | number }} Kcal</h1>
+<div  class="text-center py-5">
+<h1>Total Calories: {{ lowerBound | number:'1.0-0' }} - {{ upperBound | number:'1.0-0' }}  Kcal</h1>
 </div>
 </div>
