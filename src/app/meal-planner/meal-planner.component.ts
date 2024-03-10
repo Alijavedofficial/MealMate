@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Subject, max, takeUntil } from 'rxjs';
 import { MealPlanService } from '../Services/meal-plan.service';
+
 @Component({
   selector: 'app-meal-planner',
   templateUrl: './meal-planner.component.html',
@@ -21,17 +22,25 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
   TotalSugar: number = 0;
   TotalFiber: number = 0;
   meallabel: string = '';
+  showFullContent: boolean[] = [];
   isLoading: boolean = false;
   private unsubscribe$ = new Subject<void>();
 
   constructor(private mealService: MealPlanService, private fb: FormBuilder) {
     this.mealform = this.fb.group({
-      TotalCalories: [, [Validators.required, Validators.min(1200),Validators.max(3000)]],
-      numberOfMeals: [,[Validators.required, Validators.min(1), Validators.max(5)],],
+      TotalCalories: [
+        ,
+        [Validators.required, Validators.min(1200), Validators.max(3000)],
+      ],
+      numberOfMeals: [
+        ,
+        [Validators.required, Validators.min(1), Validators.max(5)],
+      ],
       dietaryPreference: ['', Validators.required],
       numberOfSnacks: [, [Validators.required, Validators.max(2)]],
       region: ['', Validators.required],
     });
+    this.meals.forEach(() => this.showFullContent.push(false));
   }
 
   ngOnInit(): void {
@@ -108,15 +117,16 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
       );
 
       let filteredMeals = this.meals;
-       
-      
+
       if (dietaryPreference) {
         filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
       }
-      if(region) {
-        filteredMeals = filteredMeals.filter(meal => meal.region.includes(region));
+      if (region) {
+        filteredMeals = filteredMeals.filter((meal) =>
+          meal.region.includes(region)
+        );
       }
-     
+
       let filteredSnacks = this.snacks;
 
       const sortedMeals = filteredMeals.slice().sort((meal1, meal2) => {
@@ -180,9 +190,7 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
           snack.label = 'Snack 3';
         }
       }
-      
-      
-      
+
       this.filteredMeals = selectedMeals;
       this.filteredSnacks = selectedSnacks;
       this.calculateTotals();
@@ -194,21 +202,28 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
       meal.dietaryPreference.includes(preference)
     );
   }
-  
 
   changeMeals() {
     const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
     const region = this.mealform.get('region')?.value;
     this.shuffleArray(this.meals);
     this.shuffleArray(this.snacks);
-    
-    this.filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference)
-    this.filteredMeals = this.filteredMeals.filter(meal => meal.region.includes(region));
-    this.filteredMeals = this.meals.slice(0, this.mealform.get('numberOfMeals')?.value);
-    this.filteredSnacks = this.snacks.slice(0, this.mealform.get('numberOfSnacks')?.value);
+
+    this.filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
+    this.filteredMeals = this.filteredMeals.filter((meal) =>
+      meal.region.includes(region)
+    );
+    this.filteredMeals = this.meals.slice(
+      0,
+      this.mealform.get('numberOfMeals')?.value
+    );
+    this.filteredSnacks = this.snacks.slice(
+      0,
+      this.mealform.get('numberOfSnacks')?.value
+    );
     this.calculateTotals();
   }
-  
+
   shuffleArray(array: any[]) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -219,8 +234,12 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
   showLoader2() {
     this.isLoading = true;
     setTimeout(() => {
-      this.changeMeals()
+      this.changeMeals();
       this.isLoading = false;
     }, 5000);
+  }
+
+  toggleContent(index: number): void {
+    this.showFullContent[index] = !this.showFullContent[index];
   }
 }

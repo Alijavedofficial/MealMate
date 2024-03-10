@@ -19,6 +19,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { LoginComponent } from './login/login.component';
 import { RecipeFinderComponent } from './recipe-finder/recipe-finder.component';
 import { NutrientrecipeComponent } from './nutrientrecipe/nutrientrecipe.component';
+import { TruncatePipe } from './Pipes/truncate.pipe';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { NutrientrecipeComponent } from './nutrientrecipe/nutrientrecipe.compone
     NavbarComponent,
     LoginComponent,
     RecipeFinderComponent,
-    NutrientrecipeComponent
+    NutrientrecipeComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,

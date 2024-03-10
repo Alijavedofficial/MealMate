@@ -24,17 +24,18 @@
     <option value="" disabled selected>Select Preference</option>
     <option value="Soy free">Soy free</option>
     <option value="Dairy free">Dairy free</option>
-    <option value="Egg free">Egg free</option>
-    <option value="Fish free">Fish free</option>
     <option value="Vegetarian">Vegetarian</option>
     <option value="Vegan">Vegan</option>
-    <option value="Chicken">Chicken</option>
+    <option value="nonveg">Non Vegetarian</option>
     <option value="Gluten free">Gluten free</option>
     <option value="Kosher">Kosher</option>
     <option value="Nut free">Nut free</option>
+    <option value="Keto">Keto</option>
+    <option value="Low-Carb">Low-Carb</option>
+    <option value="Flexitarian">Flexitarian</option>
     <option value="Paleo">Paleo</option>
     <option value="Pescetarian">Pescetarian</option>
-    <option value="Shellfish free">Shellfish free</option>
+    
   </select> 
   <div
     *ngIf="
@@ -155,12 +156,12 @@
 <ng-template #loadedContent>
 <div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10 max-sm:flex-col">
   <ul class="w-[60%] flex flex-col">
-    <li *ngFor="let meal of filteredMeals">
+    <li *ngFor="let meal of filteredMeals;let i = index">
        <h3 class="text-[20px] font-semibold">{{ meal.label }}:</h3>
     <div class="flex p-4 mb-6 gap-5 justify-start meals">
       <img
         [src]="meal.image"
-        class="rounded-xl w-[100px] h-[100px] object-cover"
+        class="rounded-xl w-[130px] h-[130px] object-cover"
       />
       <div class="flex flex-col text-start w-full">
         <div class="pb-2 flex justify-between">
@@ -194,6 +195,7 @@
           <h2 class="text-[16px] font-medium text-yellow-600">{{ meal.fiber }} g</h2>
         </div>
       </div>
+      <div class="pt-2 flex items-center gap-1" ><h1 class="pl-2 text-[20px] font-medium">Ingredients:</h1><p class="text-[16px] font-medium flex"> {{ showFullContent[i] ? meal.ingredients.join(', ') : (meal.ingredients.join(', ') | truncate: 30) }}<a (click)="toggleContent(i)" class="cursor-pointer">...</a></p></div>
     </div>
       </div>
     </li>
