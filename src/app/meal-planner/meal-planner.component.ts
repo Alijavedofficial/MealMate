@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Subject, max, takeUntil } from 'rxjs';
+import { Subject, filter, max, takeUntil } from 'rxjs';
 import { MealPlanService } from '../Services/meal-plan.service';
 
 @Component({
@@ -69,7 +69,7 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.generateMealPlan();
       this.isLoading = false;
-    }, 5000);
+    }, 3000);
   }
 
   //This method calculates total for all the nutrients and calories of the generated meal plan
@@ -122,9 +122,12 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
         filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
       }
       if (region) {
-        filteredMeals = filteredMeals.filter((meal) =>
-          meal.region.includes(region)
-        );
+        if(region === 'none'){
+          this.filteredMeals = this.meals
+        } else{
+          filteredMeals = filteredMeals.filter((meal) => meal.region.includes(region));
+        }
+        
       }
 
       let filteredSnacks = this.snacks;
@@ -198,29 +201,62 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
   }
   //This filters the meals according to the preference that user have selected in the meal form
   filterMealsByDietaryPreference(preference: string) {
+    if(preference === 'none') {
+      return this.meals
+    } else {
     return this.meals.filter((meal) =>
       meal.dietaryPreference.includes(preference)
-    );
+    )};
+  }
+
+  filterMealsByRegion(region: string) {
+    return this.meals.filter((meal) =>
+     meal.region.includes(region)
+    )
   }
 
   changeMeals() {
     const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
     const region = this.mealform.get('region')?.value;
+  
     this.shuffleArray(this.meals);
     this.shuffleArray(this.snacks);
+  
+    let filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
+    filteredMeals = this.filterMealsByRegion(region);
+    
+    this.filteredMeals = filteredMeals.slice(0, this.mealform.get('numberOfMeals')?.value);
+    this.filteredSnacks = this.snacks.slice(0, this.mealform.get('numberOfSnacks')?.value);
+  
+  
 
-    this.filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
-    this.filteredMeals = this.filteredMeals.filter((meal) =>
-      meal.region.includes(region)
-    );
-    this.filteredMeals = this.meals.slice(
-      0,
-      this.mealform.get('numberOfMeals')?.value
-    );
-    this.filteredSnacks = this.snacks.slice(
-      0,
-      this.mealform.get('numberOfSnacks')?.value
-    );
+    
+    for (let i = 0; i < this.filteredMeals.length; i++) {
+      const meal = this.filteredMeals[i];
+
+      if (i === 0) {
+        meal.label = 'Breakfast';
+      } else if (i === 1) {
+        meal.label = 'Lunch';
+      } else if (i === 2) {
+        meal.label = 'Dinner';
+      } else if (i === 3) {
+        meal.label = 'Supper';
+      } else {
+        meal.label = 'Meal ' + (i + 1);
+      }
+    }
+    for (let i = 0; i < this.filteredSnacks.length; i++) {
+      const snack = this.filteredSnacks[i];
+
+      if (i === 0) {
+        snack.label = 'Nibbles';
+      } else if (i === 1) {
+        snack.label = 'Munch';
+      } else {
+        snack.label = 'Snack 3';
+      }
+    }
     this.calculateTotals();
   }
 
@@ -236,7 +272,7 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.changeMeals();
       this.isLoading = false;
-    }, 5000);
+    }, 3000);
   }
 
   toggleContent(index: number): void {

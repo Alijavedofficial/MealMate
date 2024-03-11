@@ -17,10 +17,18 @@
       "Gluten Free",
       "Nut Free",
       "Shellfish Free",
-      "Chicken"
+      "nonveg"
     ],
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "grilled chicken",
+      "lettuce",
+      "tomatoes",
+      "cucumbers",
+      "vinaigrette"
+    ]
   },
+
   {
     "name": "Vegetable Stir-Fry",
     "calories": 600,
@@ -42,7 +50,15 @@
       "Nut Free",
       "Shellfish Free"
     ],
-    "region": "Asian"
+    "region": "Asian",
+    "ingredients": [
+      "broccoli",
+      "carrots",
+      "bell peppers",
+      "tofu",
+      "rice",
+      "soy sauce"
+    ]
   },
 
   {
@@ -62,9 +78,11 @@
       "Gluten Free",
       "Kosher",
       "Egg Free",
-      "Shellfish Free"
+      "Shellfish Free",
+      "nonveg"
     ],
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["salmon", "quinoa", "asparagus", "lemon"]
   },
 
   {
@@ -78,8 +96,20 @@
     "fiber": 4,
     "sodium": 480,
     "image": "../assets/Meal_Images/Spaghetti Bolognese.webp",
-    "dietaryPreference": ["Gluten free", "Dairy Free", "Shellfish Free"],
-    "region": "Italian"
+    "dietaryPreference": [
+      "Gluten free",
+      "Dairy Free",
+      "Shellfish Free",
+      "nonveg"
+    ],
+    "region": "Italian",
+    "ingredients": [
+      "spaghetti",
+      "ground beef",
+      "tomato sauce",
+      "onion",
+      "garlic"
+    ]
   },
 
   {
@@ -105,7 +135,16 @@
       "Shellfish Free",
       "Dairy Free"
     ],
-    "region": "Mediterranean"
+    "region": "Mediterranean",
+    "ingredients": [
+      "lettuce",
+      "tomatoes",
+      "cucumbers",
+      "chickpeas",
+      "feta",
+      "olives",
+      "lemon vinaigrette"
+    ]
   },
 
   {
@@ -129,7 +168,8 @@
       "Nut Free",
       "Shellfish Free"
     ],
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["wrap", "grilled veggies", "hummus"]
   },
 
   {
@@ -151,7 +191,8 @@
       "Gluten Free",
       "Nut Free"
     ],
-    "region": "Asian"
+    "region": "Asian",
+    "ingredients": ["tofu", "broccoli", "carrots", "rice", "soy sauce"]
   },
 
   {
@@ -171,9 +212,16 @@
       "Gluten Free",
       "Fish Free",
       "Shellfish Free",
-      "Chicken"
+      "nonveg"
     ],
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "chicken",
+      "romaine lettuce",
+      "croutons",
+      "parmesan cheese",
+      "caesar dressing"
+    ]
   },
 
   {
@@ -198,7 +246,14 @@
       "Dairy Free",
       "Kosher"
     ],
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "quinoa",
+      "cucumber",
+      "tomato",
+      "chickpeas",
+      "lemon vinaigrette"
+    ]
   },
   {
     "name": "Veggie Omelette",
@@ -219,7 +274,8 @@
       "Shellfish Free",
       "Vegetarian"
     ],
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["eggs", "spinach", "tomato", "onion", "cheese"]
   },
 
   {
@@ -234,7 +290,8 @@
     "sodium": 420,
     "image": "../assets/Meal_Images/Black Bean Soup.avif",
     "dietaryPreference": ["Gluten free"],
-    "region": "Mexican"
+    "region": "Mexican",
+    "ingredients": ["black beans", "onion", "celery", "chicken broth"]
   },
 
   {
@@ -255,9 +312,11 @@
       "Nut Free",
       "Shellfish Free",
       "Kosher",
-      "Fish Free"
+      "Fish Free",
+      "nonveg"
     ],
-    "region": "Turkish"
+    "region": "Turkish",
+    "ingredients": ["bread", "turkey", "lettuce", "tomato", "mustard"]
   },
 
   {
@@ -272,7 +331,15 @@
     "sodium": 460,
     "image": "../assets/Meal_Images/Vegetarian Chili.avif",
     "dietaryPreference": ["Vegan"],
-    "region": "Mexican"
+    "region": "Mexican",
+    "ingredients": [
+      "beans",
+      "tomatoes",
+      "peppers",
+      "onion",
+      "chili powder",
+      "cumin"
+    ]
   },
 
   {
@@ -287,7 +354,8 @@
     "sodium": 300,
     "image": "../assets/Meal_Images/Greek Yogurt Parfait.avif",
     "dietaryPreference": ["Vegetarian"],
-    "region": "Greek"
+    "region": "Greek",
+    "ingredients": ["greek yogurt", "granola", "fruit", "honey"]
   },
 
   {
@@ -302,7 +370,8 @@
     "sodium": 380,
     "image": "../assets/Meal_Images/Hummus Wrap.avif",
     "dietaryPreference": ["Nut free"],
-    "region": "Middle Eastern"
+    "region": "Middle Eastern",
+    "ingredients": ["wrap", "hummus", "cucumber", "tomato", "lettuce"]
   },
 
   {
@@ -316,8 +385,9 @@
     "fiber": 6,
     "sodium": 470,
     "image": "../assets/Meal_Images/Eggplant Parmesan.avif",
-    "dietaryPreference": ["Dairy free"],
-    "region": "Italian"
+    "dietaryPreference": ["Dairy free", "nonveg"],
+    "region": "Italian",
+    "ingredients": ["eggplant", "tomato sauce", "parmesan cheese", "basil"]
   },
 
   {
@@ -331,98 +401,117 @@
     "fiber": 4,
     "sodium": 430,
     "image": "../assets/Meal_Images/Sushi Roll.avif",
-    "dietaryPreference": ["Fish free"],
-    "region": "Japanese"
+    "dietaryPreference": ["Fish free", "nonveg"],
+    "region": "Japanese",
+    "ingredients": [
+      "rice",
+      "nori",
+      "cucumber",
+      "avocado",
+      "carrots",
+      "sesame seeds"
+    ]
   },
 
   {
-    "name": "Pasta Primavera",
-    "calories": 600,
-    "perServing": "large plate",
-    "protein": 14,
-    "fat": 10,
-    "carbs": 50,
-    "sugar": 7,
-    "fiber": 5,
-    "sodium": 490,
-    "image": "../assets/Meal_Images/Pasta Primavera.avif",
-    "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
-    "region": "Italian"
-  },
-  {
-    "name": "Avocado Toast",
+    "name": "Greek Salad",
     "calories": 500,
-    "perServing": "medium plate",
-    "protein": 10,
-    "fat": 15,
-    "carbs": 35,
+    "protein": 15,
+    "fat": 20,
+    "carbs": 20,
     "sugar": 5,
     "fiber": 4,
-    "sodium": 420,
-    "image": "../assets/Meal_Images/Avocado Toast.avif",
-    "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
-    "region": "Mexican"
-  },
-  {
-    "name": "Caprese Sandwich",
-    "calories": 600,
-    "perServing": "large sandwich",
-    "protein": 18,
-    "fat": 12,
-    "carbs": 30,
-    "sugar": 6,
-    "fiber": 5,
-    "sodium": 440,
-    "image": "../assets/Meal_Images/Caprese Sandwich.avif",
-    "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
-    "region": "Italian"
-  },
-  {
-    "name": "Sweet Potato Bowl",
-    "calories": 500,
-    "perServing": "large bowl",
-    "protein": 12,
-    "fat": 10,
-    "carbs": 40,
-    "sugar": 5,
-    "fiber": 5,
-    "sodium": 380,
-    "image": "../assets/Meal_Images/Sweet Potato Bowl.avif",
-    "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
-    "region": "Global"
-  },
-  {
-    "name": "Chicken Teriyaki",
-    "calories": 600,
+    "sodium": 400,
+    "image": "../assets/Meal_Images/Greek Salad.avif",
+    "dietaryPreference": ["Vegetarian"],
     "perServing": "large plate",
-    "protein": 25,
-    "fat": 15,
-    "carbs": 30,
-    "sugar": 6,
-    "fiber": 4,
-    "sodium": 490,
-    "image": "../assets/Meal_Images/Chicken Teriyaki.avif",
-    "dietaryPreference": ["Chicken"],
-    "region": "Japanese"
+    "region": "Greek",
+    "ingredients": [
+      "lettuce",
+      "tomatoes",
+      "cucumbers",
+      "onion",
+      "olives",
+      "feta cheese",
+      "oregano",
+      "olive oil",
+      "red wine vinegar"
+    ]
   },
+
+  {
+    "name": "Hummus and Pita",
+    "calories": 600,
+    "protein": 15,
+    "fat": 20,
+    "carbs": 45,
+    "sugar": 5,
+    "fiber": 8,
+    "sodium": 450,
+    "image": "../assets/Meal_Images/Hummus and Pita.avif",
+    "dietaryPreference": ["Vegetarian", "Vegan"],
+    "perServing": "large plate",
+    "region": "Middle Eastern",
+    "ingredients": ["hummus", "pita bread", "cucumber", "tomato", "olive oil"]
+  },
+
+  {
+    "name": "Pasta with Marinara Sauce",
+    "calories": 500,
+    "protein": 15,
+    "fat": 10,
+    "carbs": 60,
+    "sugar": 10,
+    "fiber": 4,
+    "sodium": 480,
+    "image": "../assets/Meal_Images/Pasta with Marinara Sauce.avif",
+    "dietaryPreference": ["Vegetarian", "Vegan"],
+    "perServing": "large plate",
+    "region": "Italian",
+    "ingredients": ["pasta", "marinara sauce", "basil", "parmesan cheese"]
+  },
+
+  {
+    "name": "Tacos",
+    "calories": 600,
+    "protein": 20,
+    "fat": 15,
+    "carbs": 45,
+    "sugar": 5,
+    "fiber": 6,
+    "sodium": 500,
+    "image": "../assets/Meal_Images/Tacos.avif",
+    "dietaryPreference": ["nonveg"],
+    "perServing": "2 tacos",
+    "region": "Mexican",
+    "ingredients": [
+      "corn tortillas",
+      "ground beef",
+      "lettuce",
+      "tomato",
+      "cheese",
+      "sour cream"
+    ]
+  },
+
   {
     "name": "Tuna Salad",
     "calories": 500,
-    "perServing": "large plate",
-    "protein": 22,
-    "fat": 12,
-    "carbs": 25,
-    "sugar": 4,
-    "fiber": 3,
+    "protein": 25,
+    "fat": 10,
+    "carbs": 20,
+    "sugar": 3,
+    "fiber": 4,
     "sodium": 450,
     "image": "../assets/Meal_Images/Tuna Salad.avif",
-    "dietaryPreference": ["Fish Free"],
-    "region": "Global"
+    "dietaryPreference": ["Pescetarian", "nonveg"],
+    "perServing": "large plate",
+    "region": "American",
+    "ingredients": ["tuna", "mayonnaise", "celery", "onion", "lettuce"]
   },
   {
     "name": "Mushroom Risotto",
     "calories": 500,
-    "perServing": "large plate",
     "protein": 16,
     "fat": 14,
     "carbs": 40,
@@ -431,7 +520,16 @@
     "sodium": 390,
     "image": "../assets/Meal_Images/Mushroom Risotto.jpeg",
     "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
-    "region": "Italian"
+    "perServing": "large plate",
+    "region": "Italian",
+    "ingredients": [
+      "arborio rice",
+      "mushrooms",
+      "onion",
+      "garlic",
+      "vegetable broth",
+      "parmesan cheese"
+    ]
   },
   {
     "name": "Broccoli Cheddar Soup",
@@ -445,7 +543,14 @@
     "image": "../assets/Meal_Images/Broccoli Cheddar Soup.avif",
     "dietaryPreference": ["Vegetarian", "Dairy Free"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "broccoli",
+      "onion",
+      "celery",
+      "chicken broth",
+      "cheddar cheese"
+    ]
   },
 
   {
@@ -460,7 +565,14 @@
     "image": "../assets/Meal_Images/Fruit Salad.avif",
     "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "strawberries",
+      "blueberries",
+      "banana",
+      "kiwi",
+      "orange juice"
+    ]
   },
   {
     "name": "Chicken Noodle Soup",
@@ -472,9 +584,17 @@
     "fiber": 5,
     "sodium": 470,
     "image": "../assets/Meal_Images/Chicken Noodle Soup.avif",
-    "dietaryPreference": ["Chicken"],
+    "dietaryPreference": ["nonveg"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "chicken",
+      "carrots",
+      "celery",
+      "onion",
+      "egg noodles",
+      "chicken broth"
+    ]
   },
   {
     "name": "Egg Salad Sandwich",
@@ -488,7 +608,15 @@
     "image": "../assets/Meal_Images/Egg Salad Sandwich.avif",
     "dietaryPreference": ["Egg Free"],
     "perServing": "large sandwich",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "bread",
+      "hard boiled eggs",
+      "mayonnaise",
+      "mustard",
+      "celery",
+      "onion"
+    ]
   },
   {
     "name": "Lentil Soup",
@@ -502,8 +630,25 @@
     "image": "../assets/Meal_Images/Lentil Soup.avif",
     "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["lentils", "onion", "carrots", "celery", "vegetable broth"]
   },
+  {
+    "name": "Waldorf Salad",
+    "calories": 500,
+    "protein": 10,
+    "fat": 12,
+    "carbs": 30,
+    "sugar": 5,
+    "fiber": 4,
+    "sodium": 380,
+    "image": "../assets/Meal_Images/Waldorf Salad.avif",
+    "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
+    "perServing": "large plate",
+    "region": "American",
+    "ingredients": ["apples", "celery", "walnuts", "mayonnaise", "lemon juice"]
+  },
+
   {
     "name": "BBQ Chicken Pizza",
     "calories": 600,
@@ -514,9 +659,16 @@
     "fiber": 4,
     "sodium": 460,
     "image": "../assets/Meal_Images/BBQ Chicken Pizza.avif",
-    "dietaryPreference": ["Chicken"],
+    "dietaryPreference": ["nonveg"],
     "perServing": "large plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "pizza dough",
+      "bbq sauce",
+      "chicken",
+      "red onion",
+      "mozzarella cheese"
+    ]
   },
   {
     "name": "Caesar Wrap",
@@ -528,9 +680,16 @@
     "fiber": 5,
     "sodium": 480,
     "image": "../assets/Meal_Images/Caesar Wrap.avif",
-    "dietaryPreference": [],
+    "dietaryPreference": ["nonveg"],
     "perServing": "large wrap",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "tortilla",
+      "chicken",
+      "romaine lettuce",
+      "parmesan cheese",
+      "caesar dressing"
+    ]
   },
   {
     "name": "Chickpea Salad",
@@ -544,7 +703,15 @@
     "image": "../assets/Meal_Images/Chickpea Salad.avif",
     "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
     "perServing": "large plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "chickpeas",
+      "cucumber",
+      "tomato",
+      "onion",
+      "lemon juice",
+      "olive oil"
+    ]
   },
   {
     "name": "Falafel Plate",
@@ -558,7 +725,14 @@
     "image": "../assets/Meal_Images/Falafel Plate.avif",
     "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
     "perServing": "large plate",
-    "region": "Middle Eastern"
+    "region": "Middle Eastern",
+    "ingredients": [
+      "falafel",
+      "pita bread",
+      "tomatoes",
+      "cucumber",
+      "tahini sauce"
+    ]
   },
   {
     "name": "Garden Salad",
@@ -581,7 +755,14 @@
       "Dairy Free"
     ],
     "perServing": "large plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "lettuce",
+      "tomatoes",
+      "cucumbers",
+      "carrots",
+      "vinaigrette"
+    ]
   },
   {
     "name": "Macaroni and Cheese",
@@ -595,7 +776,8 @@
     "image": "../assets/Meal_Images/Macaroni and Cheese.avif",
     "dietaryPreference": ["Vegetarian", "Dairy Free"],
     "perServing": "large plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["macaroni", "cheddar cheese", "milk", "butter", "flour"]
   },
   {
     "name": "Peanut Butter and Jelly Sandwich",
@@ -609,7 +791,8 @@
     "image": "../assets/Meal_Images/Peanut Butter and Jelly Sandwich.avif",
     "dietaryPreference": ["Vegetarian", "Nut Free"],
     "perServing": "large sandwich",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["bread", "peanut butter", "jelly"]
   },
   {
     "name": "Ratatouille",
@@ -623,7 +806,16 @@
     "image": "../assets/Meal_Images/Ratatouille.avif",
     "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
     "perServing": "large plate",
-    "region": "French"
+    "region": "French",
+    "ingredients": [
+      "tomatoes",
+      "eggplant",
+      "zucchini",
+      "onion",
+      "garlic",
+      "olive oil",
+      "herbs"
+    ]
   },
   {
     "name": "Shakshuka",
@@ -637,7 +829,8 @@
     "image": "../assets/Meal_Images/Shakshuka.avif",
     "dietaryPreference": ["Vegetarian", "Egg Free"],
     "perServing": "large plate",
-    "region": "Middle Eastern"
+    "region": "Middle Eastern",
+    "ingredients": ["tomatoes", "onion", "garlic", "eggs", "cilantro", "spices"]
   },
   {
     "name": "Tofu Scramble",
@@ -651,7 +844,8 @@
     "image": "../assets/Meal_Images/Tofu Scramble.avif",
     "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
     "perServing": "large plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["tofu", "onion", "peppers", "turmeric", "nutritional yeast"]
   },
   {
     "name": "Veggie Burger",
@@ -665,21 +859,8 @@
     "image": "../assets/Meal_Images/Veggie Burger.avif",
     "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
     "perServing": "large burger",
-    "region": "Global"
-  },
-  {
-    "name": "Waldorf Salad",
-    "calories": 500,
-    "protein": 10,
-    "fat": 12,
-    "carbs": 30,
-    "sugar": 5,
-    "fiber": 4,
-    "sodium": 380,
-    "image": "../assets/Meal_Images/Waldorf Salad.avif",
-    "dietaryPreference": ["Vegetarian", "Vegan", "Egg Free"],
-    "perServing": "large plate",
-    "region": "American"
+    "region": "Global",
+    "ingredients": ["black beans", "quinoa", "onion", "spices", "bread bun"]
   },
 
   {
@@ -694,7 +875,15 @@
     "image": "../assets/Meal_Images/Zucchini Noodles with Pesto.avif",
     "dietaryPreference": ["Vegetarian", "Dairy Free"],
     "perServing": "large plate",
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "zucchini",
+      "pesto",
+      "parmesan cheese",
+      "pine nuts",
+      "olive oil",
+      "garlic"
+    ]
   },
   {
     "name": "Baked Potato",
@@ -708,7 +897,15 @@
     "image": "../assets/Meal_Images/Baked Potato.avif",
     "dietaryPreference": ["Vegetarian", "Egg Free"],
     "perServing": "large plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "russet potato",
+      "butter",
+      "sour cream",
+      "chives",
+      "bacon bits",
+      "cheddar cheese"
+    ]
   },
   {
     "name": "Cauliflower Rice Bowl",
@@ -722,7 +919,14 @@
     "image": "../assets/Meal_Images/Cauliflower Rice Bowl.avif",
     "dietaryPreference": ["Vegetarian", "Gluten Free"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "cauliflower rice",
+      "chickpeas",
+      "tomatoes",
+      "cucumber",
+      "tahini dressing"
+    ]
   },
   {
     "name": "Fajita Wrap",
@@ -734,9 +938,18 @@
     "fiber": 6,
     "sodium": 420,
     "image": "../assets/Meal_Images/Fajita Wrap.avif",
-    "dietaryPreference": ["Nut Free"],
+    "dietaryPreference": ["Nut Free", "nonveg"],
     "perServing": "large wrap",
-    "region": "Mexican"
+    "region": "Mexican",
+    "ingredients": [
+      "tortilla",
+      "chicken",
+      "peppers",
+      "onion",
+      "cheese",
+      "sour cream",
+      "guacamole"
+    ]
   },
   {
     "name": "Gazpacho",
@@ -750,7 +963,16 @@
     "image": "../assets/Meal_Images/Gazpacho.avif",
     "dietaryPreference": ["Vegetarian", "Vegan"],
     "perServing": "large bowl",
-    "region": "Spanish"
+    "region": "Spanish",
+    "ingredients": [
+      "tomatoes",
+      "cucumber",
+      "bell pepper",
+      "onion",
+      "garlic",
+      "olive oil",
+      "vinegar"
+    ]
   },
   {
     "name": "Nicoise Salad",
@@ -764,7 +986,15 @@
     "image": "../assets/Meal_Images/Nicoise Salad.avif",
     "dietaryPreference": ["Fish Free", "Egg Free"],
     "perServing": "large plate",
-    "region": "French"
+    "region": "French",
+    "ingredients": [
+      "potatoes",
+      "green beans",
+      "olives",
+      "tomatoes",
+      "lettuce",
+      "vinaigrette"
+    ]
   },
   {
     "name": "Pad Thai",
@@ -778,7 +1008,15 @@
     "image": "../assets/Meal_Images/Pad Thai.avif",
     "dietaryPreference": ["Gluten Free"],
     "perServing": "large plate",
-    "region": "Thai"
+    "region": "Thai",
+    "ingredients": [
+      "rice noodles",
+      "tofu",
+      "eggs",
+      "peanuts",
+      "lime juice",
+      "fish sauce"
+    ]
   },
   {
     "name": "Rice and Beans",
@@ -792,7 +1030,8 @@
     "image": "../assets/Meal_Images/Rice and Beans.avif",
     "dietaryPreference": ["Vegetarian", "Soy Free"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["rice", "black beans", "onion", "garlic", "cilantro"]
   },
   {
     "name": "Stuffed Bell Peppers",
@@ -806,7 +1045,15 @@
     "image": "../assets/Meal_Images/Stuffed Bell Peppers.jpeg",
     "dietaryPreference": ["Vegetarian", "Nut free"],
     "perServing": "2 medium peppers",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "bell peppers",
+      "quinoa",
+      "black beans",
+      "corn",
+      "onion",
+      "garlic"
+    ]
   },
   {
     "name": "Tomato Soup",
@@ -820,7 +1067,14 @@
     "image": "../assets/Meal_Images/Tomato Soup.avif",
     "dietaryPreference": ["Vegetarian", "Nut free"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "tomatoes",
+      "onion",
+      "garlic",
+      "vegetable broth",
+      "heavy cream"
+    ]
   },
   {
     "name": "Veggie Pizza",
@@ -834,7 +1088,16 @@
     "image": "../assets/Meal_Images/Veggie Pizza.avif",
     "dietaryPreference": ["Vegetarian"],
     "perServing": "large slice",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "pizza dough",
+      "tomato sauce",
+      "mozzarella",
+      "mushrooms",
+      "onion",
+      "peppers",
+      "olives"
+    ]
   },
 
   {
@@ -847,9 +1110,10 @@
     "fiber": 2,
     "sodium": 640,
     "image": "../assets/Meal_Images/Grilled Salmon.avif",
-    "dietaryPreference": ["Pescetarian", "Dairy free"],
+    "dietaryPreference": ["Pescetarian", "Dairy free", "nonveg"],
     "perServing": "large fillet",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["salmon", "olive oil", "salt", "pepper", "lemon"]
   },
   {
     "name": "Quinoa Salad",
@@ -863,8 +1127,43 @@
     "image": "../assets/Meal_Images/Quinoa Salad.avif",
     "dietaryPreference": ["Vegan", "Gluten free"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "quinoa",
+      "chickpeas",
+      "cucumber",
+      "tomato",
+      "onion",
+      "lemon juice",
+      "olive oil"
+    ]
   },
+  {
+    "name": "Greek Salad",
+    "calories": 500,
+    "protein": 20,
+    "fat": 36,
+    "carbs": 30,
+    "sugar": 8,
+    "fiber": 6,
+    "sodium": 700,
+    "image": "../assets/Meal_Images/Greek Salad.avif",
+    "dietaryPreference": ["Vegetarian"],
+    "perServing": "large bowl",
+    "region": "Mediterranean",
+    "ingredients": [
+      "romaine lettuce",
+      "cucumbers",
+      "tomatoes",
+      "onion",
+      "feta cheese",
+      "olives",
+      "oregano",
+      "olive oil",
+      "red wine vinegar"
+    ]
+  },
+
   {
     "name": "Grilled Chicken Breast",
     "calories": 400,
@@ -875,9 +1174,10 @@
     "fiber": 0,
     "sodium": 560,
     "image": "../assets/Meal_Images/Grilled Chicken Breast.avif",
-    "dietaryPreference": ["Paleo", "Gluten free", "Chicken"],
+    "dietaryPreference": ["Paleo", "Gluten free", "nonveg"],
     "perServing": "large fillet",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["chicken breast", "olive oil", "salt", "pepper", "garlic"]
   },
 
   {
@@ -890,10 +1190,18 @@
     "fiber": 6,
     "sodium": 720,
     "image": "../assets/Meal_Images/Steak Salad.avif",
-    "dietaryPreference": ["Dairy free", "Gluten free"],
+    "dietaryPreference": ["Dairy free", "Gluten free", "nonveg"],
     "perServing": "large plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "steak",
+      "mixed greens",
+      "tomatoes",
+      "avocado",
+      "balsamic vinaigrette"
+    ]
   },
+
   {
     "name": "Baked Chicken Thighs",
     "calories": 448,
@@ -904,9 +1212,17 @@
     "fiber": 0,
     "sodium": 608,
     "image": "../assets/Meal_Images/Baked Chicken Thighs.avif",
-    "dietaryPreference": ["Paleo", "Gluten free", "Chicken"],
+    "dietaryPreference": ["Paleo", "Gluten free", "nonveg"],
     "perServing": "large fillet",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "chicken thighs",
+      "olive oil",
+      "garlic",
+      "rosemary",
+      "salt",
+      "pepper"
+    ]
   },
 
   {
@@ -930,8 +1246,18 @@
       "Dairy free"
     ],
     "perServing": "large plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "zucchini",
+      "eggplant",
+      "peppers",
+      "mushrooms",
+      "asparagus",
+      "olive oil",
+      "balsamic vinegar"
+    ]
   },
+
   {
     "name": "Lemon Herb Tilapia",
     "calories": 580,
@@ -949,11 +1275,44 @@
       "Shellfish free",
       "Gluten free",
       "Nut free",
-      "Dairy free"
+      "Dairy free",
+      "nonveg"
     ],
     "perServing": "large fillet",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "tilapia fillets",
+      "lemon",
+      "parsley",
+      "olive oil",
+      "salt",
+      "pepper"
+    ]
   },
+  {
+    "name": "Risotto Primavera",
+    "calories": 500,
+    "perServing": "1.5 cups",
+    "protein": 15,
+    "fat": 15,
+    "carbs": 60,
+    "sugar": 5,
+    "fiber": 4,
+    "sodium": 500,
+    "image": "../assets/Meal_Images/Risotto Primavera.avif",
+    "dietaryPreference": ["Vegetarian", "Gluten free"],
+    "region": "Italian",
+    "ingredients": [
+      "arborio rice",
+      "asparagus",
+      "peas",
+      "carrots",
+      "onion",
+      "vegetable broth",
+      "parmesan cheese"
+    ]
+  },
+
   {
     "name": "Stuffed Portobello Mushrooms",
     "calories": 520,
@@ -975,8 +1334,16 @@
       "Dairy free"
     ],
     "perServing": "2 large mushrooms",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "portobello mushrooms",
+      "breadcrumbs",
+      "garlic",
+      "spinach",
+      "sun-dried tomatoes"
+    ]
   },
+
   {
     "name": "Grilled Zucchini",
     "calories": 240,
@@ -998,8 +1365,10 @@
       "Dairy free"
     ],
     "perServing": "medium plate",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["zucchini", "olive oil", "salt", "pepper"]
   },
+
   {
     "name": "Spinach Salad",
     "calories": 300,
@@ -1012,8 +1381,16 @@
     "image": "../assets/Meal_Images/Spinach Salad.avif",
     "dietaryPreference": ["Vegetarian"],
     "perServing": "large bowl",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": [
+      "spinach",
+      "strawberries",
+      "feta",
+      "almonds",
+      "balsamic vinaigrette"
+    ]
   },
+
   {
     "name": "Grilled Swordfish",
     "calories": 640,
@@ -1024,10 +1401,12 @@
     "fiber": 0,
     "sodium": 760,
     "image": "../assets/Meal_Images/Grilled Swordfish.avif",
-    "dietaryPreference": ["Pescatarian", "Shellfish free"],
+    "dietaryPreference": ["Pescatarian", "Shellfish free", "nonveg"],
     "perServing": "large fillet",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["swordfish steak", "lemon", "olive oil", "salt", "pepper"]
   },
+
   {
     "name": "Baked Tofu",
     "calories": 400,
@@ -1040,22 +1419,10 @@
     "image": "../assets/Meal_Images/Baked Tofu.avif",
     "dietaryPreference": ["Vegetarian", "Vegan"],
     "perServing": "medium fillet",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["firm tofu", "soy sauce", "sesame oil", "garlic", "ginger"]
   },
-  {
-    "name": "Greek Salad",
-    "calories": 500,
-    "protein": 20,
-    "fat": 36,
-    "carbs": 30,
-    "sugar": 8,
-    "fiber": 6,
-    "sodium": 700,
-    "image": "../assets/Meal_Images/Greek Salad.avif",
-    "dietaryPreference": ["Vegetarian"],
-    "perServing": "large bowl",
-    "region": "Mediterranean"
-  },
+
   {
     "name": "Salmon Nicoise",
     "calories": 500,
@@ -1066,9 +1433,18 @@
     "fiber": 3,
     "sodium": 380,
     "image": "../assets/Meal_Images/Salmon Nicoise.avif",
-    "dietaryPreference": ["Gluten free", "Pescatarian"],
+    "dietaryPreference": ["Gluten free", "Pescatarian", "nonveg"],
     "perServing": "large plate",
-    "region": "Mediterranean"
+    "region": "Mediterranean",
+    "ingredients": [
+      "salmon",
+      "green beans",
+      "potatoes",
+      "olives",
+      "tomatoes",
+      "eggs",
+      "lettuce"
+    ]
   },
 
   {
@@ -1081,9 +1457,10 @@
     "fiber": 2,
     "sodium": 400,
     "image": "../assets/Meal_Images/Grilled Tuna Steak.avif",
-    "dietaryPreference": ["Gluten free", "Pescatarian"],
+    "dietaryPreference": ["Gluten free", "Pescatarian", "nonveg"],
     "perServing": "large steak",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["tuna steak", "salt", "pepper", "oil"]
   },
 
   {
@@ -1096,9 +1473,10 @@
     "fiber": 2,
     "sodium": 370,
     "image": "../assets/Meal_Images/Baked Halibut.jpeg",
-    "dietaryPreference": ["Gluten free", "Pescatarian"],
+    "dietaryPreference": ["Gluten free", "Pescatarian", "nonveg"],
     "perServing": "large fillet",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["halibut fillet", "lemon", "parsley", "butter"]
   },
 
   {
@@ -1113,7 +1491,8 @@
     "image": "../assets/Meal_Images/Grilled Vegetable Wrap.jpeg",
     "dietaryPreference": ["Gluten free", "Vegetarian", "Vegan"],
     "perServing": "large wrap",
-    "region": "Global"
+    "region": "Global",
+    "ingredients": ["tortilla", "grilled vegetables", "hummus"]
   },
 
   {
@@ -1128,7 +1507,8 @@
     "sodium": 480,
     "image": "../assets/Meal_Images/Pizza Margherita.avif",
     "dietaryPreference": ["Vegetarian"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "basil"]
   },
 
   {
@@ -1143,7 +1523,14 @@
     "sodium": 600,
     "image": "../assets/Meal_Images/Spaghetti Carbonara.avif",
     "dietaryPreference": ["Egg free", "Dairy free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "spaghetti",
+      "pancetta",
+      "egg yolk",
+      "parmesan cheese",
+      "black pepper"
+    ]
   },
 
   {
@@ -1158,22 +1545,13 @@
     "sodium": 700,
     "image": "../assets/Meal_Images/Lasagna Bolognese.avif",
     "dietaryPreference": ["Halal"],
-    "region": "Italian"
-  },
-
-  {
-    "name": "Risotto Primavera",
-    "calories": 500,
-    "perServing": "1.5 cups",
-    "protein": 15,
-    "fat": 15,
-    "carbs": 60,
-    "sugar": 5,
-    "fiber": 4,
-    "sodium": 500,
-    "image": "../assets/Meal_Images/Risotto Primavera.avif",
-    "dietaryPreference": ["Vegetarian", "Gluten free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "lasagna noodles",
+      "bolognese sauce",
+      "mozzarella cheese",
+      "parmesan cheese"
+    ]
   },
   {
     "name": "Chicken Parmesan",
@@ -1186,8 +1564,15 @@
     "fiber": 3,
     "sodium": 600,
     "image": "../assets/Meal_Images/Chicken Parmesan.jpeg",
-    "dietaryPreference": ["Gluten free", "Chicken"],
-    "region": "Italian"
+    "dietaryPreference": ["Gluten free", "nonveg"],
+    "region": "Italian",
+    "ingredients": [
+      "chicken breast",
+      "tomato sauce",
+      "mozzarella cheese",
+      "parmesan cheese",
+      "pasta"
+    ]
   },
 
   {
@@ -1201,8 +1586,17 @@
     "fiber": 3,
     "sodium": 700,
     "image": "../assets/Meal_Images/Ossobuco alla Milanese.jpeg",
-    "dietaryPreference": [],
-    "region": "Italian"
+    "dietaryPreference": ["nonveg"],
+    "region": "Italian",
+    "ingredients": [
+      "veal shank",
+      "tomatoes",
+      "onion",
+      "carrot",
+      "celery",
+      "white wine",
+      "stock"
+    ]
   },
 
   {
@@ -1215,8 +1609,9 @@
     "sugar": 5,
     "fiber": 3,
     "image": "../assets/Meal_Images/Frittata.jpeg",
-    "dietaryPreference": [],
-    "region": "Italian"
+    "dietaryPreference": ["nonveg"],
+    "region": "Italian",
+    "ingredients": ["eggs", "potatoes", "onion", "spinach", "cheese"]
   },
 
   {
@@ -1231,7 +1626,8 @@
     "sodium": 380,
     "image": "../assets/Meal_Images/Pesto Pasta.jpeg",
     "dietaryPreference": ["Vegetarian"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": ["pasta", "pesto sauce", "parmesan cheese", "pine nuts"]
   },
 
   {
@@ -1246,7 +1642,17 @@
     "sodium": 620,
     "image": "../assets/Meal_Images/Minestrone Soup.avif",
     "dietaryPreference": ["Vegetarian"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "beans",
+      "pasta",
+      "tomatoes",
+      "carrots",
+      "zucchini",
+      "onion",
+      "olive oil",
+      "vegetable broth"
+    ]
   },
 
   {
@@ -1261,7 +1667,14 @@
     "sodium": 300,
     "image": "../assets/Meal_Images/Orecchiette with Broccoli Rabe.jpeg",
     "dietaryPreference": ["Vegetarian"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "orecchiette pasta",
+      "broccoli rabe",
+      "garlic",
+      "red pepper flakes",
+      "parmesan cheese"
+    ]
   },
 
   {
@@ -1276,7 +1689,15 @@
     "sodium": 400,
     "image": "../assets/Meal_Images/Tagliatelle with Mushrooms.jpeg",
     "dietaryPreference": ["Vegetarian"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "tagliatelle pasta",
+      "mushrooms",
+      "garlic",
+      "parsley",
+      "parmesan cheese",
+      "cream"
+    ]
   },
 
   {
@@ -1291,7 +1712,15 @@
     "sodium": 600,
     "image": "../assets/Meal_Images/Polenta with Sausage and Peppers.jpeg",
     "dietaryPreference": ["Gluten free", "Dairy free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "polenta",
+      "italian sausage",
+      "onion",
+      "bell peppers",
+      "tomatoes",
+      "basil"
+    ]
   },
 
   {
@@ -1305,8 +1734,17 @@
     "fiber": 2,
     "sodium": 750,
     "image": "../assets/Meal_Images/Seafood Risotto.jpeg",
-    "dietaryPreference": ["Pescatarian", "Gluten free", "Dairy free"],
-    "region": "Italian"
+    "dietaryPreference": ["Pescatarian", "Gluten free", "Dairy free", "nonveg"],
+    "region": "Italian",
+    "ingredients": [
+      "arborio rice",
+      "white wine",
+      "shrimp",
+      "scallops",
+      "clams",
+      "fish stock",
+      "parmesan cheese"
+    ]
   },
 
   {
@@ -1321,7 +1759,16 @@
     "sodium": 650,
     "image": "../assets/Meal_Images/Pasta e Fagioli.jpeg",
     "dietaryPreference": ["Vegetarian", "Vegan", "Gluten free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "ditalini pasta",
+      "cannellini beans",
+      "onion",
+      "carrots",
+      "celery",
+      "tomatoes",
+      "chicken stock"
+    ]
   },
 
   {
@@ -1336,7 +1783,16 @@
     "sodium": 400,
     "image": "../assets/Meal_Images/Caprese Salad.jpeg",
     "dietaryPreference": ["Vegetarian", "Vegan", "Gluten free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "mozzarella",
+      "tomatoes",
+      "basil",
+      "olive oil",
+      "balsamic vinegar",
+      "salt",
+      "pepper"
+    ]
   },
 
   {
@@ -1350,8 +1806,17 @@
     "fiber": 4,
     "sodium": 650,
     "image": "../assets/Meal_Images/Linguine with Clams.jpeg",
-    "dietaryPreference": ["Pescatarian", "Gluten free"],
-    "region": "Italian"
+    "dietaryPreference": ["Pescatarian", "Gluten free", "nonveg"],
+    "region": "Italian",
+    "ingredients": [
+      "linguine",
+      "clams",
+      "olive oil",
+      "garlic",
+      "white wine",
+      "parsley",
+      "lemon"
+    ]
   },
 
   {
@@ -1366,7 +1831,14 @@
     "sodium": 850,
     "image": "../assets/Meal_Images/Bucatini all'Amatriciana.jpeg",
     "dietaryPreference": ["Vegetarian"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "bucatini pasta",
+      "guanciale",
+      "tomatoes",
+      "pecorino cheese",
+      "black pepper"
+    ]
   },
 
   {
@@ -1381,7 +1853,16 @@
     "sodium": 600,
     "image": "../assets/Meal_Images/Penne Arrabbiata.jpeg",
     "dietaryPreference": ["Vegetarian", "Vegan", "Gluten free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "penne pasta",
+      "olive oil",
+      "garlic",
+      "chili peppers",
+      "tomatoes",
+      "basil",
+      "parmesan cheese"
+    ]
   },
 
   {
@@ -1396,7 +1877,19 @@
     "sodium": 400,
     "image": "../assets/Meal_Images/Panzanella Salad.jpeg",
     "dietaryPreference": ["Vegan", "Gluten free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "ciabatta bread",
+      "tomatoes",
+      "cucumber",
+      "red onion",
+      "basil",
+      "olive oil",
+      "red wine vinegar",
+      "garlic",
+      "salt",
+      "pepper"
+    ]
   },
 
   {
@@ -1410,8 +1903,20 @@
     "fiber": 5,
     "sodium": 800,
     "image": "../assets/Meal_Images/Chicken Cacciatore.jpeg",
-    "dietaryPreference": ["Gluten free", "Dairy free", "Chicken"],
-    "region": "Italian"
+    "dietaryPreference": ["Gluten free", "Dairy free", "nonveg"],
+    "region": "Italian",
+    "ingredients": [
+      "chicken thighs",
+      "olive oil",
+      "onion",
+      "garlic",
+      "bell pepper",
+      "mushrooms",
+      "tomatoes",
+      "white wine",
+      "oregano",
+      "basil"
+    ]
   },
 
   {
@@ -1426,7 +1931,17 @@
     "sodium": 200,
     "image": "../assets/Meal_Images/Bruschetta.jpeg",
     "dietaryPreference": ["Vegetarian", "Gluten free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "french bread",
+      "garlic",
+      "tomatoes",
+      "basil",
+      "balsamic vinegar",
+      "olive oil",
+      "salt",
+      "pepper"
+    ]
   },
 
   {
@@ -1441,9 +1956,9 @@
     "sodium": 650,
     "image": "../assets/Meal_Images/Baked Ziti.jpeg",
     "dietaryPreference": ["Vegetarian", "Nut free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": ["pasta", "tomatoes", "cheese"]
   },
-
   {
     "name": "Cannoli",
     "calories": 618,
@@ -1456,7 +1971,8 @@
     "sodium": 170,
     "image": "../assets/Meal_Images/Cannoli.jpeg",
     "dietaryPreference": ["Egg free", "Dairy free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": ["pastry shell", "ricotta filling", "powdered sugar"]
   },
 
   {
@@ -1479,7 +1995,8 @@
       "Gluten free",
       "Nut free"
     ],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": ["pasta", "vegetables", "italian dressing"]
   },
 
   {
@@ -1493,8 +2010,9 @@
     "fiber": 0,
     "sodium": 100,
     "image": "../assets/Meal_Images/Bistecca Fiorentina.jpeg",
-    "dietaryPreference": ["Gluten free", "Dairy free"],
-    "region": "Italian"
+    "dietaryPreference": ["Gluten free", "Dairy free", "nonveg"],
+    "region": "Italian",
+    "ingredients": ["t-bone steak", "salt", "pepper", "olive oil"]
   },
 
   {
@@ -1508,8 +2026,9 @@
     "fiber": 2,
     "sodium": 1200,
     "image": "../assets/Meal_Images/Osso Buco.jpeg",
-    "dietaryPreference": ["Gluten free", "Nut free", "Dairy free"],
-    "region": "Italian"
+    "dietaryPreference": ["Gluten free", "Nut free", "Dairy free", "nonveg"],
+    "region": "Italian",
+    "ingredients": ["veal shanks", "tomatoes", "carrots", "onion", "white wine"]
   },
 
   {
@@ -1523,8 +2042,15 @@
     "fiber": 2,
     "sodium": 800,
     "image": "../assets/Meal_Images/Pollo alla Cacciatora.jpeg",
-    "dietaryPreference": ["Gluten free", "Dairy free"],
-    "region": "Italian"
+    "dietaryPreference": ["Gluten free", "Dairy free", "nonveg"],
+    "region": "Italian",
+    "ingredients": [
+      "chicken breasts",
+      "tomatoes",
+      "onions",
+      "bell peppers",
+      "white wine"
+    ]
   },
 
   {
@@ -1538,8 +2064,14 @@
     "fiber": 1,
     "sodium": 600,
     "image": "../assets/Meal_Images/Saltimbocca.jpeg",
-    "dietaryPreference": ["Gluten free", "Nut free", "Shellfish free"],
-    "region": "Italian"
+    "dietaryPreference": [
+      "Gluten free",
+      "Nut free",
+      "Shellfish free",
+      "nonveg"
+    ],
+    "region": "Italian",
+    "ingredients": ["veal cutlets", "prosciutto", "sage", "white wine"]
   },
 
   {
@@ -1554,7 +2086,19 @@
     "sodium": 850,
     "image": "../assets/Meal_Images/Ribollita.jpeg",
     "dietaryPreference": ["Vegetarian", "Dairy free", "Gluten free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "cannellini beans",
+      "kale",
+      "carrots",
+      "onion",
+      "celery",
+      "garlic",
+      "tomatoes",
+      "parsley",
+      "parmesan cheese",
+      "tuscan bread"
+    ]
   },
 
   {
@@ -1569,33 +2113,17 @@
     "sodium": 650,
     "image": "../assets/Meal_Images/Stracciatella Soup.jpeg",
     "dietaryPreference": ["Egg free", "Dairy free", "Gluten free"],
-    "region": "Italian"
+    "region": "Italian",
+    "ingredients": [
+      "chicken broth",
+      "spinach",
+      "parmesan cheese",
+      "eggs",
+      "lemon juice",
+      "salt",
+      "pepper"
+    ]
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   {
     "name": "İskender Kebab",
@@ -1608,9 +2136,17 @@
     "fiber": 5,
     "sodium": 950,
     "image": "../assets/Meal_Images/İskender Kebab.avif",
-    "dietaryPreference": ["Gluten free", "Dairy free"],
+    "dietaryPreference": ["Gluten free", "Dairy free", "nonveg"],
     "region": "Turkish",
-    "ingredients": ["Lamb", "Bread", "Tomato sauce", "Yogurt", "Butter", "Paprika", "Pepper"]
+    "ingredients": [
+      "Lamb",
+      "Bread",
+      "Tomato sauce",
+      "Yogurt",
+      "Butter",
+      "Paprika",
+      "Pepper"
+    ]
   },
   {
     "name": "Pide",
@@ -1625,7 +2161,14 @@
     "image": "../assets/Meal_Images/Pide.jpeg",
     "dietaryPreference": ["Egg free", "Dairy free"],
     "region": "Turkish",
-    "ingredients": ["Dough", "Ground meat", "Tomato", "Onion", "Pepper", "Spices"]
+    "ingredients": [
+      "Dough",
+      "Ground meat",
+      "Tomato",
+      "Onion",
+      "Pepper",
+      "Spices"
+    ]
   },
   {
     "name": "Adana Kebab",
@@ -1638,9 +2181,16 @@
     "fiber": 4,
     "sodium": 850,
     "image": "../assets/Meal_Images/Adana Kebab.jpeg",
-    "dietaryPreference": ["Gluten free", "Dairy free"],
+    "dietaryPreference": ["Gluten free", "Dairy free", "nonveg"],
     "region": "Turkish",
-    "ingredients": ["Ground lamb", "Red pepper flakes", "Salt", "Onion", "Parsley", "Cumin"]
+    "ingredients": [
+      "Ground lamb",
+      "Red pepper flakes",
+      "Salt",
+      "Onion",
+      "Parsley",
+      "Cumin"
+    ]
   },
   {
     "name": "Simit",
@@ -1685,7 +2235,15 @@
     "image": "../assets/Meal_Images/Kumpir.jpeg",
     "dietaryPreference": ["Vegetarian"],
     "region": "Turkish",
-    "ingredients": ["Potato", "Cheese", "Butter", "Olives", "Pickles", "Corn", "Peas"]
+    "ingredients": [
+      "Potato",
+      "Cheese",
+      "Butter",
+      "Olives",
+      "Pickles",
+      "Corn",
+      "Peas"
+    ]
   },
   {
     "name": "Tavuk Pilav",
@@ -1700,7 +2258,7 @@
     "image": "../assets/Meal_Images/Tavuk Pilav.jpeg",
     "dietaryPreference": ["Gluten free", "Dairy free"],
     "region": "Turkish",
-    "ingredients": ["Chicken", "Rice", "Onion", "Pepper", "Tomato", "Spices"]
+    "ingredients": ["Rice", "Onion", "Pepper", "Tomato", "Spices"]
   },
   {
     "name": "Hünkar Beğendi",
@@ -1717,7 +2275,7 @@
     "region": "Turkish",
     "ingredients": ["Lamb", "Eggplant", "Milk", "Butter", "Flour", "Spices"]
   },
-  
+
   {
     "name": "Köfteci Yusuf",
     "calories": 500,
@@ -1746,7 +2304,15 @@
     "image": "../assets/Meal_Images/Baklava.jpeg",
     "dietaryPreference": ["Vegetarian"],
     "region": "Turkish",
-    "ingredients": ["Phyllo dough", "Walnuts", "Pistachios", "Butter", "Sugar", "Honey", "Cinnamon"]
+    "ingredients": [
+      "Phyllo dough",
+      "Walnuts",
+      "Pistachios",
+      "Butter",
+      "Sugar",
+      "Honey",
+      "Cinnamon"
+    ]
   },
   {
     "name": "Döner Kebab",
@@ -1759,9 +2325,17 @@
     "fiber": 5,
     "sodium": 900,
     "image": "../assets/Meal_Images/Döner Kebab.jpeg",
-    "dietaryPreference": ["Gluten free", "Dairy free"],
+    "dietaryPreference": ["Gluten free", "Dairy free", "nonveg"],
     "region": "Turkish",
-    "ingredients": ["Lamb", "Beef", "Chicken", "Tomato", "Onion", "Lettuce", "Pita bread"]
+    "ingredients": [
+      "Lamb",
+      "Beef",
+      "nonveg",
+      "Tomato",
+      "Onion",
+      "Lettuce",
+      "Pita bread"
+    ]
   },
   {
     "name": "Köfte",
@@ -1776,7 +2350,15 @@
     "image": "../assets/Meal_Images/Köfte.jpeg",
     "dietaryPreference": ["Gluten free", "Dairy free"],
     "region": ["Turkish", "Pakistan"],
-    "ingredients": ["Ground lamb", "Onion", "Parsley", "Cumin", "Coriander", "Salt", "Pepper"]
+    "ingredients": [
+      "Ground lamb",
+      "Onion",
+      "Parsley",
+      "Cumin",
+      "Coriander",
+      "Salt",
+      "Pepper"
+    ]
   },
   {
     "name": "Karnıyarık",
@@ -1791,7 +2373,15 @@
     "image": "../assets/Meal_Images/Karnıyarık.jpeg",
     "dietaryPreference": ["Gluten free", "Vegetarian"],
     "region": "Turkish",
-    "ingredients": ["Eggplant", "Ground beef", "Tomato", "Pepper", "Onion", "Garlic", "Spices"]
+    "ingredients": [
+      "Eggplant",
+      "Ground beef",
+      "Tomato",
+      "Pepper",
+      "Onion",
+      "Garlic",
+      "Spices"
+    ]
   },
   {
     "name": "Lahmacun",
@@ -1806,7 +2396,15 @@
     "image": "../assets/Meal_Images/Lahmacun.jpeg",
     "dietaryPreference": ["Dairy free"],
     "region": "Turkish",
-    "ingredients": ["Dough", "Ground lamb", "Tomato", "Pepper", "Onion", "Parsley", "Spices"]
+    "ingredients": [
+      "Dough",
+      "Ground lamb",
+      "Tomato",
+      "Pepper",
+      "Onion",
+      "Parsley",
+      "Spices"
+    ]
   },
   {
     "name": "Mantı",
@@ -1821,7 +2419,15 @@
     "image": "../assets/Meal_Images/Mantı.jpeg",
     "dietaryPreference": ["Nut free"],
     "region": "Turkish",
-    "ingredients": ["Dough", "Ground beef", "Onion", "Garlic", "Yogurt", "Mint", "Butter"]
+    "ingredients": [
+      "Dough",
+      "Ground beef",
+      "Onion",
+      "Garlic",
+      "Yogurt",
+      "Mint",
+      "Butter"
+    ]
   },
   {
     "name": "Çılbır",
@@ -1836,7 +2442,15 @@
     "image": "../assets/Meal_Images/Çılbır.jpeg",
     "dietaryPreference": ["Vegetarian", "Gluten free"],
     "region": "Turkish",
-    "ingredients": ["Eggs", "Yogurt", "Garlic", "Butter", "Paprika", "Parsley", "Vinegar"]
+    "ingredients": [
+      "Eggs",
+      "Yogurt",
+      "Garlic",
+      "Butter",
+      "Paprika",
+      "Parsley",
+      "Vinegar"
+    ]
   },
   {
     "name": "Midye Dolma",
@@ -1907,11 +2521,18 @@
     "carbs": 30,
     "sugar": 4,
     "fiber": 3,
-    "sodium": 850, 
+    "sodium": 850,
     "image": "../assets/Meal_Images/Tavuk Şiş.jpeg",
     "dietaryPreference": ["Gluten free"],
     "region": "Turkish",
-    "ingredients": ["Chicken", "Bell peppers", "Onion", "Tomato", "Olive oil", "Spices"]
+    "ingredients": [
+      "Chicken",
+      "Bell peppers",
+      "Onion",
+      "Tomato",
+      "Olive oil",
+      "Spices"
+    ]
   },
   {
     "name": "Kabak Tatlısı",
@@ -1941,7 +2562,14 @@
     "image": "../assets/Meal_Images/Mercimek Köftesi.jpeg",
     "dietaryPreference": ["Vegan", "Gluten free"],
     "region": "Turkish",
-    "ingredients": ["Red lentils", "Bulgur", "Onion", "Tomato paste", "Parsley", "Spices"]
+    "ingredients": [
+      "Red lentils",
+      "Bulgur",
+      "Onion",
+      "Tomato paste",
+      "Parsley",
+      "Spices"
+    ]
   },
   {
     "name": "İmam Bayıldı",
@@ -1951,12 +2579,19 @@
     "fat": 25,
     "carbs": 30,
     "sugar": 5,
-    "fiber": 5, 
+    "fiber": 5,
     "sodium": 600,
     "image": "../assets/Meal_Images/İmam Bayıldı.jpeg",
     "dietaryPreference": ["Vegetarian"],
     "region": "Turkish",
-    "ingredients": ["Eggplant", "Tomato", "Onion", "Garlic", "Olive oil", "Herbs"]
+    "ingredients": [
+      "Eggplant",
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Olive oil",
+      "Herbs"
+    ]
   },
   {
     "name": "Kuru Fasulye",
@@ -1971,7 +2606,14 @@
     "image": "../assets/Meal_Images/Kuru Fasulye Pilavı.jpeg",
     "dietaryPreference": ["Vegan", "Gluten free"],
     "region": "Turkish",
-    "ingredients": ["White beans", "Tomato", "Onion", "Garlic", "Olive oil", "Spices"]
+    "ingredients": [
+      "White beans",
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Olive oil",
+      "Spices"
+    ]
   },
   {
     "name": "Yoğurtlu Kebap",
@@ -1986,7 +2628,14 @@
     "image": "../assets/Meal_Images/Yoğurtlu Kebap.jpeg",
     "dietaryPreference": ["Gluten free"],
     "region": "Turkish",
-    "ingredients": ["Lamb", "Yogurt", "Garlic", "Olive oil", "Spices", "Parsley"]
+    "ingredients": [
+      "Lamb",
+      "Yogurt",
+      "Garlic",
+      "Olive oil",
+      "Spices",
+      "Parsley"
+    ]
   },
   {
     "name": "Kestaneli Pilav",
@@ -2016,7 +2665,15 @@
     "image": "../assets/Meal_Images/Kabak Mücver.jpeg",
     "dietaryPreference": ["Vegetarian", "Gluten free"],
     "region": "Turkish",
-    "ingredients": ["Zucchini", "Egg", "Flour", "Dill", "Mint", "Garlic", "Salt"]
+    "ingredients": [
+      "Zucchini",
+      "Egg",
+      "Flour",
+      "Dill",
+      "Mint",
+      "Garlic",
+      "Salt"
+    ]
   },
   {
     "name": "Börek",
@@ -2061,7 +2718,14 @@
     "image": "../assets/Meal_Images/Kuru Köfte.jpeg",
     "dietaryPreference": ["Gluten free"],
     "region": "Turkish",
-    "ingredients": ["Red lentils", "Bulgur", "Onion", "Garlic", "Parsley", "Spices"]
+    "ingredients": [
+      "Red lentils",
+      "Bulgur",
+      "Onion",
+      "Garlic",
+      "Parsley",
+      "Spices"
+    ]
   },
   {
     "name": "Kuru Fasulye Pilavı",
@@ -2076,12 +2740,19 @@
     "image": "../assets/Meal_Images/Kuru Fasulye Pilavı.jpeg",
     "dietaryPreference": ["Vegan", "Gluten free"],
     "region": "Turkish",
-    "ingredients": ["White beans", "Rice", "Onion", "Tomato", "Pepper", "Spices"]
+    "ingredients": [
+      "White beans",
+      "Rice",
+      "Onion",
+      "Tomato",
+      "Pepper",
+      "Spices"
+    ]
   },
   {
     "name": "Patlıcan Kebabı",
     "calories": 350,
-    "perServing": "4 pieces", 
+    "perServing": "4 pieces",
     "protein": 15,
     "fat": 15,
     "carbs": 25,
@@ -2089,9 +2760,17 @@
     "fiber": 5,
     "sodium": 400,
     "image": "../assets/Meal_Images/Patlıcan Kebabı.jpeg",
-    "dietaryPreference": ["Gluten free", "Vegan"],
+    "dietaryPreference": ["Gluten free", "Vegan", "nonveg"],
     "region": "Turkish",
-    "ingredients": ["Eggplant", "Bell peppers", "Tomato", "Onion", "Garlic", "Olive oil", "Spices"]
+    "ingredients": [
+      "Eggplant",
+      "Bell peppers",
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Olive oil",
+      "Spices"
+    ]
   },
   {
     "name": "Patlıcan Musakka",
@@ -2106,7 +2785,454 @@
     "image": "../assets/Meal_Images/Patlıcan Musakka.jpeg",
     "dietaryPreference": ["Vegetarian"],
     "region": "Turkish",
-    "ingredients": ["Eggplant", "Ground beef", "Tomato", "Onion", "Garlic", "Olive oil", "Spices"]
-  }
+    "ingredients": [
+      "Eggplant",
+      "Ground beef",
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Olive oil",
+      "Spices"
+    ]
+  },
 
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Chicken Biryani",
+    "calories": 550,
+    "perServing": "1 plate",
+    "protein": 25,
+    "fat": 15,
+    "carbs": 60,
+    "sugar": 5,
+    "fiber": 4,
+    "sodium": 800, 
+    "image": "../assets/Meal_Images/Chicken Biryani.jpg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["chicken", "basmati rice", "garam masala", "cumin", "yogurt"]
+  },
+  
+  {
+    "name": "Karahi Gosht",
+    "calories": 600,
+    "perServing": "1 plate",
+    "protein": 30,
+    "fat": 35,
+    "carbs": 20,
+    "sugar": 5,
+    "fiber": 3,
+    "sodium": 500,
+    "image": "../assets/Meal_Images/Karahi Gosht.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["mutton", "tomato", "garlic", "ginger", "coriander", "yogurt"]  
+  },
+  
+  {
+    "name": "Haleem",
+    "calories": 380,
+    "perServing": "1 bowl",
+    "protein": 15,
+    "fat": 12,
+    "carbs": 45,
+    "sugar": 5,
+    "fiber": 4,
+    "sodium": 480,
+    "image": "../assets/Meal_Images/Haleem.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["wheat", "mutton", "lentils", "ginger", "garlic", "chilies"]
+  },
+  
+  {
+    "name": "Seekh Kebab",
+    "calories": 300,
+    "perServing": "5 pieces", 
+    "protein": 15,
+    "fat": 24,
+    "carbs": 5,
+    "sugar": 2,
+    "fiber": 1,
+    "sodium": 400,
+    "image": "../assets/Meal_Images/Seekh Kebab.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["minced lamb", "onion", "garlic", "coriander", "cumin"] 
+  },
+  
+  {
+    "name": "Naan",
+    "calories": 130,
+    "perServing": "1 piece",
+    "protein": 3,
+    "fat": 2,
+    "carbs": 23,
+    "sugar": 0,
+    "fiber": 1,
+    "sodium": 230,
+    "image": "../assets/Meal_Images/Naan.jpeg",
+    "dietaryPreference": ["vegan"],
+    "region": "Pakistani",
+    "ingredients": ["all-purpose flour", "yeast", "milk", "ghee"]
+  },
+  {
+    "name": "Chicken Tikka",
+    "calories": 230,
+    "perServing": "5 pieces",
+    "protein": 25,
+    "fat": 7,
+    "carbs": 5,
+    "sugar": 2,
+    "fiber": 1, 
+    "sodium": 400,
+    "image": "../assets/Meal_Images/Chicken Tikka.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["chicken breast", "yogurt", "garam masala", "paprika", "cumin"]
+  },
+  
+  {
+    "name": "Aloo Gobi",
+    "calories": 210,
+    "perServing": "1 plate",
+    "protein": 5,
+    "fat": 12,
+    "carbs": 15,
+    "sugar": 2,
+    "fiber": 4,
+    "sodium": 340,
+    "image": "../assets/Meal_Images/Aloo Gobi.jpeg",
+    "dietaryPreference": ["vegan"],
+    "region": "Pakistani",
+    "ingredients": ["potato", "cauliflower", "tomato", "garlic", "ginger", "turmeric"]
+  },
+  
+  {
+    "name": "Daal Makhani",
+    "calories": 230,
+    "perServing": "1 bowl",
+    "protein": 15,
+    "fat": 8,
+    "carbs": 20,
+    "sugar": 2,
+    "fiber": 8,
+    "sodium": 480,
+    "image": "../assets/Meal_Images/Daal Makhani.jpeg",
+    "dietaryPreference": ["vegan"],
+    "region": "Pakistani",
+    "ingredients": ["black lentils", "kidney beans", "tomato", "cream", "cumin", "coriander"]
+  },
+  
+  {
+    "name": "Nihari",
+    "calories": 380,
+    "perServing": "1 bowl",
+    "protein": 25,
+    "fat": 24,
+    "carbs": 15,
+    "sugar": 2,
+    "fiber": 1,
+    "sodium": 680,
+    "image": "../assets/Meal_Images/Nihari.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani", 
+    "ingredients": ["beef shank", "wheat flour", "ginger", "garlic", "chili powder"]
+  },
+  
+  {
+    "name": "Chicken Korma",
+    "calories": 510,
+    "perServing": "1 plate",
+    "protein": 32,
+    "fat": 21,
+    "carbs": 25,
+    "sugar": 12,
+    "fiber": 2,
+    "sodium": 480,
+    "image": "../assets/Meal_Images/Chicken Korma.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["chicken", "cream", "cashews", "garam masala", "cumin", "coriander"]
+  },
+  
+  {
+    "name": "Malai Boti",
+    "calories": 550,
+    "perServing": "4 pieces",
+    "protein": 25,
+    "fat": 35,
+    "carbs": 15,
+    "sugar": 8,
+    "fiber": 1,
+    "sodium": 420,
+    "image": "../assets/Meal_Images/Malai Boti.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["lamb cubes", "cream", "cumin", "coriander", "garlic", "ginger"]
+  },
+  {
+    "name": "Paratha",
+    "calories": 300,
+    "perServing": "1 piece",
+    "protein": 8,
+    "fat": 15,
+    "carbs": 30,
+    "sugar": 2,
+    "fiber": 2,
+    "sodium": 400,
+    "image": "../assets/Meal_Images/Paratha.jpeg",
+    "dietaryPreference": ["vegetarian"],
+    "region": "Pakistani",
+    "ingredients": ["whole wheat flour", "ghee", "water"]
+  },
+  
+  {
+    "name": "Qorma",
+    "calories": 380,
+    "perServing": "1 plate",
+    "protein": 12,
+    "fat": 15,
+    "carbs": 35,
+    "sugar": 8,
+    "fiber": 3,
+    "sodium": 480,
+    "image": "../assets/Meal_Images/Qorma.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["chicken", "onion", "yogurt", "garam masala", "ginger", "garlic"]
+  },
+  
+  {
+    "name": "Tandoori Chicken",
+    "calories": 210,
+    "perServing": "2 pieces",
+    "protein": 25,
+    "fat": 7,
+    "carbs": 5,
+    "sugar": 2,
+    "fiber": 0,
+    "sodium": 380,
+    "image": "../assets/Meal_Images/Tandoori Chicken.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["chicken", "yogurt", "tandoori masala", "cumin", "garlic"]
+  },
+  
+  {
+    "name": "Palak Paneer",
+    "calories": 270,
+    "perServing": "1 plate",
+    "protein": 12,
+    "fat": 18,
+    "carbs": 15,
+    "sugar": 8,
+    "fiber": 4,
+    "sodium": 480,
+    "image": "../assets/Meal_Images/Palak Paneer.jpeg",
+    "dietaryPreference": ["vegetarian"],
+    "region": "Pakistani",
+    "ingredients": ["spinach", "paneer", "tomato", "garlic", "ginger", "cumin"]  
+  },
+  
+  {
+    "name": "Chapli Kebab",
+    "calories": 430,
+    "perServing": "4 pieces",
+    "protein": 25,
+    "fat": 25,
+    "carbs": 15,
+    "sugar": 2,
+    "fiber": 1,
+    "sodium": 420,
+    "image": "../assets/Meal_Images/Chapli Kebab.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["minced beef", "onion", "garlic", "coriander", "egg"]
+  },
+  {
+    "name": "Aloo Matar",
+    "calories": 210,
+    "perServing": "1 plate",
+    "protein": 5,
+    "fat": 8,
+    "carbs": 30,
+    "sugar": 6,
+    "fiber": 5,
+    "sodium": 340,
+    "image": "../assets/Meal_Images/Aloo Matar.jpeg",
+    "dietaryPreference": ["vegan"],
+    "region": "Pakistani",
+    "ingredients": ["potatoes", "peas", "tomatoes", "onion", "cumin", "coriander", "turmeric"] 
+  },
+  
+  {
+    "name": "Pulao",
+    "calories": 350,
+    "perServing": "1 plate",
+    "protein": 10,
+    "fat": 8,
+    "carbs": 55,
+    "sugar": 2,
+    "fiber": 2,
+    "sodium": 240,
+    "image": "../assets/Meal_Images/Pulao.jpeg",
+    "dietaryPreference": ["vegan"],
+    "region": "Pakistani",
+    "ingredients": ["basmati rice", "carrots", "peas", "cinnamon", "cloves"]
+  },
+  
+  {
+    "name": "Shami Kebab", 
+    "calories": 230,
+    "perServing": "3 pieces",
+    "protein": 12,
+    "fat": 14,
+    "carbs": 10,
+    "sugar": 2,
+    "fiber": 1,
+    "sodium": 420,
+    "image": "../assets/Meal_Images/Shami Kebab.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["minced beef", "chickpeas", "onion", "garlic", "ginger", "cumin"]
+  },
+  
+  {
+    "name": "Phirni",
+    "calories": 210,
+    "perServing": "1 bowl",
+    "protein": 5,
+    "fat": 4,
+    "carbs": 36,
+    "sugar": 15,
+    "fiber": 0,
+    "sodium": 60,
+    "image": "../assets/Meal_Images/Phirni.jpeg",
+    "dietaryPreference": ["vegetarian"],
+    "region": "Pakistani",
+    "ingredients": ["rice flour", "milk", "sugar", "cardamom", "almonds"]
+  },
+  
+  {
+    "name": "Shawarma",
+    "calories": 600,
+    "perServing": "1 roll",
+    "protein": 25,
+    "fat": 30,
+    "carbs": 50,
+    "sugar": 5,
+    "fiber": 2,
+    "sodium": 820,
+    "image": "../assets/Meal_Images/Shawarma.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["chicken", "pita bread", "lettuce", "tomato", "tahini sauce"]
+  },
+  {
+    "name": "Fruit Chaat",
+    "calories": 120,
+    "perServing": "1 bowl",
+    "protein": 2,
+    "fat": 2,
+    "carbs": 26,
+    "sugar": 20,
+    "fiber": 4,
+    "sodium": 20,
+    "image": "../assets/Meal_Images/Fruit Chaat.jpeg",
+    "dietaryPreference": ["vegan"],
+    "region": "Pakistani",
+    "ingredients": ["mango", "apple", "banana", "chickpeas", "cumin", "chaat masala"]
+  },
+  
+  {
+    "name": "Sajji",
+    "calories": 550, 
+    "perServing": "4 pieces",
+    "protein": 40,
+    "fat": 35,
+    "carbs": 0,
+    "sugar": 0,
+    "fiber": 0,
+    "sodium": 75,
+    "image": "../assets/Meal_Images/Sajji.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["leg of lamb", "salt", "cumin", "garlic", "ginger"]
+  },
+  
+  {
+    "name": "Bun Kebab",
+    "calories": 350,
+    "perServing": "1 roll",
+    "protein": 12,
+    "fat": 15,
+    "carbs": 40,
+    "sugar": 5,
+    "fiber": 2,
+    "sodium": 420,
+    "image": "../assets/Meal_Images/Bun Kebab.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["minced beef", "burger bun", "cumin", "coriander", "mint chutney"]   
+  },
+  
+  {
+    "name": "Katakat",
+    "calories": 400,
+    "perServing": "6 pieces",
+    "protein": 15, 
+    "fat": 25,
+    "carbs": 30,
+    "sugar": 10,
+    "fiber": 2,
+    "sodium": 150,
+    "image": "../assets/Meal_Images/Katakat.jpeg",
+    "dietaryPreference": ["vegetarian"],
+    "region": "Pakistani",
+    "ingredients": ["all-purpose flour", "coconut", "sugar", "ghee", "cardamom"]
+  },
+  
+  {
+    "name": "Gajar Ka Halwa",
+    "calories": 400,
+    "perServing": "1 bowl",
+    "protein": 4,
+    "fat": 15,
+    "carbs": 60,
+    "sugar": 30,
+    "fiber": 5,
+    "sodium": 60,
+    "image": "../assets/Meal_Images/Gajar Ka Halwa.jpeg",
+    "dietaryPreference": ["vegetarian"],
+    "region": "Pakistani",
+    "ingredients": ["carrots", "milk", "sugar", "cashews", "cardamom", "ghee"]
+  },
+  
+  {
+    "name": "Kofta Curry",
+    "calories": 300,
+    "perServing": "1 plate",
+    "protein": 15,
+    "fat": 12,
+    "carbs": 25,
+    "sugar": 8,
+    "fiber": 5, 
+    "sodium": 480,
+    "image": "../assets/Meal_Images/Kofta Curry.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+  }
 ]

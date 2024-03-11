@@ -1,12 +1,24 @@
 <div class="container">
-    <h1>Find a Recipe</h1>
-    <form (ngSubmit)="searchRecipe()">
-      <label for="dishName">Enter Dish Name:</label>
-      <input type="text" id="dishName" name="dishName" [(ngModel)]="dishName" required>
-      <button type="submit">Search</button>
+    <form (ngSubmit)="searchRecipe()" class="px-20 py-6">
+      <div class="field">
+    <span><i class="fa-solid fa-utensils"></i></span>
+     <input type="text" id="dishName" name="dishName" [(ngModel)]="dishName" placeholder="Dish Name"/>
+     </div>
+      <button type="submit" (click)="showLoader()">Search</button>
     </form>
+
+    <div *ngIf="isLoading; else loadedContent" class="justify-center items-center flex w-full gap-6 py-16">
   
-    <div *ngIf="recipe">
+      <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+        <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+      </svg>
+    </div>
+
+  <ng-template #loadedContent>
+    <div *ngIf="recipe" >
       <h2>{{ recipe.title }}</h2>
       <img [src]="recipe.image" alt="{{ recipe.title }}">
   
@@ -57,7 +69,8 @@
           
       </ul>
     </div>
-  
+  </ng-template>
+
     <div *ngIf="errorMessage">
       <p class="error">{{ errorMessage }}</p>
     </div>

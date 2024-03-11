@@ -12,6 +12,7 @@ export class RecipeFinderComponent {
   recipe: any;
   relatedRecipes: any[] = [];
   errorMessage: string = '';
+  isLoading: boolean = false;
 
   constructor(private recipeService: RecipefinderService) {}
 
@@ -55,5 +56,13 @@ export class RecipeFinderComponent {
         this.errorMessage = 'Error fetching recipes';
       }
     );
+  }
+
+  showLoader() {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.searchRecipe()
+      this.isLoading = false;
+    }, 3000);
   }
 }
