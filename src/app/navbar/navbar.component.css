@@ -82,11 +82,11 @@
   top: 40px;
   padding: 10px 0;
   border: 1px solid #ccc;
-  z-index: 1;
   background-color: #e6e7ee;
   border-radius: 12px;
   box-shadow: -3px -3px 7px #ffffff73,
     2px 2px 5px rgba(94, 104, 121, 0.288);
+    z-index: 9999;
 }
 
 .dropdown-menu.show {
@@ -112,7 +112,3 @@ span i{
   font-size: 22px;
 }
 
-.rotate-up {
-  transform: rotate(90deg);
-  transition: transform .2s ease;
-}

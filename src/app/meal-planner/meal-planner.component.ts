@@ -1,15 +1,18 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit,ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Subject, filter, max, takeUntil } from 'rxjs';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { MealPlanService } from '../Services/meal-plan.service';
+import gsap from 'gsap';
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-meal-planner',
   templateUrl: './meal-planner.component.html',
   styleUrl: './meal-planner.component.css',
 })
-export class MealPlannerComponent implements OnInit, OnDestroy {
+export class MealPlannerComponent implements OnInit,AfterViewInit {
   //Initialization
+  @ViewChild('mealForm') mealForm?: ElementRef;
   mealform: FormGroup;
   meals: any[] = [];
   snacks: any[] = [];
@@ -24,9 +27,11 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
   meallabel: string = '';
   showFullContent: boolean[] = [];
   isLoading: boolean = false;
-  private unsubscribe$ = new Subject<void>();
 
-  constructor(private mealService: MealPlanService, private fb: FormBuilder) {
+  constructor(
+    private mealService: MealPlanService,
+    private fb: FormBuilder,
+  ) {
     this.mealform = this.fb.group({
       TotalCalories: [
         ,
@@ -46,23 +51,44 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.mealService
       .getMeals()
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe((data) => {
-        this.meals = data;
-      });
+      .pipe(untilDestroyed(this))
+      .subscribe(
+        (data) => {
+          this.meals = data;
+        },
+        (error) => {
+          console.error('error fetching Meals', error);
+        }
+      );
     this.mealService
       .getSnacks()
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe((data) => {
-        this.snacks = data;
-      });
+      .pipe(untilDestroyed(this))
+      .subscribe(
+        (data) => {
+          this.snacks = data;
+        },
+        (error) => {
+          console.error('error fetching Snacks', error);
+        }
+      );
   }
 
-  ngOnDestroy(): void {
-    this.unsubscribe$.next();
-    this.unsubscribe$.complete();
+  ngAfterViewInit(): void {
+      this.MealFormAnimation()
   }
 
+  MealFormAnimation(): void {
+    gsap.from(this.mealForm?.nativeElement, {
+       y: 50,
+       duration: 1.2,
+       opacity: 0,
+       ease: 'power3.inOut',
+    });
+    
+   
+    
+   }
+   
   //This method allows to wait  for showing the meal plan
   showLoader() {
     this.isLoading = true;
@@ -74,30 +100,25 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
 
   //This method calculates total for all the nutrients and calories of the generated meal plan
   calculateTotals() {
-    this.totalCalories = 0;
-    this.totalProtein = 0;
-    this.TotalFiber = 0;
-    this.TotalSugar = 0;
-    this.totalCarbs = 0;
-    this.totalFat = 0;
+    const totals = {
+      totalCalories: 0,
+      totalProtein: 0,
+      TotalFiber: 0,
+      TotalSugar: 0,
+      totalCarbs: 0,
+      totalFat: 0,
+    };
 
-    for (const meal of this.filteredMeals) {
-      this.totalCalories += meal.calories;
-      this.totalProtein += meal.protein;
-      this.TotalFiber += meal.fiber;
-      this.TotalSugar += meal.sugar;
-      this.totalFat += meal.fat;
-      this.totalCarbs += meal.carbs;
+    for (const item of [...this.filteredMeals, ...this.filteredSnacks]) {
+      totals.totalCalories += item.calories;
+      totals.totalProtein += item.protein;
+      totals.TotalFiber += item.fiber;
+      totals.TotalSugar += item.sugar;
+      totals.totalFat += item.fat;
+      totals.totalCarbs += item.carbs;
     }
 
-    for (const snack of this.filteredSnacks) {
-      this.totalCalories += snack.calories;
-      this.totalProtein += snack.protein;
-      this.TotalFiber += snack.fiber;
-      this.TotalSugar += snack.sugar;
-      this.totalFat += snack.fat;
-      this.totalCarbs += snack.carbs;
-    }
+    Object.assign(this, totals);
   }
 
   //This is the main method for generating the meal plan once the meal form is valid
@@ -122,12 +143,13 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
         filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
       }
       if (region) {
-        if(region === 'none'){
-          this.filteredMeals = this.meals
-        } else{
-          filteredMeals = filteredMeals.filter((meal) => meal.region.includes(region));
+        if (region === 'none') {
+          this.filteredMeals = this.meals;
+        } else {
+          filteredMeals = filteredMeals.filter((meal) =>
+            meal.region.includes(region)
+          );
         }
-        
       }
 
       let filteredSnacks = this.snacks;
@@ -201,36 +223,38 @@ export class MealPlannerComponent implements OnInit, OnDestroy {
   }
   //This filters the meals according to the preference that user have selected in the meal form
   filterMealsByDietaryPreference(preference: string) {
-    if(preference === 'none') {
-      return this.meals
+    if (preference === 'none') {
+      return this.meals;
     } else {
-    return this.meals.filter((meal) =>
-      meal.dietaryPreference.includes(preference)
-    )};
+      return this.meals.filter((meal) =>
+        meal.dietaryPreference.includes(preference)
+      );
+    }
   }
 
   filterMealsByRegion(region: string) {
-    return this.meals.filter((meal) =>
-     meal.region.includes(region)
-    )
+    return this.meals.filter((meal) => meal.region.includes(region));
   }
 
   changeMeals() {
     const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
     const region = this.mealform.get('region')?.value;
-  
+
     this.shuffleArray(this.meals);
     this.shuffleArray(this.snacks);
-  
+
     let filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
     filteredMeals = this.filterMealsByRegion(region);
-    
-    this.filteredMeals = filteredMeals.slice(0, this.mealform.get('numberOfMeals')?.value);
-    this.filteredSnacks = this.snacks.slice(0, this.mealform.get('numberOfSnacks')?.value);
-  
-  
 
-    
+    this.filteredMeals = filteredMeals.slice(
+      0,
+      this.mealform.get('numberOfMeals')?.value
+    );
+    this.filteredSnacks = this.snacks.slice(
+      0,
+      this.mealform.get('numberOfSnacks')?.value
+    );
+
     for (let i = 0; i < this.filteredMeals.length; i++) {
       const meal = this.filteredMeals[i];
 

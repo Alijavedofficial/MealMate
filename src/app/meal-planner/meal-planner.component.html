@@ -1,12 +1,13 @@
-<div class="px-20 py-10">
+<div class="px-20 py-10 max-sm:px-0">
 
   <!--Meal Form for entering calories,meals and user's preference-->
-<form [formGroup]="mealform" class="px-20 py-6" (submit)="generateMealPlan()"  >
-  <div class="py-4 text-center">
-  <h1 class="text-[35px] font-semibold">Stay In Perfect Shape With MealMate</h1>
+<form [formGroup]="mealform" class="px-20 py-6 max-sm:px-3" (submit)="generateMealPlan()">
+  <div>
+  <div class="pt-8 pb-10 text-center">
+  <h1 class="text-[40px] font-semibold max-sm:text-[25px]">Stay In Perfect Shape With MealMate</h1>
   
 </div>
-<div class="grid grid-cols-3 gap-6">
+<div class="grid grid-cols-3 gap-8">
 
   <div class="field">
     <span><i class="fa-solid fa-cookie-bite"></i></span>
@@ -92,8 +93,8 @@
 
 <div class="flex flex-col gap-2 items-start justify-start ">
   
-  <label>Number of Meals:</label>
-  <div class="flex gap-5">
+  <label class="font-medium text-[17px]">Number of Meals:</label>
+  <div class="flex gap-6 py-2">
     <div class="neumorphism-input">
       <input type="radio" id="option2" name="optionm" value="2" formControlName="numberOfMeals" >
       <label for="option2" data-label="2"></label>
@@ -119,8 +120,8 @@
 
 
 <div class="flex flex-col gap-2 items-start justify-start ">
-<label>Number of Snacks:</label>
-<div class="flex gap-5">
+<label class="font-medium text-[17px]">Number of Snacks:</label>
+<div class="flex gap-6 py-2">
   <div class="neumorphism-input">
     <input type="radio" id="option0" name="option" value="0" formControlName="numberOfSnacks" >
     <label for="option0" data-label="0"></label>
@@ -142,6 +143,7 @@
   <button class="p-3 px-5 rounded-lg" (click)="showLoader()" (click)="generateMealPlan()" type="submit">
     Generate Meals
   </button>
+</div>
 </form>
 
 <div *ngIf="isLoading; else loadedContent" class="justify-center items-center flex w-full gap-6 py-16">
@@ -157,7 +159,7 @@
 
 <!--Meal are displayed here depending on user's preference-->
 <ng-template #loadedContent>
-<div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10 max-sm:flex-col">
+<div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10 max-sm:flex-col" >
   <ul class="w-[60%] flex flex-col">
     <li *ngFor="let meal of filteredMeals;let i = index">
        <h3 class="text-[20px] font-semibold">{{ meal.label }}:</h3>
