@@ -27,6 +27,7 @@ import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { environment } from '../environments/environment.prod';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,7 @@ import { environment } from '../environments/environment.prod';
     LoginComponent,
     RecipeFinderComponent,
     NutrientrecipeComponent,
-    TruncatePipe
+    TruncatePipe,
   ],
   imports: [
     BrowserModule,

@@ -1,26 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { Auth, createUserWithEmailAndPassword } from '@angular/fire/auth';
+import { Component} from '@angular/core';
+
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+
+import { Auth, GoogleAuthProvider, signInWithPopup,createUserWithEmailAndPassword } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent{
 
-  loginForm: FormGroup;
+  loginForm!: FormGroup;
 
   constructor(private fb: FormBuilder, public auth: Auth,private router: Router) {
     this.loginForm = this.fb.group({
       email: new FormControl('', Validators.required),
       password: new FormControl('', Validators.required)
     });
-  }
-
-  ngOnInit(): void {
-      
   }
 
   onSubmit() {
@@ -33,5 +31,15 @@ export class LoginComponent implements OnInit{
     });
    
  }
+
+ signInWithGoogle() {
+    signInWithPopup(this.auth, new GoogleAuthProvider())
+    .then((userCredential) => {
+      this.router.navigate(['/planner']);
+    })
+    .catch((error) => {
+      console.error('Google sign-in error:', error);
+    });
+}
 
 }
