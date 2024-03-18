@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mealmate-83eb0": {
+      "hosting": {
+        "mealmate": [
+          "mealmate-83eb0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mealmate-83eb0"
+  }
+}

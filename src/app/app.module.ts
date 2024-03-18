@@ -20,6 +20,11 @@ import { LoginComponent } from './login/login.component';
 import { RecipeFinderComponent } from './recipe-finder/recipe-finder.component';
 import { NutrientrecipeComponent } from './nutrientrecipe/nutrientrecipe.component';
 import { TruncatePipe } from './Pipes/truncate.pipe';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { environment } from '../environments/environment.prod';
 
 
 @NgModule({
@@ -45,7 +50,11 @@ import { TruncatePipe } from './Pipes/truncate.pipe';
     MatInputModule,
     MatSelectModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]
