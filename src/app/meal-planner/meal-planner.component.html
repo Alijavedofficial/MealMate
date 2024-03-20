@@ -1,4 +1,4 @@
-<div class="px-20 py-10 max-sm:px-0">
+<div class="px-20 py-16 max-sm:px-0">
 
   <!--Meal Form for entering calories,meals and user's preference-->
 <form [formGroup]="mealform" class="px-20 py-6 max-sm:px-3" (submit)="generateMealPlan()">
@@ -144,6 +144,7 @@
     Generate Meals
   </button>
 </div>
+
 </form>
 
 <div *ngIf="isLoading; else loadedContent" class="justify-center items-center flex w-full gap-6 py-16">

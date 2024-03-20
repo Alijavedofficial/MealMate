@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import { ArticleService } from '../Services/article.service';
+import { ArticlesService } from '../Services/article.service';
 
 interface Article {
   title: string;
@@ -23,7 +23,7 @@ export class ArticlesComponent implements OnInit {
   articlesPerPage: number = 9;
 
   constructor(
-    private articlesService: ArticleService,
+    private articlesService: ArticlesService,
     private renderer: Renderer2
   ) {}
 

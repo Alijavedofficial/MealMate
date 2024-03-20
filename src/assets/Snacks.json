@@ -133,12 +133,12 @@
   },
   {
       "name": "Hard-boiled Eggs",
-      "calories": 78,
+      "calories": 72,
       "protein": 6.3,
-      "carbs": 0.6,
-      "fat": 5.3,
+      "carbs": 0.4,
+      "fat": 4.8,
       "fiber": 0,
-      "sugar": 0.6,
+      "sugar": 0.2,
       "dietaryPreference": ["vegetarian", "gluten-free", "halal"],
       "servingSize": "50g (1 egg)",
       "image": "../assets/Snack_Images/Hard-boiled Eggs.avif"
@@ -491,18 +491,7 @@
       "servingSize": "46g (1/4 cup)",
       "image": "../assets/Snack_Images/Sunflower Seeds.jpeg"
   },
-  {
-      "name": "Muesli",
-      "calories": 289,
-      "protein": 8,
-      "carbs": 57,
-      "fat": 3,
-      "fiber": 8,
-      "sugar": 14,
-      "dietaryPreference": ["vegetarian", "vegan"],
-      "servingSize": "85g (1/2 cup)",
-      "image": "../assets/Snack_Images/Muesli.jpeg"
-  },
+  
   {
       "name": "Banana Chips",
       "calories": 147,
@@ -727,7 +716,94 @@
     "dietaryPreference": ["vegan"],
     "region": "Pakistani",
     "ingredients": ["gram flour", "potato", "spices"]
+  },
+
+
+  {
+    "name": "Cinnamon Apple Bites",
+    "calories": 190,
+    "servingSize": "5 pieces",
+    "protein": 5,
+    "fat": 12,
+    "carbs": 15,
+    "sugar": 2,
+    "fiber": 2,
+    "sodium": 220,
+    "image": "../assets/Meal_Images/Pakora.jpeg",
+    "dietaryPreference": ["vegan"],
+    "region": "Pakistani",
+    "ingredients": ["gram flour", "potato", "spices"]
+  },
+  {
+    "name": "Microwave Sweet potato",
+    "calories": 112,
+    "servingSize": "1 plate",
+    "protein": 2.0,
+    "fat": 0.1,
+    "carbs": 26.2,
+    "sugar": 5.4,
+    "fiber": 3.9, 
+    "image": "../assets/Meal_Images/Kofta Curry.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Pakistani",
+    "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+  },
+  {
+    "name": "Cucumber and Tomato Toss",
+    "calories": 92,
+    "servingSize": "small plate",
+    "protein": 1.3,
+    "fat": 7,
+    "carbs": 6.4,
+    "sugar": 4.6,
+    "fiber": 1.6, 
+    "image": "../assets/Meal_Images/Kofta Curry.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Global",
+    "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+  },
+  {
+    "name": "Roasted Asparagus",
+    "calories": 69,
+    "servingSize": "small plate",
+    "protein": 2.6,
+    "fat": 5.2,
+    "carbs": 4.7,
+    "sugar": 2.3,
+    "fiber": 1.6, 
+    "image": "../assets/Meal_Images/Kofta Curry.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Global",
+    "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+  },
+  {
+    "name": "Protein Pancakes",
+    "calories": 250,
+    "servingSize": "2 Pancakes",
+    "protein": 13.8,
+    "fat": 10.2,
+    "carbs": 27,
+    "sugar": 14.8,
+    "fiber": 1.6, 
+    "image": "../assets/Meal_Images/Kofta Curry.jpeg",
+    "dietaryPreference": ["nonveg"],
+    "region": "Global",
+    "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+  },
+  {
+    "name": "Phirni",
+    "calories": 210,
+    "servingSize": "1 bowl",
+    "protein": 5,
+    "fat": 4,
+    "carbs": 36,
+    "sugar": 15,
+    "fiber": 0,
+    "sodium": 60,
+    "image": "../assets/Meal_Images/Phirni.jpeg",
+    "dietaryPreference": ["vegetarian"],
+    "region": "Pakistani",
+    "ingredients": ["rice flour", "milk", "sugar", "cardamom", "almonds"]
   }
- 
 
 ]
