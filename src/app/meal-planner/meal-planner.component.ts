@@ -128,99 +128,58 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     const numberOfSnacks = this.mealform.get('numberOfSnacks')?.value;
     const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
     const region = this.mealform.get('region')?.value;
+    
+    if (!totalCalories || !numberOfMeals) {
+      return; // Do nothing if total calories or number of meals is not provided
+    }
+    
     const mealCalories = totalCalories * 0.8;
     const snackCalories = totalCalories * 0.2;
-
-    if (totalCalories && numberOfMeals) {
-      const desiredCaloriesPerMeal = Math.round(mealCalories / numberOfMeals);
-      const desiredCaloriesPerSnack = Math.round(
-        snackCalories / numberOfSnacks
-      );
-
-      let filteredMeals = this.meals;
-
-      if (dietaryPreference) {
-        filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
-      }
-      if (region) {
-        if (region === 'none') {
-          this.filteredMeals = this.meals;
-        } else {
-          filteredMeals = filteredMeals.filter((meal) =>
-            meal.region.includes(region)
-          );
-        }
-      }
-
-      let filteredSnacks = this.snacks;
-
-      const sortedMeals = filteredMeals.slice().sort((meal1, meal2) => {
-        const diff1 = Math.abs(meal1.calories - desiredCaloriesPerMeal);
-        const diff2 = Math.abs(meal2.calories - desiredCaloriesPerMeal);
-        return diff1 - diff2;
-      });
-
-      const sortedSnacks = filteredSnacks.slice().sort((snack1, snack2) => {
-        const diff1 = Math.abs(snack1.calories - desiredCaloriesPerSnack);
-        const diff2 = Math.abs(snack2.calories - desiredCaloriesPerSnack);
-        return diff1 - diff2;
-      });
-
-      let selectedMeals: any[] = [];
-
-      let selectedSnacks: any[] = [];
-      let totalSelectedCalories = 0;
-
-      for (const meal of sortedMeals) {
-        if (selectedMeals.length < numberOfMeals) {
-          selectedMeals.push(meal);
-          totalSelectedCalories += meal.calories;
-        } else {
-          break;
-        }
-      }
-
-      for (const snack of sortedSnacks) {
-        if (selectedSnacks.length < numberOfSnacks) {
-          selectedSnacks.push(snack);
-          totalSelectedCalories += snack.calories;
-        } else {
-          break;
-        }
-      }
-      for (let i = 0; i < selectedMeals.length; i++) {
-        const meal = selectedMeals[i];
-
-        if (i === 0) {
-          meal.label = 'Breakfast';
-        } else if (i === 1) {
-          meal.label = 'Lunch';
-        } else if (i === 2) {
-          meal.label = 'Dinner';
-        } else if (i === 3) {
-          meal.label = 'Supper';
-        } else {
-          meal.label = 'Meal ' + (i + 1);
-        }
-      }
-
-      for (let i = 0; i < selectedSnacks.length; i++) {
-        const snack = selectedSnacks[i];
-
-        if (i === 0) {
-          snack.label = 'Nibbles';
-        } else if (i === 1) {
-          snack.label = 'Munch';
-        } else {
-          snack.label = 'Snack 3';
-        }
-      }
-
-      this.filteredMeals = selectedMeals;
-      this.filteredSnacks = selectedSnacks;
-      this.calculateTotals();
+    
+    const desiredCaloriesPerMeal = Math.round(mealCalories / numberOfMeals);
+    const desiredCaloriesPerSnack = Math.round(snackCalories / numberOfSnacks);
+    
+    let filteredMeals = this.meals;
+    
+    if (dietaryPreference && dietaryPreference !== 'none') {
+      filteredMeals = filteredMeals.filter((meal) => meal.dietaryPreference.includes(dietaryPreference))
     }
+    
+    if (region && region !== 'none') {
+      filteredMeals = filteredMeals.filter((meal) => meal.region.includes(region));
+    }
+    
+    const sortedMeals = this.sortByCaloriesDifference(filteredMeals, desiredCaloriesPerMeal);
+    const sortedSnacks = this.sortByCaloriesDifference(this.snacks, desiredCaloriesPerSnack);
+    
+    const selectedMeals = this.selectItems(sortedMeals, numberOfMeals);
+    const selectedSnacks = this.selectItems(sortedSnacks, numberOfSnacks);
+    
+    this.filteredMeals = this.labelItems(selectedMeals, 'Meal');
+    this.filteredSnacks = this.labelItems(selectedSnacks, 'Snack');
+    
+    this.calculateTotals();
   }
+  
+  private sortByCaloriesDifference(items: any[], desiredCalories: number): any[] {
+    return items.slice().sort((item1, item2) => {
+      const diff1 = Math.abs(item1.calories - desiredCalories);
+      const diff2 = Math.abs(item2.calories - desiredCalories);
+      return diff1 - diff2;
+    });
+  }
+  
+  private selectItems(items: any[], count: number): any[] {
+    return items.slice(0, count);
+  }
+  
+  private labelItems(items: any[], prefix: string): any[] {
+    return items.map((item, index) => {
+      item.label = index === 0 ? `${prefix} 1` : `${prefix} ${index + 1}`;
+      return item;
+    });
+  }
+  
   //This filters the meals according to the preference that user have selected in the meal form
   filterMealsByDietaryPreference(preference: string) {
     if (preference === 'none') {
@@ -236,68 +195,6 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     return this.meals.filter((meal) => meal.region.includes(region));
   }
 
-  changeMeals() {
-    const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
-    const region = this.mealform.get('region')?.value;
-
-    this.shuffleArray(this.meals);
-    this.shuffleArray(this.snacks);
-
-    let filteredMeals = this.filterMealsByDietaryPreference(dietaryPreference);
-    filteredMeals = this.filterMealsByRegion(region);
-
-    this.filteredMeals = filteredMeals.slice(
-      0,
-      this.mealform.get('numberOfMeals')?.value
-    );
-    this.filteredSnacks = this.snacks.slice(
-      0,
-      this.mealform.get('numberOfSnacks')?.value
-    );
-
-    for (let i = 0; i < this.filteredMeals.length; i++) {
-      const meal = this.filteredMeals[i];
-
-      if (i === 0) {
-        meal.label = 'Breakfast';
-      } else if (i === 1) {
-        meal.label = 'Lunch';
-      } else if (i === 2) {
-        meal.label = 'Dinner';
-      } else if (i === 3) {
-        meal.label = 'Supper';
-      } else {
-        meal.label = 'Meal ' + (i + 1);
-      }
-    }
-    for (let i = 0; i < this.filteredSnacks.length; i++) {
-      const snack = this.filteredSnacks[i];
-
-      if (i === 0) {
-        snack.label = 'Nibbles';
-      } else if (i === 1) {
-        snack.label = 'Munch';
-      } else {
-        snack.label = 'Snack 3';
-      }
-    }
-    this.calculateTotals();
-  }
-
-  shuffleArray(array: any[]) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }
-
-  showLoader2() {
-    this.isLoading = true;
-    setTimeout(() => {
-      this.changeMeals();
-      this.isLoading = false;
-    }, 3000);
-  }
 
   toggleContent(index: number): void {
     this.showFullContent[index] = !this.showFullContent[index];
