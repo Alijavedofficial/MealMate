@@ -19,6 +19,9 @@ export class LoginComponent{
     });
   }
 
+  
+
+
   onSubmit() {
    createUserWithEmailAndPassword(this.auth, this.loginForm.value.email, this.loginForm.value.password)
    .then((response: any) => {

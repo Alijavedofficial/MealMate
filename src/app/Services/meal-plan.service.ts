@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MealPlanService {
-  private MealapiUrl = '../../assets/meals.json'; 
+  private MealapiUrl = '../../assets/foods.json'; 
   private SnackapiUrl = '../../assets/Snacks.json'
 
   constructor(private http: HttpClient) { }

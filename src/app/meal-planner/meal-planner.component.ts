@@ -95,7 +95,7 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     setTimeout(() => {
       this.generateMealPlan();
       this.isLoading = false;
-    }, 3000);
+    }, 1000);
   }
 
   //This method calculates total for all the nutrients and calories of the generated meal plan
@@ -121,11 +121,9 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     Object.assign(this, totals);
   }
 
-  //This is the main method for generating the meal plan once the meal form is valid
   generateMealPlan() {
     const totalCalories = this.mealform.get('TotalCalories')?.value;
     const numberOfMeals = this.mealform.get('numberOfMeals')?.value;
-    const numberOfSnacks = this.mealform.get('numberOfSnacks')?.value;
     const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
     const region = this.mealform.get('region')?.value;
     
@@ -133,11 +131,8 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
       return; // Do nothing if total calories or number of meals is not provided
     }
     
-    const mealCalories = totalCalories * 0.8;
-    const snackCalories = totalCalories * 0.2;
-    
+    const mealCalories = totalCalories * 0.9;
     const desiredCaloriesPerMeal = Math.round(mealCalories / numberOfMeals);
-    const desiredCaloriesPerSnack = Math.round(snackCalories / numberOfSnacks);
     
     let filteredMeals = this.meals;
     
@@ -150,13 +145,10 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     }
     
     const sortedMeals = this.sortByCaloriesDifference(filteredMeals, desiredCaloriesPerMeal);
-    const sortedSnacks = this.sortByCaloriesDifference(this.snacks, desiredCaloriesPerSnack);
     
     const selectedMeals = this.selectItems(sortedMeals, numberOfMeals);
-    const selectedSnacks = this.selectItems(sortedSnacks, numberOfSnacks);
     
     this.filteredMeals = this.labelItems(selectedMeals, 'Meal');
-    this.filteredSnacks = this.labelItems(selectedSnacks, 'Snack');
     
     this.calculateTotals();
   }
@@ -173,30 +165,11 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     return items.slice(0, count);
   }
   
-  private labelItems(items: any[], prefix: string): any[] {
-    return items.map((item, index) => {
-      item.label = index === 0 ? `${prefix} 1` : `${prefix} ${index + 1}`;
-      return item;
+  private labelItems(meals: any[], prefix: string): any[] {
+    return meals.map((meal, index) => {
+      meal.label = `${prefix} ${index + 1}`;
+      return meal;
     });
   }
-  
-  //This filters the meals according to the preference that user have selected in the meal form
-  filterMealsByDietaryPreference(preference: string) {
-    if (preference === 'none') {
-      return this.meals;
-    } else {
-      return this.meals.filter((meal) =>
-        meal.dietaryPreference.includes(preference)
-      );
-    }
-  }
 
-  filterMealsByRegion(region: string) {
-    return this.meals.filter((meal) => meal.region.includes(region));
-  }
-
-
-  toggleContent(index: number): void {
-    this.showFullContent[index] = !this.showFullContent[index];
-  }
 }

@@ -24,19 +24,11 @@
   <select formControlName="dietaryPreference"> 
     <option value="" disabled selected>Select Preference</option>
     <option value="none">None</option>
-    <option value="Soy free">Soy free</option>
-    <option value="Dairy free">Dairy free</option>
     <option value="Vegetarian">Vegetarian</option>
     <option value="Vegan">Vegan</option>
-    <option value="nonveg">Non Vegetarian</option>
-    <option value="Gluten free">Gluten free</option>
-    <option value="Kosher">Kosher</option>
-    <option value="Nut free">Nut free</option>
-    <option value="Keto">Keto</option>
-    <option value="Low-Carb">Low-Carb</option>
-    <option value="Flexitarian">Flexitarian</option>
+    <option value="Mediterranean">Mediterranean</option>
+    <option value="Keto">Keto</option>   
     <option value="Paleo">Paleo</option>
-    <option value="Pescetarian">Pescetarian</option>
     
   </select> 
   <div
@@ -62,7 +54,7 @@
     <option value="none">None</option>
     <option value="Global">Global</option>
     <option value="Pakistani">Pakistani</option>
-    <option value="Mediterranean">Mediterranean</option>
+    
     <option value="Asian">Asian</option>
     <option value="Thai">Thai</option>
     <option value="Spanish">Spanish</option>
@@ -160,6 +152,60 @@
 
 <!--Meal are displayed here depending on user's preference-->
 <ng-template #loadedContent>
+<div class="flex justify-between gap-10 max-sm:flex-col mt-20 items-center" *ngIf="filteredMeals.length > 1">
+  <div class="w-full max-sm:w-full">
+    <div *ngFor="let meal of filteredMeals" class="meals mb-5">
+      <div class="px-4 py-2">
+      <h1>Breakfast</h1>
+      <h3>{{ meal.totalcal }} kcal</h3>
+      <ul>
+        <li *ngFor="let food of meal.foods">
+        <div class="flex gap-4 mb-5">
+          <img [src]="food.image" class="rounded-xl w-[50px] h-[50px] object-cover">
+          <div class="">
+          <span>{{ food.name }}</span><br>
+          <span>{{ food.perServing }}</span>
+          </div>
+        </div>
+        </li>
+      </ul>
+     </div>
+    </div>
+  </div>
+
+
+  <div class="flex flex-col w-[40%]">
+    <h1 class="text-[#000000] text-[1.5rem] font-semibold pb-4">Total Nutrition Value</h1>
+    <div class="total-table">
+      <div class="Total-vals">
+        <h2>Total Calories</h2>
+        <span>{{totalCalories}} Kcal</span>
+      </div>
+      <div class="Total-vals">
+        <h2>Total Protein</h2>
+        <span>{{totalProtein}} g</span>
+      </div>
+      <div class="Total-vals">
+        <h2>Total Carbs</h2>
+        <span>{{totalCarbs}} g</span>
+      </div>
+      <div class="Total-vals">
+        <h2>Total Fat</h2>
+        <span>{{totalFat}} g</span>
+      </div>
+      <div class="Total-vals">
+        <h2>Total Sugar</h2>
+        <span>{{TotalSugar}} g</span>
+      </div>
+      <div class="Total-vals">
+        <h2>Total Fiber</h2>
+        <span>{{TotalFiber}} g</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</ng-template>
+  <!--
 <div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10 max-sm:flex-col" >
   <ul class="w-[60%] flex flex-col">
     <li *ngFor="let meal of filteredMeals;let i = index">
@@ -248,37 +294,9 @@
   </div>
     </li>  
   </ul>
-  <div class="flex flex-col w-[30%]">
-  <h1 class="text-[#000000] text-[1.5rem] font-semibold pb-4">Total Nutrition Value</h1>
-  <div class="total-table">
-    <div class="Total-vals">
-      <h2>Total Calories</h2>
-      <span>{{totalCalories}} Kcal</span>
-    </div>
-    <div class="Total-vals">
-      <h2>Total Protein</h2>
-      <span>{{totalProtein}} g</span>
-    </div>
-    <div class="Total-vals">
-      <h2>Total Carbs</h2>
-      <span>{{totalCarbs}} g</span>
-    </div>
-    <div class="Total-vals">
-      <h2>Total Fat</h2>
-      <span>{{totalFat}} g</span>
-    </div>
-    <div class="Total-vals">
-      <h2>Total Sugar</h2>
-      <span>{{TotalSugar}} g</span>
-    </div>
-    <div class="Total-vals">
-      <h2>Total Fiber</h2>
-      <span>{{TotalFiber}} g</span>
-    </div>
-  </div>
-</div>
-</div>
-</ng-template>
+  
+</div>-->
+
 
 
 

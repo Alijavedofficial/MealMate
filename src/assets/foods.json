@@ -1,0 +1,2420 @@
+[
+{
+    "totalcal": 473,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Basic Scrambled eggs",
+        "calories": 273,
+        "perServing": "1 plate",
+        "protein": 19.5,
+        "fat": 20.2,
+        "carbs": 2.4,
+        "sugar": 0.6,
+        "fiber": 0.2, 
+        "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Simple Bread",
+        "calories": 164,
+        "perServing": "2 Slices",
+        "protein": 5.4,
+        "fat": 0.9,
+        "carbs": 28.6,
+        "sugar": 1.2,
+        "fiber": 3.2,
+        "ingredients": ["flour","salt","yeast","water","eggs","sugar"],
+        "image": "../assets/Meal_Images/Simple Bread.jpeg"
+      }
+    ]
+  },
+  {
+    
+    "totalcal": 416,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Simple Spinach Scramble",
+        "calories": 252,
+        "perServing": "1 plate",
+        "protein": 14.1,
+        "fat": 18.7,
+        "carbs": 6.8,
+        "sugar": 3.0,
+        "fiber": 1.8, 
+        "image": "../assets/Meal_Images/Simple Spinach Scramble.jpg",
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Simple Bread",
+        "calories": 164,
+        "perServing": "2 Slices",
+        "protein": 5.4,
+        "fat": 0.9,
+        "carbs": 28.6,
+        "sugar": 1.2,
+        "fiber": 3.2,
+        "ingredients": ["flour","salt","yeast","water","eggs","sugar"],
+        "image": "../assets/Meal_Images/Simple Bread.jpeg"
+      }
+    ]
+  },
+  {
+    
+    "totalcal": 816,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Egg White Spinach Omelet",
+        "calories": 368,
+        "perServing": "2 Omlete",
+        "protein": 32,
+        "fat": 24,
+        "carbs": 6,
+        "sugar": 1.7,
+        "fiber": 1, 
+        "image": "../assets/Breakfast_Images/Egg White Spinach Omelet.jpeg",
+        "price": 1.57,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Almond Butter Banana Toast",
+        "calories": 448,
+        "perServing": "1 Serving",
+        "protein": 12,
+        "fat": 19,
+        "carbs": 67,
+        "sugar": 34,
+        "fiber": 12,
+        "price": 1.12,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Almond Butter Banana Toast.jpg"
+      }
+    ]
+  },
+  {
+    "totalcal": 809,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Pumpkin Pie Spiced Waffles",
+        "calories": 549,
+        "perServing": "1 Serving",
+        "protein": 27,
+        "fat": 38,
+        "carbs": 25,
+        "sugar": 4.7,
+        "fiber": 10, 
+        "image": "../assets/Breakfast_Images/Pumpkin Pie Spiced Waffles.jpeg",
+        "price": 1.63,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Yogurt with Walnuts & Honey",
+        "calories": 260,
+        "perServing": "1 Serving",
+        "protein": 28,
+        "fat": 10,
+        "carbs": 16,
+        "sugar": 14,
+        "fiber": 1,
+        "price": 2.47,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Yogurt with Walnuts & Honey.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 818,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Banana Peanut Butter Chia Pudding",
+        "calories": 333,
+        "perServing": "1 Serving",
+        "protein": 13,
+        "fat": 21,
+        "carbs": 28,
+        "sugar": 14.7,
+        "fiber": 7, 
+        "image": "../assets/Breakfast_Images/Banana Peanut Butter Chia Pudding.jpg",
+        "price": 0.54,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Vanilla Walnut Blueberry Yogurt",
+        "calories": 485,
+        "perServing": "6 oz",
+        "protein": 21,
+        "fat": 34,
+        "carbs": 25,
+        "sugar": 13.7,
+        "fiber": 4,
+        "price": 3.32,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Vanilla Walnut Blueberry Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 820,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Basic Egg White Omelet",
+        "calories": 171,
+        "perServing": "1 Serving",
+        "protein": 15,
+        "fat": 12,
+        "carbs": 1,
+        "sugar": 1,
+        "fiber": 0, 
+        "image": "../assets/Breakfast_Images/Basic Egg White Omelet.jpg",
+        "price": 0.59,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Blueberry Vanilla Coconut Smoothie",
+        "calories": 649,
+        "perServing": "1 Serving",
+        "protein": 16,
+        "fat": 53,
+        "carbs": 33,
+        "sugar": 22.9,
+        "fiber": 8,
+        "price": 2.78,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Blueberry Vanilla Coconut Smoothie.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 812,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Morning Omelet",
+        "calories": 404,
+        "perServing": "1 Serving",
+        "protein": 23,
+        "fat": 31,
+        "carbs": 8,
+        "sugar": 3.2,
+        "fiber": 2, 
+        "image": "../assets/Breakfast_Images/Morning Omelet.jpeg",
+        "price": 1.10,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Chocolate Coconut Protein Shake",
+        "calories": 408,
+        "perServing": "1 Shake",
+        "protein": 28,
+        "fat": 30,
+        "carbs": 13,
+        "sugar": 4.1,
+        "fiber": 5,
+        "price": 1.17,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Chocolate Coconut Protein Shake.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 815,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Scrambled Eggs, Avocado, and Smoked Salmon on Toast",
+        "calories": 556,
+        "perServing": "1 Serving",
+        "protein": 29,
+        "fat": 40,
+        "carbs": 23,
+        "sugar": 3.6,
+        "fiber": 8, 
+        "image": "../assets/Breakfast_Images/Scrambled Eggs, Avocado, and Smoked Salmon on Toast.jpeg",
+        "price": 2.14,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Yogurt with Walnuts & Honey",
+        "calories": 260,
+        "perServing": "1 Serving",
+        "protein": 28,
+        "fat": 10,
+        "carbs": 16,
+        "sugar": 14,
+        "fiber": 1,
+        "price": 2.47,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Yogurt with Walnuts & Honey.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 807,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Sticky Bun Chia Seed Pudding",
+        "calories": 322,
+        "perServing": "1 Serving",
+        "protein": 7,
+        "fat": 24,
+        "carbs": 22,
+        "sugar": 4.8,
+        "fiber": 11, 
+        "image": "../assets/Breakfast_Images/Sticky Bun Chia Seed Pudding.jpeg",
+        "price": 1.39,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Vanilla Walnut Blueberry Yogurt",
+        "calories": 485,
+        "perServing": "6 oz",
+        "protein": 21,
+        "fat": 34,
+        "carbs": 25,
+        "sugar": 13.7,
+        "fiber": 4,
+        "price": 3.32,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Vanilla Walnut Blueberry Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 815,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Salmon and Cream Cheese on Toast",
+        "calories": 199,
+        "perServing": "1 Serving",
+        "protein": 12,
+        "fat": 8,
+        "carbs": 20,
+        "sugar": 3.2,
+        "fiber": 4, 
+        "image": "../assets/Breakfast_Images/Salmon and Cream Cheese on Toast.jpeg",
+        "price": 0.84,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Strawberry Vanilla Coconut Smoothie",
+        "calories": 616,
+        "perServing": "1 Serving",
+        "protein": 16,
+        "fat": 53,
+        "carbs": 25,
+        "sugar": 17,
+        "fiber": 6,
+        "price": 2.52,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Strawberry Vanilla Coconut Smoothie.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 819,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Emmental Cheese, Tomato, and Arugula Omelet",
+        "calories": 334,
+        "perServing": "1 Serving",
+        "protein": 31,
+        "fat": 20,
+        "carbs": 7,
+        "sugar": 1.8,
+        "fiber": 2, 
+        "image": "../assets/Breakfast_Images/Emmental Cheese, Tomato, and Arugula Omelet.jpg",
+        "price": 1.23,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Vanilla Walnut Blueberry Yogurt",
+        "calories": 485,
+        "perServing": "6 oz",
+        "protein": 21,
+        "fat": 34,
+        "carbs": 25,
+        "sugar": 13.7,
+        "fiber": 4,
+        "price": 3.32,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Vanilla Walnut Blueberry Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 812,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Tuna Melt Omelet",
+        "calories": 649,
+        "perServing": "1 Serving",
+        "protein": 56,
+        "fat": 44,
+        "carbs": 6,
+        "sugar": 2.5,
+        "fiber": 1, 
+        "image": "../assets/Breakfast_Images/Tuna Melt Omelet.jpeg",
+        "price": 1.53,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Yogurt & Banana Chips",
+        "calories": 163,
+        "perServing": "1 Serving",
+        "protein": 23,
+        "fat": 3,
+        "carbs": 11,
+        "sugar": 9.3,
+        "fiber": 0,
+        "price": 2.00,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Yogurt & Banana Chips.jpg"
+      }
+    ]
+  },
+  {
+    "totalcal": 810,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Breakfast Burrito",
+        "calories": 402,
+        "perServing": "1 Serving",
+        "protein": 31,
+        "fat": 15,
+        "carbs": 34,
+        "sugar": 5.4,
+        "fiber": 4, 
+        "image": "../assets/Breakfast_Images/Breakfast Burrito.jpeg",
+        "price": 1.42,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Chocolate Coconut Protein Shake",
+        "calories": 408,
+        "perServing": "1 Shake",
+        "protein": 28,
+        "fat": 30,
+        "carbs": 13,
+        "sugar": 4.1,
+        "fiber": 5,
+        "price": 1.17,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Chocolate Coconut Protein Shake.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 811,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Blueberry and Sunflower Seed Steel Cut Oatmeal",
+        "calories": 443,
+        "perServing": "1 Serving",
+        "protein": 35,
+        "fat": 18,
+        "carbs": 39,
+        "sugar": 2.1,
+        "fiber": 7, 
+        "image": "../assets/Breakfast_Images/Blueberry and Sunflower Seed Steel Cut Oatmeal.jpg",
+        "price": 0.87,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Chocolate Avocado Smoothie",
+        "calories": 368,
+        "perServing": "1 Serving",
+        "protein": 31,
+        "fat": 21,
+        "carbs": 17,
+        "sugar": 1.2,
+        "fiber":10,
+        "price": 1.49,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Chocolate Avocado Smoothie.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 818,
+    "dietaryPreference": ["Mediterranean"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Peach Raspberry Smoothie",
+        "calories": 333,
+        "perServing": "1 Serving",
+        "protein": 16,
+        "fat": 18,
+        "carbs": 28,
+        "sugar": 15.4,
+        "fiber": 6, 
+        "image": "../assets/Breakfast_Images/Peach Raspberry Smoothie.jpeg",
+        "price": 2.75,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Vanilla Walnut Blueberry Yogurt",
+        "calories": 485,
+        "perServing": "6 oz",
+        "protein": 21,
+        "fat": 34,
+        "carbs": 25,
+        "sugar": 13.7,
+        "fiber": 4,
+        "price": 3.32,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Vanilla Walnut Blueberry Yogurt.jpeg"
+      }
+    ]
+  },
+
+
+
+  {
+    "totalcal": 830,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Orange-Vanilla Protein Smoothie",
+        "calories": 390,
+        "perServing": "1 Serving",
+        "protein": 16,
+        "fat": 2,
+        "carbs": 58,
+        "sugar": 45.2,
+        "fiber": 1, 
+        "image": "../assets/Breakfast_Images/Orange-Vanilla Protein Smoothie.jpg",
+        "price": 1.24,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Protein-boosted Yogurt",
+        "calories": 440,
+        "perServing": "1 Serving",
+        "protein": 43,
+        "fat": 24,
+        "carbs": 11,
+        "sugar": 0,
+        "fiber": 0,
+        "price": 2.49,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 822,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Sausage and Egg White Scramble",
+        "calories": 337,
+        "perServing": "1 Serving",
+        "protein": 28,
+        "fat": 22,
+        "carbs": 6,
+        "sugar": 2.4,
+        "fiber": 0, 
+        "image": "../assets/Breakfast_Images/Sausage and Egg White Scramble.jpeg",
+        "price": 1.21,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Vanilla Walnut Blueberry Yogurt",
+        "calories": 485,
+        "perServing": "6 oz",
+        "protein": 21,
+        "fat": 34,
+        "carbs": 25,
+        "sugar": 13.7,
+        "fiber": 4,
+        "price": 3.32,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Vanilla Walnut Blueberry Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 827,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Sausage, Egg, and Cheese Scramble",
+        "calories": 560,
+        "perServing": "1 Serving",
+        "protein": 13,
+        "fat": 39,
+        "carbs": 32,
+        "sugar": 18.3,
+        "fiber": 7, 
+        "image": "../assets/Breakfast_Images/Sausage and Egg White Scramble.jpeg",
+        "price": 2.76,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Orange Dream Protein Smoothie",
+        "calories": 267,
+        "perServing": "1 Serving",
+        "protein": 26,
+        "fat": 3,
+        "carbs": 29,
+        "sugar": 16.9,
+        "fiber": 1,
+        "price": 1.22,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Orange Dream Protein Smoothie.jpg"
+      }
+    ]
+  },
+  {
+    "totalcal": 820,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Scrambled Eggs with Chorizo",
+        "calories": 592,
+        "perServing": "1 Serving",
+        "protein": 25,
+        "fat": 51,
+        "carbs": 7,
+        "sugar": 3.5,
+        "fiber": 1, 
+        "image": "../assets/Breakfast_Images/Scrambled Eggs with Chorizo.jpeg",
+        "price": 1.17,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cinnamon Honey Cottage Cheese",
+        "calories": 228,
+        "perServing": "1 Serving",
+        "protein": 28,
+        "fat": 2,
+        "carbs": 24,
+        "sugar": 23.4,
+        "fiber": 0,
+        "price": 1.11,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Cinnamon Honey Cottage Cheese.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 808,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Eggs, Cheese, Turkey Sausage Omelet",
+        "calories": 368,
+        "perServing": "1 Serving",
+        "protein": 32,
+        "fat": 25,
+        "carbs": 2,
+        "sugar": 1,
+        "fiber": 0, 
+        "image": "../assets/Breakfast_Images/Eggs, Cheese, Turkey Sausage Omelet.jpeg",
+        "price": 1.03,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Protein-boosted Yogurt",
+        "calories": 440,
+        "perServing": "1 Serving",
+        "protein": 43,
+        "fat": 24,
+        "carbs": 11,
+        "sugar": 0,
+        "fiber": 0,
+        "price": 2.49,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 830,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Oregano Eggs",
+        "calories": 241,
+        "perServing": "1 Serving",
+        "protein": 16,
+        "fat": 19,
+        "carbs": 2,
+        "sugar": 0.4,
+        "fiber": 0, 
+        "image": "../assets/Breakfast_Images/Oregano Eggs.jpeg",
+        "price": 0.45,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Coconut, Apple, Cinnamon Smoothie",
+        "calories":558,
+        "perServing": "1 Serving",
+        "protein": 6,
+        "fat": 51,
+        "carbs": 29,
+        "sugar": 19,
+        "fiber": 9,
+        "price": 1.31,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Coconut, Apple, Cinnamon Smoothie.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 819,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Avocado Egg Stack",
+        "calories": 521,
+        "perServing": "1 Serving",
+        "protein": 11,
+        "fat": 48,
+        "carbs": 4,
+        "sugar": 1.5,
+        "fiber": 13, 
+        "image": "../assets/Breakfast_Images/Avocado Egg Stack.jpeg",
+        "price": 1.74,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Apple, Melon, and Greens Smoothie",
+        "calories":298,
+        "perServing": "1 Serving",
+        "protein": 9,
+        "fat": 5,
+        "carbs": 54,
+        "sugar": 48.2,
+        "fiber": 8,
+        "price": 3.32,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Apple, Melon, and Greens Smoothie.jpg"
+      }
+    ]
+  },
+  {
+    "totalcal": 819,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Cheesy Scrambled Eggs",
+        "calories": 380,
+        "perServing": "1 Serving",
+        "protein": 26,
+        "fat": 27,
+        "carbs": 6,
+        "sugar": 3.6,
+        "fiber": 1, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs.jpg",
+        "price": 0.89,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Protein-boosted Yogurt",
+        "calories": 440,
+        "perServing": "1 Serving",
+        "protein": 43,
+        "fat": 24,
+        "carbs": 11,
+        "sugar": 0,
+        "fiber": 0,
+        "price": 2.49,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 821,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Garlic Egg Omelet",
+        "calories": 336,
+        "perServing": "1 Serving",
+        "protein": 19,
+        "fat": 28,
+        "carbs":2,
+        "sugar": 0.6,
+        "fiber": 0, 
+        "image": "../assets/Breakfast_Images/Garlic Egg Omelet.jpeg",
+        "price": 0.66,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Vanilla Walnut Blueberry Yogurt",
+        "calories": 485,
+        "perServing": "6 oz",
+        "protein": 21,
+        "fat": 34,
+        "carbs": 25,
+        "sugar": 13.7,
+        "fiber": 4,
+        "price": 3.32,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Vanilla Walnut Blueberry Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 829,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Canadian Bacon and Avocado Omelet",
+        "calories": 390,
+        "perServing": "1 Serving",
+        "protein": 21,
+        "fat": 31,
+        "carbs": 4,
+        "sugar": 3.1,
+        "fiber": 5, 
+        "image": "../assets/Breakfast_Images/Peach Raspberry Smoothie.jpeg",
+        "price": 1.20,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Protein-boosted Yogurt",
+        "calories": 440,
+        "perServing": "1 Serving",
+        "protein": 43,
+        "fat": 24,
+        "carbs": 11,
+        "sugar": 0,
+        "fiber": 0,
+        "price": 2.49,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 830,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Kale and Egg Cups",
+        "calories": 236,
+        "perServing": "1 Serving",
+        "protein": 16,
+        "fat": 16,
+        "carbs": 6,
+        "sugar": 0.4,
+        "fiber": 1, 
+        "image": "../assets/Breakfast_Images/Kale and Egg Cups.jpeg",
+        "price": 0.69,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cherry Berry Protein Smoothie",
+        "calories": 594,
+        "perServing": "1 Serving",
+        "protein": 41,
+        "fat": 24,
+        "carbs": 45,
+        "sugar": 38.8,
+        "fiber": 15,
+        "price": 3.51,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Cherry Berry Protein Smoothie.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 817,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Eggs, Cheese, and Bacon Omelet",
+        "calories": 378,
+        "perServing": "1 Serving",
+        "protein": 30,
+        "fat": 27,
+        "carbs": 2,
+        "sugar": 1.5,
+        "fiber": 0, 
+        "image": "../assets/Breakfast_Images/925744_tabitharwheeler_ebec9aa8-1bcd-429b-af1e-e18cda9078f5.jpg",
+        "price": 1.10,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Protein-boosted Yogurt",
+        "calories": 440,
+        "perServing": "1 Serving",
+        "protein": 43,
+        "fat": 24,
+        "carbs": 11,
+        "sugar": 0,
+        "fiber": 0,
+        "price": 2.49,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 823,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Gouda & Green Onion Omelet",
+        "calories": 729,
+        "perServing": "1 Serving",
+        "protein": 41,
+        "fat": 61,
+        "carbs": 4,
+        "sugar": 2.9,
+        "fiber": 1, 
+        "image": "../assets/Breakfast_Images/Gouda & Green Onion Omelet.jpg",
+        "price": 1.75,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cantaloupe",
+        "calories": 94,
+        "perServing": "4 Slices",
+        "protein": 2,
+        "fat": 1,
+        "carbs": 20,
+        "sugar": 21.7,
+        "fiber": 2,
+        "price": 1.08,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Cantaloupe.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 820,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Egg-Stuffed Avocado",
+        "calories": 551,
+        "perServing": "1 Serving",
+        "protein": 18,
+        "fat": 46,
+        "carbs": 10,
+        "sugar": 3.3,
+        "fiber": 10, 
+        "image": "../assets/Breakfast_Images/Egg-Stuffed Avocado.jpeg",
+        "price": 1.07,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Sweet Cottage Cheese & Blue Berries",
+        "calories": 269,
+        "perServing": "1 Serving",
+        "protein": 29,
+        "fat": 3,
+        "carbs": 32,
+        "sugar": 30.8,
+        "fiber": 2,
+        "price": 2.21,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Sweet Cottage Cheese & Blue Berries.jpg"
+      }
+    ]
+  },
+  {
+    "totalcal": 813,
+    "dietaryPreference": ["Keto"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Cheesy Scrambled Eggs With Scallions",
+        "calories": 373,
+        "perServing": "1 Serving",
+        "protein": 29,
+        "fat": 26,
+        "carbs": 4,
+        "sugar": 1.9,
+        "fiber": 1, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.74,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Protein-boosted Yogurt",
+        "calories": 440,
+        "perServing": "1 Serving",
+        "protein": 43,
+        "fat": 24,
+        "carbs": 11,
+        "sugar": 0,
+        "fiber": 0,
+        "price": 2.49,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+
+
+
+  {
+    "totalcal": 824,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Sunrise raisin oatmeal",
+        "calories": 594,
+        "perServing": "2 Serving",
+        "protein": 13,
+        "fat": 3,
+        "carbs": 142,
+        "sugar": 61.4,
+        "fiber": 16, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.79,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Rice Cake with Peanut Butter and Chocolate Chips",
+        "calories": 230,
+        "perServing": "1 Serving",
+        "protein": 5,
+        "fat": 15,
+        "carbs": 24,
+        "sugar": 12.9,
+        "fiber": 3,
+        "price": 0.20,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 832,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Green Vegan Smoothie",
+        "calories": 349,
+        "perServing": "1 Serving(738 g)",
+        "protein": 10,
+        "fat": 4,
+        "carbs": 80,
+        "sugar": 51,
+        "fiber": 12, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.70,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "No-Bake Apple Cookies",
+        "calories": 483,
+        "perServing": "1 Slice",
+        "protein":14,
+        "fat": 39,
+        "carbs": 28,
+        "sugar": 17.4,
+        "fiber": 7,
+        "price": 0.76,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 837,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Avocado Sandwich",
+        "calories": 464,
+        "perServing": "1 Sandwich",
+        "protein": 11,
+        "fat": 31,
+        "carbs": 41,
+        "sugar": 3.9,
+        "fiber": 17, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.57,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Blueberry, Banana, and Strawberry Smoothie",
+        "calories": 373,
+        "perServing": "1 Serving",
+        "protein":11,
+        "fat": 5,
+        "carbs": 77,
+        "sugar": 45.6,
+        "fiber":11,
+        "price": 3.57,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 833,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "10-Minute Energizing Oatmeal",
+        "calories": 350,
+        "perServing": "1 Bowl(238 g)",
+        "protein": 12,
+        "fat": 9,
+        "carbs": 62,
+        "sugar": 23.6,
+        "fiber": 8, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.75,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "No-Bake Apple Cookies",
+        "calories": 483,
+        "perServing": "1 Slice",
+        "protein":14,
+        "fat": 39,
+        "carbs": 28,
+        "sugar": 17.4,
+        "fiber": 7,
+        "price": 0.76,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 840,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Chia Pudding",
+        "calories": 270,
+        "perServing": "1 Bowl(394 g)",
+        "protein": 7,
+        "fat": 12,
+        "carbs": 36,
+        "sugar": 6.3,
+        "fiber":19, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.60,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Banana, Coffee, Cashew, and Cocoa Smoothie",
+        "calories": 483,
+        "perServing": "1 Smoothie(472 g)",
+        "protein":13,
+        "fat": 19,
+        "carbs": 97,
+        "sugar": 48,
+        "fiber":11,
+        "price": 1.51,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 830,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Banana Oat Baked French Toast",
+        "calories": 347,
+        "perServing": "1 Serving",
+        "protein": 10,
+        "fat": 13,
+        "carbs": 50,
+        "sugar": 13.6,
+        "fiber": 8, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.77,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "No-Bake Apple Cookies",
+        "calories": 483,
+        "perServing": "1 Slice",
+        "protein":14,
+        "fat": 39,
+        "carbs": 28,
+        "sugar": 17.4,
+        "fiber": 7,
+        "price": 0.76,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 824,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Spiced Berry Cobbler Oatmeal",
+        "calories": 748,
+        "perServing": "1 Bowl(253 g)",
+        "protein": 28,
+        "fat": 31,
+        "carbs": 96,
+        "sugar": 9,
+        "fiber": 19, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.41,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cucumber, Pineapple, Melon Smoothie",
+        "calories": 76,
+        "perServing": "1 Serving",
+        "protein":1,
+        "fat": 0,
+        "carbs": 19,
+        "sugar": 16.6,
+        "fiber": 2,
+        "price": 0.68,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 831,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Vegan Chocolate Peanut Protein Shake",
+        "calories": 489,
+        "perServing": "1 Shake",
+        "protein": 34,
+        "fat": 20,
+        "carbs": 49,
+        "sugar": 19.9,
+        "fiber": 12, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.25,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Crispy Hash Browns",
+        "calories": 342,
+        "perServing": "1 Serving",
+        "protein":6,
+        "fat": 14,
+        "carbs": 50,
+        "sugar": 1.7,
+        "fiber": 4,
+        "price": 1.14,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 837,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Hemp Protein Shake",
+        "calories": 354,
+        "perServing": "1 Shake",
+        "protein": 14,
+        "fat": 8,
+        "carbs": 64,
+        "sugar": 15.4,
+        "fiber":20, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 15.24,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "No-Bake Apple Cookies",
+        "calories": 483,
+        "perServing": "1 Slice",
+        "protein":14,
+        "fat": 39,
+        "carbs": 28,
+        "sugar": 17.4,
+        "fiber": 7,
+        "price": 0.76,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 840,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Oatmeal and Apples",
+        "calories": 270,
+        "perServing": "1 Bowl",
+        "protein": 7,
+        "fat": 4,
+        "carbs": 57,
+        "sugar": 11.1,
+        "fiber":11, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.56,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Banana, Coffee, Cashew, and Cocoa Smoothie",
+        "calories": 483,
+        "perServing": "1 Smoothie(472 g)",
+        "protein":13,
+        "fat": 19,
+        "carbs": 97,
+        "sugar": 48,
+        "fiber":11,
+        "price": 1.51,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 488,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Cinnamon Almond Oatmeal",
+        "calories": 270,
+        "perServing": "1 Bowl(382 g)",
+        "protein": 7,
+        "fat": 4,
+        "carbs": 57,
+        "sugar": 11.1,
+        "fiber":11, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.77,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Banana, Coffee, Cashew, and Cocoa Smoothie",
+        "calories": 133,
+        "perServing": "1 Bowl(300 g)",
+        "protein":13,
+        "fat": 1,
+        "carbs": 33,
+        "sugar": 22.4,
+        "fiber":7,
+        "price": 2.94,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 482,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "3-Vegetable Tofu Scramble",
+        "calories": 273,
+        "perServing": "1 Bowl(356 g)",
+        "protein":24,
+        "fat": 7,
+        "carbs": 28,
+        "sugar": 4.6,
+        "fiber":8, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.68,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Banana, Coffee, Cashew, and Cocoa Smoothie",
+        "calories": 209,
+        "perServing": "1 Serving(142 g)",
+        "protein":4,
+        "fat": 6,
+        "carbs": 40,
+        "sugar": 23.9,
+        "fiber":5,
+        "price": 0.44,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 549,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Scrambled Tofu on Toast",
+        "calories": 425,
+        "perServing": "1 Serving(203 g)",
+        "protein":29,
+        "fat": 29,
+        "carbs": 19,
+        "sugar": 1.7,
+        "fiber":6, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.84,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Oranges",
+        "calories": 124,
+        "perServing": "2 Orange(262 g)",
+        "protein":1,
+        "fat": 0,
+        "carbs": 15,
+        "sugar": 12.2,
+        "fiber": 3,
+        "price": 0.29,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 588,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Vegan Banana Oat Soy Shake",
+        "calories": 266,
+        "perServing": "1 Shake(252 g)",
+        "protein":11,
+        "fat": 4,
+        "carbs": 51,
+        "sugar": 13.7,
+        "fiber":7, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.71,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Avocado",
+        "calories": 322,
+        "perServing": "1 Avacado(201 g)",
+        "protein":4,
+        "fat": 29,
+        "carbs": 17,
+        "sugar": 1.3,
+        "fiber": 13,
+        "price": 1.35,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 479,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Apple Crumble",
+        "calories": 96,
+        "perServing": "1 Crumble(152 g)",
+        "protein":2,
+        "fat": 0,
+        "carbs": 24,
+        "sugar": 12.3,
+        "fiber":5, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.31,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Pineapple Raspberry Smoothie",
+        "calories": 383,
+        "perServing": "1 Serving(788 g)",
+        "protein":5,
+        "fat": 1,
+        "carbs": 97,
+        "sugar": 64,
+        "fiber": 13,
+        "price": 4.26,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 479,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Vegan Cookies",
+        "calories": 140,
+        "perServing": "1 Serving(75 g)",
+        "protein":3,
+        "fat": 4,
+        "carbs": 25,
+        "sugar": 10.3,
+        "fiber":3, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.23,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Pomegranate, Blueberry, and Spinach Smoothie",
+        "calories": 353,
+        "perServing": "1 Smoothie(500 g)",
+        "protein":6,
+        "fat": 7,
+        "carbs": 73,
+        "sugar": 43.5,
+        "fiber": 13,
+        "price": 2.06,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 599,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "White Bean & Artichoke Toast",
+        "calories": 246,
+        "perServing": "1 Toast(233 g)",
+        "protein":13,
+        "fat": 5,
+        "carbs": 39,
+        "sugar": 1.9,
+        "fiber":9, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.61,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Pomegranate, Blueberry, and Spinach Smoothie",
+        "calories": 353,
+        "perServing": "1 Smoothie(500 g)",
+        "protein":6,
+        "fat": 7,
+        "carbs": 73,
+        "sugar": 43.5,
+        "fiber": 13,
+        "price": 2.06,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 549,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Cucumber Apple Salad",
+        "calories": 196,
+        "perServing": "1 Serving(800 g)",
+        "protein":4,
+        "fat": 1,
+        "carbs": 48,
+        "sugar": 29.1,
+        "fiber":7, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.12,
+        "ingredients": ["cucumber","apples","vinegar","water","pepper","garlic Salt"]
+      },
+      {
+        "name": "Pomegranate, Blueberry, and Spinach Smoothie",
+        "calories": 353,
+        "perServing": "1 Smoothie(500 g)",
+        "protein":6,
+        "fat": 7,
+        "carbs": 73,
+        "sugar": 43.5,
+        "fiber": 13,
+        "price": 2.06,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 549,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Cucumber Apple Salad",
+        "calories": 196,
+        "perServing": "1 Serving(800 g)",
+        "protein":4,
+        "fat": 1,
+        "carbs": 48,
+        "sugar": 29.1,
+        "fiber":7, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.12,
+        "ingredients": ["cucumber","apples","vinegar","water","pepper","garlic Salt"]
+      },
+      {
+        "name": "Banana Chia Mango Smoothie",
+        "calories": 378,
+        "perServing": "1 Smoothie(500 g)",
+        "protein":6,
+        "fat": 7,
+        "carbs": 79,
+        "sugar": 50,
+        "fiber": 12,
+        "price": 1.18,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 549,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Cucumber Apple Salad",
+        "calories": 196,
+        "perServing": "1 Serving(800 g)",
+        "protein":4,
+        "fat": 1,
+        "carbs": 48,
+        "sugar": 29.1,
+        "fiber":7, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.12,
+        "ingredients": ["cucumber","apples","vinegar","water","pepper","garlic Salt"]
+      },
+      {
+        "name": "PB & Dates Energy Bites",
+        "calories": 112,
+        "perServing": "1 Serving(30 g)",
+        "protein":2,
+        "fat": 4,
+        "carbs": 18,
+        "sugar": 10.7,
+        "fiber": 4,
+        "price": 0.18,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 549,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "PB & Dates Energy Bites",
+        "calories": 112,
+        "perServing": "1 Serving(30 g)",
+        "protein":2,
+        "fat": 4,
+        "carbs": 18,
+        "sugar": 10.7,
+        "fiber": 4,
+        "price": 0.18,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      },
+      {
+        "name": "Banana Chia Mango Smoothie",
+        "calories": 378,
+        "perServing": "1 Smoothie(500 g)",
+        "protein":6,
+        "fat": 7,
+        "carbs": 79,
+        "sugar": 50,
+        "fiber": 12,
+        "price": 1.18,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 494,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Peanut Butter Banana English Muffin",
+        "calories": 285,
+        "perServing": "1 Serving(130 g)",
+        "protein":45,
+        "fat": 10,
+        "carbs": 45,
+        "sugar": 14.3,
+        "fiber": 7,
+        "price": 0.43,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      },
+      {
+        "name": "Banana, Almond Butter, and Dates",
+        "calories": 209,
+        "perServing": "1 Serving(142 g)",
+        "protein":4,
+        "fat": 6,
+        "carbs": 40,
+        "sugar": 23.9,
+        "fiber": 5,
+        "price": 0.44,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 498,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "PB & Dates Energy Bites",
+        "calories": 112,
+        "perServing": "1 Serving(30 g)",
+        "protein":2,
+        "fat": 4,
+        "carbs": 18,
+        "sugar": 10.7,
+        "fiber": 4,
+        "price": 0.18,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      },
+      {
+        "name": "Brown Sugar Pecan Oatmeal",
+        "calories": 386,
+        "perServing": "1 Serving(610 g)",
+        "protein":11,
+        "fat": 7,
+        "carbs": 77,
+        "sugar": 13.9,
+        "fiber": 12,
+        "price": 0.50,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 488,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Vegan Banana Oat Pancakes",
+        "calories": 412,
+        "perServing": "1 Serving(332 g)",
+        "protein": 11,
+        "fat": 4,
+        "carbs": 91,
+        "sugar": 17.7,
+        "fiber": 12, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.90,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cucumber, Pineapple, Melon Smoothie",
+        "calories": 76,
+        "perServing": "1 Serving",
+        "protein":1,
+        "fat": 0,
+        "carbs": 19,
+        "sugar": 16.6,
+        "fiber": 2,
+        "price": 0.68,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 727,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Fast Oatmeal",
+        "calories": 244,
+        "perServing": "1 Bowl(312 g)",
+        "protein": 6,
+        "fat": 1,
+        "carbs": 58,
+        "sugar": 24,
+        "fiber": 6, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.28,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "No-Bake Apple Cookies",
+        "calories": 483,
+        "perServing": "1 Slice",
+        "protein":14,
+        "fat": 39,
+        "carbs": 28,
+        "sugar": 17.4,
+        "fiber": 7,
+        "price": 0.76,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 726,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Oatmeal with Mango and Toasted Coconut",
+        "calories": 373,
+        "perServing": "1 Bowl(180 g)",
+        "protein": 9,
+        "fat": 12,
+        "carbs": 64,
+        "sugar": 28.8,
+        "fiber": 8, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.85,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Pomegranate, Blueberry, and Spinach Smoothie",
+        "calories": 353,
+        "perServing": "1 Smoothie(500 g)",
+        "protein":6,
+        "fat": 7,
+        "carbs": 73,
+        "sugar": 43.5,
+        "fiber": 13,
+        "price": 2.06,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 738,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Seedy Avocado Toast",
+        "calories": 278,
+        "perServing": "1 Toast(118 g)",
+        "protein": 9,
+        "fat": 92,
+        "carbs": 22,
+        "sugar": 2.2,
+        "fiber": 9, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.58,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Rice Cake with Peanut Butter and Chocolate Chips",
+        "calories": 230,
+        "perServing": "1 Serving",
+        "protein": 5,
+        "fat": 15,
+        "carbs": 24,
+        "sugar": 12.9,
+        "fiber": 3,
+        "price": 0.20,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 724,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Avocado Sandwich",
+        "calories": 464,
+        "perServing": "1 Sandwich(260 g)",
+        "protein": 11,
+        "fat": 31,
+        "carbs": 41,
+        "sugar": 3.9,
+        "fiber": 17, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.57,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Strawberry Pear Juice",
+        "calories": 260,
+        "perServing": "1 Shake(450 g)",
+        "protein": 2,
+        "fat": 1,
+        "carbs": 67,
+        "sugar": 41,
+        "fiber": 16,
+        "price": 1.96,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 719,
+    "dietaryPreference": ["Vegan"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Strawberry Smoothie Bowl",
+        "calories": 428,
+        "perServing": "1 Serving(382 g)",
+        "protein": 15,
+        "fat": 10,
+        "carbs": 71,
+        "sugar": 14.7,
+        "fiber": 11, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.96,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Apples and Almond Butter",
+        "calories": 260,
+        "perServing": "1 Bowl(214 g)",
+        "protein": 7,
+        "fat": 18,
+        "carbs": 31,
+        "sugar": 20.3,
+        "fiber": 8,
+        "price": 0.88,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+
+
+
+
+  {
+    "totalcal": 1049,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Smashed White Bean and Avocado Sandwich",
+        "calories": 555,
+        "perServing": "1 Sandwich(400 g)",
+        "protein": 24,
+        "fat": 20,
+        "carbs": 75,
+        "sugar": 4.7,
+        "fiber": 18, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.28,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Peach and Peanut Butter Snack",
+        "calories": 494,
+        "perServing": "2 Serving(364 g)",
+        "protein": 18,
+        "fat": 33,
+        "carbs": 42,
+        "sugar": 30.3,
+        "fiber":10,
+        "price": 1.09,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 1063,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Banana Orange Smoothie",
+        "calories": 584,
+        "perServing": "1 Smoothie(550 g)",
+        "protein": 41,
+        "fat": 21,
+        "carbs": 63,
+        "sugar": 35.5,
+        "fiber": 11, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.77,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Balsamic and Avocado Snack",
+        "calories": 480 ,
+        "perServing": "2 Snacks(179 g)",
+        "protein": 3,
+        "fat": 48,
+        "carbs": 14,
+        "sugar": 2.8,
+        "fiber":9,
+        "price": 0.95,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 1050,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Chocolate PB & Banana Protein Shake",
+        "calories": 519,
+        "perServing": "1 Shake(490 g)",
+        "protein": 41,
+        "fat": 20,
+        "carbs": 49,
+        "sugar": 30.5,
+        "fiber": 5, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 0.98,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Balsamic and Avocado Snack",
+        "calories": 531 ,
+        "perServing": "1 Serving(225 g)",
+        "protein": 12,
+        "fat": 39,
+        "carbs": 43,
+        "sugar": 28.8,
+        "fiber":7,
+        "price": 1.95,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 1055,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Yogurt Chocolate Banana Shake",
+        "calories": 849,
+        "perServing": "1 Shake(715 g)",
+        "protein": 55,
+        "fat": 40,
+        "carbs": 71,
+        "sugar": 30.5,
+        "fiber": 7, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 3.50,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Caprese Salad",
+        "calories": 206 ,
+        "perServing": "1 Bowl(117 g)",
+        "protein": 8,
+        "fat": 18,
+        "carbs": 4,
+        "sugar": 2.1,
+        "fiber":1,
+        "price": 0.84,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 1063,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Coconut Banana Oatmeal Smoothie",
+        "calories": 886,
+        "perServing": "1 Shake(350 g)",
+        "protein": 37,
+        "fat": 67,
+        "carbs": 48,
+        "sugar": 17.1,
+        "fiber":10, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.61,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cheesy Cucumber and Tomato Snack Stacks",
+        "calories": 178 ,
+        "perServing": "3 Stacks(300 g)",
+        "protein":22,
+        "fat": 6,
+        "carbs": 8,
+        "sugar": 4.8,
+        "fiber":2,
+        "price": 1.49,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 667,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Vegan Chocolate Peanut Protein Shake",
+        "calories": 489,
+        "perServing": "1 Shake",
+        "protein": 34,
+        "fat": 20,
+        "carbs": 49,
+        "sugar": 19.9,
+        "fiber": 12, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.25,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cheesy Cucumber and Tomato Snack Stacks",
+        "calories": 178 ,
+        "perServing": "3 Stacks(300 g)",
+        "protein":22,
+        "fat": 6,
+        "carbs": 8,
+        "sugar": 4.8,
+        "fiber":2,
+        "price": 3.34,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 1053,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Vegan Chocolate Peanut Protein Shake",
+        "calories": 489,
+        "perServing": "1 Shake",
+        "protein": 34,
+        "fat": 20,
+        "carbs": 49,
+        "sugar": 19.9,
+        "fiber": 12, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2.25,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cucumber Avocado Caprese Salad",
+        "calories": 564 ,
+        "perServing": "1 Bowl(700 g)",
+        "protein":23,
+        "fat": 40,
+        "carbs":36,
+        "sugar": 15,
+        "fiber":12,
+        "price": 3.34,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 1066,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Tomato and Hummus Pocket Sandwich",
+        "calories": 445,
+        "perServing": "1 Sandwich(250 g)",
+        "protein": 17,
+        "fat": 20,
+        "carbs": 55,
+        "sugar": 1.9,
+        "fiber": 13, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 2,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Arugula Pine Nut Salad",
+        "calories": 621 ,
+        "perServing": "1 Bowl(330 g)",
+        "protein":15,
+        "fat": 58,
+        "carbs":17,
+        "sugar": 6.8,
+        "fiber":4,
+        "price": 2.04,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 581,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Avocado Egg Bake",
+        "calories": 393,
+        "perServing": "1 Serving(250 g)",
+        "protein": 10,
+        "fat": 34,
+        "carbs": 18,
+        "sugar": 1.5,
+        "fiber": 13, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.48,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Toast with Tomato, Onion, & Hummus",
+        "calories": 188 ,
+        "perServing": "1 Toast(160 g)",
+        "protein":9,
+        "fat": 7,
+        "carbs":24,
+        "sugar": 3.3,
+        "fiber":6,
+        "price": 1.04,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 586,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Sunrise Smoothie",
+        "calories": 404,
+        "perServing": "1 Smoothie(480 g)",
+        "protein": 31,
+        "fat": 12,
+        "carbs": 47,
+        "sugar": 19.5,
+        "fiber": 7, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.82,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Yogurt & Strawberries",
+        "calories": 182 ,
+        "perServing": "1 Serving(350 g)",
+        "protein":24,
+        "fat": 1,
+        "carbs":20,
+        "sugar": 14.8,
+        "fiber":3,
+        "price": 2.65,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 579,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Mocha Berry Almond Smoothie",
+        "calories": 507,
+        "perServing": "1 Smoothie(500 g)",
+        "protein": 55,
+        "fat": 13,
+        "carbs": 49,
+        "sugar": 19.3,
+        "fiber": 7, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 4.02,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Yogurt & Strawberries",
+        "calories": 72 ,
+        "perServing": "1 Serving(130 g)",
+        "protein":6,
+        "fat": 5,
+        "carbs":0,
+        "sugar": 0.2,
+        "fiber":0,
+        "price": 0.14,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 594,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Oatmeal Cottage Cheese Pancakes",
+        "calories": 306,
+        "perServing": "1 Serving(280 g)",
+        "protein": 31,
+        "fat": 4,
+        "carbs": 36,
+        "sugar": 6.9,
+        "fiber": 5, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.30,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Rice Cake with Strawberries, Cottage Cheese, and Honey",
+        "calories": 288 ,
+        "perServing": "1 Serving(330 g)",
+        "protein":29,
+        "fat": 3,
+        "carbs":37,
+        "sugar": 27.5,
+        "fiber":2,
+        "price": 1.63,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 863,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Oatmeal Cottage Cheese Pancakes",
+        "calories": 306,
+        "perServing": "1 Serving(280 g)",
+        "protein": 31,
+        "fat": 4,
+        "carbs": 36,
+        "sugar": 6.9,
+        "fiber": 5, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.30,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cheese quesadilla",
+        "calories": 557 ,
+        "perServing": "1 quesadilla(180 g)",
+        "protein":20,
+        "fat": 38,
+        "carbs":35,
+        "sugar": 3.5,
+        "fiber":2,
+        "price": 1.38,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  },
+  {
+    "totalcal": 649,
+    "dietaryPreference": ["Vegetarian"],
+    "region": "Global",
+    "foods": [
+      {
+        "name": "Strawberries",
+        "calories": 92,
+        "perServing": "1 Bowl(280 g)",
+        "protein": 2,
+        "fat": 1,
+        "carbs":22,
+        "sugar": 14,
+        "fiber": 6, 
+        "image": "../assets/Breakfast_Images/Cheesy Scrambled Eggs With Scallions.jpg",
+        "price": 1.30,
+        "ingredients": ["beef kofta", "tomato", "onion", "garlic", "ginger", "coriander", "cumin"]
+      },
+      {
+        "name": "Cheese quesadilla",
+        "calories": 557 ,
+        "perServing": "1 quesadilla(180 g)",
+        "protein":20,
+        "fat": 38,
+        "carbs":35,
+        "sugar": 3.5,
+        "fiber":2,
+        "price": 1.38,
+        "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+        "image": "../assets/Breakfast_Images/Protein-boosted Yogurt.jpeg"
+      }
+    ]
+  }
+]
+  
