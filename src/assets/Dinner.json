@@ -1,0 +1,1415 @@
+[
+      {
+        "totalcal": 1106,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Tuna Steak with Salsa",
+            "calories": 945,
+            "perServing": "1 Serving(700 g)",
+            "carbs": 55,
+            "fat": 50,
+            "protein": 74,
+            "fiber": 17,
+            "sugar": 19.3 ,
+            "cooktime": 5,
+            "preptime": 10,   
+            "price": 6.32,       
+            "image": "../assets/Dinner_Images/Tuna Steak with Salsa.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Simple Spinach Salad",
+            "calories": 161,
+            "perServing": "1 Serving(150 g)",
+            "carbs": 9,
+            "fat": 14,
+            "protein":4,
+            "fiber": 3,
+            "sugar": 2.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 0.92,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Simple Spinach Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 1007,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Tuna Steak with Salsa",
+            "calories": 945,
+            "perServing": "1 Serving(700 g)",
+            "carbs": 55,
+            "fat": 50,
+            "protein": 74,
+            "fiber": 17,
+            "sugar": 19.3 ,
+            "cooktime": 5,
+            "preptime": 10,   
+            "price": 6.32,       
+            "image": "../assets/Dinner_Images/Tuna Steak with Salsa.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 1113,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken Parmesan",
+            "calories": 748,
+            "perServing": "1 Serving(450 g)",
+            "carbs": 62,
+            "fat": 21,
+            "protein": 72,
+            "fiber": 5,
+            "sugar": 9.7 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.07,       
+            "image": "../assets/Dinner_Images/Chicken Parmesan.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Sundried Tomato and Avocado Chopped Salad",
+            "calories": 365,
+            "perServing": "1 Serving(250 g)",
+            "carbs": 24,
+            "fat": 30,
+            "protein":6,
+            "fiber": 17,
+            "sugar": 2.5,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 1.49,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Sundried Tomato and Avocado Chopped Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 810,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken Parmesan",
+            "calories": 748,
+            "perServing": "1 Serving(450 g)",
+            "carbs": 62,
+            "fat": 21,
+            "protein": 72,
+            "fiber": 5,
+            "sugar": 9.7 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.07,       
+            "image": "../assets/Dinner_Images/Chicken Parmesan.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 909,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken Parmesan",
+            "calories": 748,
+            "perServing": "1 Serving(450 g)",
+            "carbs": 62,
+            "fat": 21,
+            "protein": 72,
+            "fiber": 5,
+            "sugar": 9.7 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.07,       
+            "image": "../assets/Dinner_Images/Chicken Parmesan.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Simple Spinach Salad",
+            "calories": 161,
+            "perServing": "1 Serving(150 g)",
+            "carbs": 9,
+            "fat": 14,
+            "protein":4,
+            "fiber": 3,
+            "sugar": 2.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 0.92,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Simple Spinach Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 965,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken Parmesan",
+            "calories": 748,
+            "perServing": "1 Serving(450 g)",
+            "carbs": 62,
+            "fat": 21,
+            "protein": 72,
+            "fiber": 5,
+            "sugar": 9.7 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.07,       
+            "image": "../assets/Dinner_Images/Chicken Parmesan.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Green Kale Salad",
+            "calories": 217,
+            "perServing": "1 Serving(507 g)",
+            "carbs": 33,
+            "fat": 7,
+            "protein": 13,
+            "fiber": 12,
+            "sugar": 11.2,
+            "cooktime": 0,
+            "preptime": 15,
+            "price": 1.62,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Green Kale Salad.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 1108,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Sage and Parsley Chicken Breast",
+            "calories": 892,
+            "perServing": "1 Serving(500 g)",
+            "carbs": 4,
+            "fat": 47,
+            "protein": 108,
+            "fiber":1,
+            "sugar": 0.2 ,
+            "cooktime": 15,
+            "preptime": 10,   
+            "price": 2.35,       
+            "image": "../assets/Dinner_Images/Sage and Parsley Chicken Breast.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Green Kale Salad",
+            "calories": 217,
+            "perServing": "1 Serving(507 g)",
+            "carbs": 33,
+            "fat": 7,
+            "protein": 13,
+            "fiber": 12,
+            "sugar": 11.2,
+            "cooktime": 0,
+            "preptime": 15,
+            "price": 1.62,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Green Kale Salad.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 1108,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Sage and Parsley Chicken Breast",
+            "calories": 892,
+            "perServing": "1 Serving(500 g)",
+            "carbs": 4,
+            "fat": 47,
+            "protein": 108,
+            "fiber":1,
+            "sugar": 0.2 ,
+            "cooktime": 15,
+            "preptime": 10,   
+            "price": 2.35,       
+            "image": "../assets/Dinner_Images/Sage and Parsley Chicken Breast.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 1053,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Sage and Parsley Chicken Breast",
+            "calories": 892,
+            "perServing": "1 Serving(500 g)",
+            "carbs": 4,
+            "fat": 47,
+            "protein": 108,
+            "fiber":1,
+            "sugar": 0.2 ,
+            "cooktime": 15,
+            "preptime": 10,   
+            "price": 2.35,       
+            "image": "../assets/Dinner_Images/Sage and Parsley Chicken Breast.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Simple Spinach Salad",
+            "calories": 161,
+            "perServing": "1 Serving(150 g)",
+            "carbs": 9,
+            "fat": 14,
+            "protein":4,
+            "fiber": 3,
+            "sugar": 2.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 0.92,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Simple Spinach Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 965,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken Parmesan",
+            "calories": 748,
+            "perServing": "1 Serving(450 g)",
+            "carbs": 62,
+            "fat": 21,
+            "protein": 72,
+            "fiber": 5,
+            "sugar": 9.7 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.07,       
+            "image": "../assets/Dinner_Images/Chicken Parmesan.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Green Kale Salad",
+            "calories": 217,
+            "perServing": "1 Serving(507 g)",
+            "carbs": 33,
+            "fat": 7,
+            "protein": 13,
+            "fiber": 12,
+            "sugar": 11.2,
+            "cooktime": 0,
+            "preptime": 15,
+            "price": 1.62,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Green Kale Salad.jpeg"
+          }
+          
+        ]
+      },
+      {
+        "totalcal": 1058,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken Parmesan",
+            "calories": 748,
+            "perServing": "1 Serving(450 g)",
+            "carbs": 62,
+            "fat": 21,
+            "protein": 72,
+            "fiber": 5,
+            "sugar": 9.7 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.07,       
+            "image": "../assets/Dinner_Images/Chicken Parmesan.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Spinach Salad with Blackberries",
+            "calories": 310,
+            "perServing": "1 Serving(250 g)",
+            "carbs": 16,
+            "fat":28,
+            "protein":4,
+            "fiber": 7,
+            "sugar": 6.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 1.87,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Spinach Salad with Blackberries.jpg"
+          }
+          
+        ]
+      },
+      {
+        "totalcal": 473,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Spinach Salad with Blackberries",
+            "calories": 310,
+            "perServing": "1 Serving(250 g)",
+            "carbs": 16,
+            "fat":28,
+            "protein":4,
+            "fiber": 7,
+            "sugar": 6.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 1.87,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Spinach Salad with Blackberries.jpg"
+          },
+          {
+            "name": "Simple Spinach Salad",
+            "calories": 161,
+            "perServing": "1 Serving(150 g)",
+            "carbs": 9,
+            "fat": 14,
+            "protein":4,
+            "fiber": 3,
+            "sugar": 2.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 0.92,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Simple Spinach Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 825,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Gourmet Grilled Cheese",
+            "calories": 458,
+            "perServing": "1 Serving(207 g)",
+            "carbs": 27,
+            "fat": 25,
+            "protein": 32,
+            "fiber":4,
+            "sugar": 3.7 ,
+            "cooktime": 10,
+            "preptime": 20,   
+            "price": 1.23,       
+            "image": "../assets/Dinner_Images/Gourmet Grilled Cheese.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Green Bean Healthy Tuna Salad",
+            "calories": 367,
+            "perServing": "1 Serving(600 g)",
+            "carbs": 29,
+            "fat":16,
+            "protein":33,
+            "fiber": 11,
+            "sugar": 12.9,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 0.87,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Green Bean Healthy Tuna Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 520,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Gourmet Grilled Cheese",
+            "calories": 458,
+            "perServing": "1 Serving(207 g)",
+            "carbs": 27,
+            "fat": 25,
+            "protein": 32,
+            "fiber":4,
+            "sugar": 3.7 ,
+            "cooktime": 10,
+            "preptime": 20,   
+            "price": 1.23,       
+            "image": "../assets/Dinner_Images/Gourmet Grilled Cheese.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 829,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "One Pan Roasted Chicken & Veggies",
+            "calories": 767,
+            "perServing": "1 Serving(750 g)",
+            "carbs": 27,
+            "fat": 50,
+            "protein": 55,
+            "fiber":7,
+            "sugar": 13.7 ,
+            "cooktime": 15,
+            "preptime": 5,   
+            "price": 2.76,       
+            "image": "../assets/Dinner_Images/One Pan Roasted Chicken & Veggies.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 928,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "One Pan Roasted Chicken & Veggies",
+            "calories": 767,
+            "perServing": "1 Serving(750 g)",
+            "carbs": 27,
+            "fat": 50,
+            "protein": 55,
+            "fiber":7,
+            "sugar": 13.7 ,
+            "cooktime": 15,
+            "preptime": 5,   
+            "price": 2.76,       
+            "image": "../assets/Dinner_Images/One Pan Roasted Chicken & Veggies.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Simple Spinach Salad",
+            "calories": 161,
+            "perServing": "1 Serving(150 g)",
+            "carbs": 9,
+            "fat": 14,
+            "protein":4,
+            "fiber": 3,
+            "sugar": 2.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 0.92,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Simple Spinach Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 1134,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "One Pan Roasted Chicken & Veggies",
+            "calories": 767,
+            "perServing": "1 Serving(750 g)",
+            "carbs": 27,
+            "fat": 50,
+            "protein": 55,
+            "fiber":7,
+            "sugar": 13.7 ,
+            "cooktime": 15,
+            "preptime": 5,   
+            "price": 2.76,       
+            "image": "../assets/Dinner_Images/One Pan Roasted Chicken & Veggies.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Green Bean Healthy Tuna Salad",
+            "calories": 367,
+            "perServing": "1 Serving(600 g)",
+            "carbs": 29,
+            "fat":16,
+            "protein":33,
+            "fiber": 11,
+            "sugar": 12.9,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 0.87,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Green Bean Healthy Tuna Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 768,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Gourmet Grilled Cheese",
+            "calories": 458,
+            "perServing": "1 Serving(207 g)",
+            "carbs": 27,
+            "fat": 25,
+            "protein": 32,
+            "fiber":4,
+            "sugar": 3.7 ,
+            "cooktime": 10,
+            "preptime": 20,   
+            "price": 1.23,       
+            "image": "../assets/Dinner_Images/Gourmet Grilled Cheese.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Spinach Salad with Blackberries",
+            "calories": 310,
+            "perServing": "1 Serving(250 g)",
+            "carbs": 16,
+            "fat":28,
+            "protein":4,
+            "fiber": 7,
+            "sugar": 6.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 1.87,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Spinach Salad with Blackberries.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 941,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Summer Pasta",
+            "calories": 631,
+            "perServing": "1 Serving(200 g)",
+            "carbs": 62,
+            "fat": 31,
+            "protein": 30,
+            "fiber":1,
+            "sugar": 2.7 ,
+            "cooktime": 5,
+            "preptime": 10,   
+            "price": 1.27,       
+            "image": "../assets/Dinner_Images/Summer Pasta.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Spinach Salad with Blackberries",
+            "calories": 310,
+            "perServing": "1 Serving(250 g)",
+            "carbs": 16,
+            "fat":28,
+            "protein":4,
+            "fiber": 7,
+            "sugar": 6.1,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 1.47,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Spinach Salad with Blackberries.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 941,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Summer Pasta",
+            "calories": 631,
+            "perServing": "1 Serving(200 g)",
+            "carbs": 62,
+            "fat": 31,
+            "protein": 30,
+            "fiber":1,
+            "sugar": 2.7 ,
+            "cooktime": 5,
+            "preptime": 10,   
+            "price": 1.27,       
+            "image": "../assets/Dinner_Images/Summer Pasta.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 906,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Summer Pasta",
+            "calories": 631,
+            "perServing": "1 Serving(200 g)",
+            "carbs": 62,
+            "fat": 31,
+            "protein": 30,
+            "fiber":1,
+            "sugar": 2.7 ,
+            "cooktime": 5,
+            "preptime": 10,   
+            "price": 1.27,       
+            "image": "../assets/Dinner_Images/Summer Pasta.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Peppers Cucumber & Avocado Salad",
+            "calories": 275,
+            "perServing": "1 Serving(350 g)",
+            "carbs": 22,
+            "fat":21,
+            "protein":4,
+            "fiber": 12,
+            "sugar": 6.6,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 1.47,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Peppers Cucumber & Avocado Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 914,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Summer Pasta",
+            "calories": 631,
+            "perServing": "1 Serving(200 g)",
+            "carbs": 62,
+            "fat": 31,
+            "protein": 30,
+            "fiber":1,
+            "sugar": 2.7 ,
+            "cooktime": 5,
+            "preptime": 10,   
+            "price": 1.27,       
+            "image": "../assets/Dinner_Images/Summer Pasta.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Maple-Mustard Glazed Pink Salmon",
+            "calories": 283,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 11,
+            "fat":10,
+            "protein":35,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 10,
+            "preptime": 2,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple-Mustard Glazed Pink Salmon.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 835,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken and Avocado Sandwich",
+            "calories": 675,
+            "perServing": "1 Serving(430 g)",
+            "carbs": 41,
+            "fat": 36,
+            "protein": 51,
+            "fiber":17,
+            "sugar": 3.8 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.35,       
+            "image": "../assets/Dinner_Images/Chicken and Avocado Sandwich.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Spinach and Cranberry Salad",
+            "calories": 160,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 16,
+            "fat":9,
+            "protein":7,
+            "fiber": 3,
+            "sugar": 10.2,
+            "cooktime": 0,
+            "preptime": 8,
+            "price": 0.80,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Spinach and Cranberry Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 835,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken and Avocado Sandwich",
+            "calories": 675,
+            "perServing": "1 Serving(430 g)",
+            "carbs": 41,
+            "fat": 36,
+            "protein": 51,
+            "fiber":17,
+            "sugar": 3.8 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.35,       
+            "image": "../assets/Dinner_Images/Chicken and Avocado Sandwich.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 958,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Chicken and Avocado Sandwich",
+            "calories": 675,
+            "perServing": "1 Serving(430 g)",
+            "carbs": 41,
+            "fat": 36,
+            "protein": 51,
+            "fiber":17,
+            "sugar": 3.8 ,
+            "cooktime": 20,
+            "preptime": 5,   
+            "price": 2.35,       
+            "image": "../assets/Dinner_Images/Chicken and Avocado Sandwich.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Maple-Mustard Glazed Pink Salmon",
+            "calories": 283,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 11,
+            "fat":10,
+            "protein":35,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 10,
+            "preptime": 2,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple-Mustard Glazed Pink Salmon.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 798,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Summer Pasta",
+            "calories": 638,
+            "perServing": "1 Serving(600 g)",
+            "carbs": 78,
+            "fat": 38,
+            "protein": 9,
+            "fiber":23,
+            "sugar": 45 ,
+            "cooktime": 0,
+            "preptime": 15,   
+            "price": 6.22,       
+            "image": "../assets/Dinner_Images/Summer Pasta.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Spinach and Cranberry Salad",
+            "calories": 160,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 16,
+            "fat":9,
+            "protein":7,
+            "fiber": 3,
+            "sugar": 10.2,
+            "cooktime": 0,
+            "preptime": 8,
+            "price": 0.80,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Spinach and Cranberry Salad.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 842,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Grilled Trout with Lemon Garlic Butter",
+            "calories": 415,
+            "perServing": "1 Serving(270 g)",
+            "carbs": 8,
+            "fat": 25,
+            "protein": 42,
+            "fiber":3,
+            "sugar": 0.1 ,
+            "cooktime": 10,
+            "preptime": 5,   
+            "price": 2.15,       
+            "image": "../assets/Dinner_Images/Grilled Trout with Lemon Garlic Butter.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Buttered Egg Noodles",
+            "calories": 427,
+            "perServing": "1 Serving(170 g)",
+            "carbs": 41,
+            "fat": 26,
+            "protein": 9,
+            "fiber": 2,
+            "sugar": 1.4,
+            "cooktime": 8,
+            "preptime": 2,
+            "price": 0.33,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Buttered Egg Noodles.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 477,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Grilled Trout with Lemon Garlic Butter",
+            "calories": 415,
+            "perServing": "1 Serving(270 g)",
+            "carbs": 8,
+            "fat": 25,
+            "protein": 42,
+            "fiber":3,
+            "sugar": 0.1 ,
+            "cooktime": 10,
+            "preptime": 5,   
+            "price": 2.15,       
+            "image": "../assets/Dinner_Images/Grilled Trout with Lemon Garlic Butter.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 710,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Maple-Mustard Glazed Pink Salmon",
+            "calories": 283,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 11,
+            "fat":10,
+            "protein":35,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 10,
+            "preptime": 2,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple-Mustard Glazed Pink Salmon.jpeg"
+          },
+          {
+            "name": "Buttered Egg Noodles",
+            "calories": 427,
+            "perServing": "1 Serving(170 g)",
+            "carbs": 41,
+            "fat": 26,
+            "protein": 9,
+            "fiber": 2,
+            "sugar": 1.4,
+            "cooktime": 8,
+            "preptime": 2,
+            "price": 0.33,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Buttered Egg Noodles.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 489,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          },
+          {
+            "name": "Buttered Egg Noodles",
+            "calories": 427,
+            "perServing": "1 Serving(170 g)",
+            "carbs": 41,
+            "fat": 26,
+            "protein": 9,
+            "fiber": 2,
+            "sugar": 1.4,
+            "cooktime": 8,
+            "preptime": 2,
+            "price": 0.33,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Buttered Egg Noodles.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 698,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Grilled Trout with Lemon Garlic Butter",
+            "calories": 415,
+            "perServing": "1 Serving(270 g)",
+            "carbs": 8,
+            "fat": 25,
+            "protein": 42,
+            "fiber":3,
+            "sugar": 0.1 ,
+            "cooktime": 10,
+            "preptime": 5,   
+            "price": 2.15,       
+            "image": "../assets/Dinner_Images/Grilled Trout with Lemon Garlic Butter.jpg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Maple-Mustard Glazed Pink Salmon",
+            "calories": 283,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 11,
+            "fat":10,
+            "protein":35,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 10,
+            "preptime": 2,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple-Mustard Glazed Pink Salmon.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 842,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Dijon Salmon Fillets",
+            "calories": 543,
+            "perServing": "1 Serving(350 g)",
+            "carbs": 6,
+            "fat": 26,
+            "protein": 67,
+            "fiber": 1,
+            "sugar": 0.4 ,
+            "cooktime": 15,
+            "preptime": 12,   
+            "price": 5.78,       
+            "image": "../assets/Dinner_Images/Dijon Salmon Fillets.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Grape, Walnut, and Romaine Salad",
+            "calories": 298,
+            "perServing": "1 Bowl(280 g)",
+            "carbs": 29,
+            "fat":19,
+            "protein":8,
+            "fiber": 5,
+            "sugar": 20.2,
+            "cooktime": 2,
+            "preptime": 5,
+            "price": 1.22,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Grape, Walnut, and Romaine Salad.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 605,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Dijon Salmon Fillets",
+            "calories": 543,
+            "perServing": "1 Serving(350 g)",
+            "carbs": 6,
+            "fat": 26,
+            "protein": 67,
+            "fiber": 1,
+            "sugar": 0.4 ,
+            "cooktime": 15,
+            "preptime": 12,   
+            "price": 5.78,       
+            "image": "../assets/Dinner_Images/Dijon Salmon Fillets.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Easy Steamed Green Beans",
+            "calories": 62,
+            "perServing": "1 Serving(300 g)",
+            "carbs": 14,
+            "fat":0,
+            "protein":4,
+            "fiber": 5,
+            "sugar": 12.9,
+            "cooktime": 6.5,
+            "preptime": 2,
+            "price": 0.16,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Easy Steamed Green Beans.jpg"
+          }
+        ]
+      },
+      {
+        "totalcal": 826,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Dijon Salmon Fillets",
+            "calories": 543,
+            "perServing": "1 Serving(350 g)",
+            "carbs": 6,
+            "fat": 26,
+            "protein": 67,
+            "fiber": 1,
+            "sugar": 0.4 ,
+            "cooktime": 15,
+            "preptime": 12,   
+            "price": 5.78,       
+            "image": "../assets/Dinner_Images/Dijon Salmon Fillets.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Maple-Mustard Glazed Pink Salmon",
+            "calories": 283,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 11,
+            "fat":10,
+            "protein":35,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 10,
+            "preptime": 2,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple-Mustard Glazed Pink Salmon.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 581,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Maple-Mustard Glazed Pink Salmon",
+            "calories": 283,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 11,
+            "fat":10,
+            "protein":35,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 10,
+            "preptime": 2,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple-Mustard Glazed Pink Salmon.jpeg"
+          },
+          {
+            "name": "Grape, Walnut, and Romaine Salad",
+            "calories": 298,
+            "perServing": "1 Bowl(280 g)",
+            "carbs": 29,
+            "fat":19,
+            "protein":8,
+            "fiber": 5,
+            "sugar": 20.2,
+            "cooktime": 2,
+            "preptime": 5,
+            "price": 1.22,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Grape, Walnut, and Romaine Salad.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 715,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Maple Glazed Salmon",
+            "calories": 309,
+            "perServing": "1 Serving(190 g)",
+            "carbs": 11,
+            "fat": 14,
+            "protein": 34,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 12,
+            "preptime": 5,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple Glazed Salmon.jpg"
+          },
+          {
+            "name": "Green Beans with Tomato, Garlic, and Pine Nuts",
+            "calories": 406,
+            "perServing": "1 Serving(600 g)",
+            "carbs": 41,
+            "fat":26,
+            "protein": 12,
+            "fiber": 14,
+            "sugar": 18.8,
+            "cooktime": 5,
+            "preptime": 10,
+            "price": 1.42,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Green Beans with Tomato, Garlic, and Pine Nuts.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 607,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Maple Glazed Salmon",
+            "calories": 309,
+            "perServing": "1 Serving(190 g)",
+            "carbs": 11,
+            "fat": 14,
+            "protein": 34,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 12,
+            "preptime": 5,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple Glazed Salmon.jpg"
+          },
+          {
+            "name": "Grape, Walnut, and Romaine Salad",
+            "calories": 298,
+            "perServing": "1 Bowl(280 g)",
+            "carbs": 29,
+            "fat":19,
+            "protein":8,
+            "fiber": 5,
+            "sugar": 20.2,
+            "cooktime": 2,
+            "preptime": 5,
+            "price": 1.22,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Grape, Walnut, and Romaine Salad.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 592,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Maple Glazed Salmon",
+            "calories": 309,
+            "perServing": "1 Serving(190 g)",
+            "carbs": 11,
+            "fat": 14,
+            "protein": 34,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 12,
+            "preptime": 5,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple Glazed Salmon.jpg"
+          },
+          {
+            "name": "Maple-Mustard Glazed Pink Salmon",
+            "calories": 283,
+            "perServing": "1 Serving(180 g)",
+            "carbs": 11,
+            "fat":10,
+            "protein":35,
+            "fiber": 0,
+            "sugar": 8.2,
+            "cooktime": 10,
+            "preptime": 2,
+            "price": 3.09,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Dinner_Images/Maple-Mustard Glazed Pink Salmon.jpeg"
+          }
+        ]
+      }
+
+
+
+
+
+]

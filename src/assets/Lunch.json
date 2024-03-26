@@ -1,0 +1,228 @@
+[
+    {
+        "totalcal": 1030,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Banana Avocado Protein Smoothie",
+            "calories": 647,
+            "perServing": "1 smoothie(500 g)",
+            "carbs": 53,
+            "fat": 32,
+            "protein": 47,
+            "fiber": 17,
+            "sugar": 21.3,
+            "cooktime": 0,
+            "preptime": 10,   
+            "price": 2.38,       
+            "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Lettuce Cucumber Walnut Salad",
+            "calories": 383,
+            "perServing": "1 Serving(500 g)",
+            "carbs": 16,
+            "fat": 34,
+            "protein": 9,
+            "fiber": 6,
+            "sugar": 7,
+            "cooktime": 0,
+            "preptime": 10,
+            "price": 1.80,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Meal_Images/Simple Bread.jpeg"
+          }
+        ]
+      },
+    {
+        "totalcal": 1016,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Yogurt Parfait",
+            "calories": 956,
+            "perServing": "1 Serving(380 g)",
+            "carbs": 99,
+            "fat": 48,
+            "protein": 34,
+            "fiber": 13,
+            "sugar": 49,
+            "cooktime": 0,
+            "preptime": 5,   
+            "price": 3.85,       
+            "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Cheesy Cucumber and Tomato Snack Stacks",
+            "calories": 59 ,
+            "perServing": "1 Stacks(100 g)",
+            "protein":7,
+            "fat": 2,
+            "carbs": 3,
+            "sugar": 1.6,
+            "fiber":1,
+            "price": 1.49,
+            "cooktime": 0,
+            "preptime": 10,
+            "ingredients": ["honey","banana","egg","rye bread","almond butter","cinnamon"],
+            "image": "../assets/Breakfast_Images/Cheesy Cucumber and Tomato Snack Stacks.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 730,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Tuna Salad",
+            "calories": 472,
+            "perServing": "1 Serving(380 g)",
+            "carbs": 19,
+            "fat": 31,
+            "protein": 36,
+            "fiber": 14,
+            "sugar": 2.4,
+            "cooktime": 0,
+            "preptime": 5,   
+            "price": 2.15,       
+            "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Yogurt with Almonds & Honey",
+            "calories": 259,
+            "perServing": "1 Serving(250 g)",
+            "carbs": 18,
+            "fat": 10,
+            "protein":27,
+            "fiber": 2,
+            "sugar": 13,
+            "cooktime": 0,
+            "preptime": 3,
+            "price": 2.19,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Meal_Images/Simple Bread.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 724,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Asian Tuna Salad",
+            "calories": 357,
+            "perServing": "1 Serving(280 g)",
+            "carbs": 6,
+            "fat": 23,
+            "protein": 33,
+            "fiber": 2,
+            "sugar": 2.4,
+            "cooktime": 0,
+            "preptime": 20,   
+            "price": 1.14,       
+            "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Chocolate Avocado Smoothie",
+            "calories": 368,
+            "perServing": "1 Serving(250 g)",
+            "carbs": 17,
+            "fat": 21,
+            "protein":31,
+            "fiber": 10,
+            "sugar": 1.3,
+            "cooktime": 0,
+            "preptime": 5,
+            "price": 1.49,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Meal_Images/Simple Bread.jpeg"
+          }
+        ]
+      },
+      {
+        "totalcal": 808,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Blueberry Almond Butter Protein Smoothie",
+            "calories": 451,
+            "perServing": "1 smoothie(700 g)",
+            "carbs": 40,
+            "fat": 10,
+            "protein": 53,
+            "fiber": 14,
+            "sugar": 24.4,
+            "cooktime": 0,
+            "preptime": 5,   
+            "price": 5.86,       
+            "image": "../assets/Lunch_Images",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Raspberry Yogurt Parfait",
+            "calories": 358,
+            "perServing": "1 Serving(320 g)",
+            "carbs": 43,
+            "fat": 16,
+            "protein":13,
+            "fiber": 5,
+            "sugar": 30,
+            "cooktime": 0,
+            "preptime": 10,
+            "price": 1.60,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Lunch_Images"
+          }
+        ]
+      },
+      {
+        "totalcal": 801,
+        "dietaryPreference": ["Mediterranean"],
+        "region": "Global",
+        "foods": [
+          {
+            "name": "Blackberry Yogurt Parfait",
+            "calories": 340,
+            "perServing": "1 Serving(350 g)",
+            "carbs": 29,
+            "fat": 13,
+            "protein": 30,
+            "fiber": 13,
+            "sugar": 15.1 ,
+            "cooktime": 0,
+            "preptime": 10,   
+            "price": 4.28,       
+            "image": "../assets/Lunch_Images",
+            "ingredients": ["banana"]
+          },
+          {
+            "name": "Simple Avocado and Cranberry Salad",
+            "calories": 461,
+            "perServing": "1 Serving(340 g)",
+            "carbs": 32,
+            "fat": 38,
+            "protein":8,
+            "fiber": 17,
+            "sugar": 10.6,
+            "cooktime": 0,
+            "preptime": 8,
+            "price": 1.86,
+            "ingredients": ["cucumber"],
+            "image": "../assets/Lunch_Images"
+          }
+        ]
+      }
+
+
+
+
+]

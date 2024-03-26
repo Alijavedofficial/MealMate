@@ -14,7 +14,9 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
   //Initialization
   @ViewChild('mealForm') mealForm?: ElementRef;
   mealform: FormGroup;
-  meals: any[] = [];
+  breakfast: any[] = [];
+  lunch: any[] = [];
+  dinner: any[] = [];
   snacks: any[] = [];
   filteredMeals: any[] = [];
   filteredSnacks: any[] = [];
@@ -24,8 +26,6 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
   totalFat: number = 0;
   TotalSugar: number = 0;
   TotalFiber: number = 0;
-  meallabel: string = '';
-  showFullContent: boolean[] = [];
   isLoading: boolean = false;
 
   constructor(
@@ -45,20 +45,18 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
       numberOfSnacks: [, [Validators.required, Validators.max(2)]],
       region: ['', Validators.required],
     });
-    this.meals.forEach(() => this.showFullContent.push(false));
+   
   }
 
   ngOnInit(): void {
-    this.mealService
-      .getMeals()
-      .pipe(untilDestroyed(this))
-      .subscribe(
-        (data) => {
-          this.meals = data;
-        },
-        (error) => {
-          console.error('error fetching Meals', error);
-        }
+    this.mealService.getBreakfast().pipe(untilDestroyed(this)).subscribe((data) => {
+          this.breakfast = data},(error) => { console.error('error fetching Breakfast', error)}
+      );
+    this.mealService.getLunch().pipe(untilDestroyed(this)).subscribe((data) => {
+          this.lunch = data},(error) => { console.error('error fetching Lunch', error)}
+      );
+    this.mealService.getDinner().pipe(untilDestroyed(this)).subscribe((data) => {
+          this.dinner = data},(error) => { console.error('error fetching Dinner', error)}
       );
     this.mealService
       .getSnacks()
@@ -109,13 +107,15 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
       totalFat: 0,
     };
 
-    for (const item of [...this.filteredMeals, ...this.filteredSnacks]) {
-      totals.totalCalories += item.calories;
-      totals.totalProtein += item.protein;
-      totals.TotalFiber += item.fiber;
-      totals.TotalSugar += item.sugar;
-      totals.totalFat += item.fat;
-      totals.totalCarbs += item.carbs;
+    for (const item of [...this.filteredMeals]) {
+      totals.totalCalories += item.totalcal;
+      for(const food of item.foods) {
+      totals.totalProtein += food.protein;
+      totals.TotalFiber += food.fiber;
+      totals.TotalSugar += food.sugar;
+      totals.totalFat += food.fat;
+      totals.totalCarbs += food.carbs;
+    }
     }
 
     Object.assign(this, totals);
@@ -129,47 +129,73 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     
     if (!totalCalories || !numberOfMeals) {
       return; // Do nothing if total calories or number of meals is not provided
+    } 
+    
+    const desiredCaloriesPerMeal = Math.round(totalCalories / numberOfMeals);
+
+    let numberOfBreakfastMeals: number = 0
+    let numberOfLunchMeals: number = 0
+    let numberOfDinnerMeals: number = 0
+
+    if(numberOfMeals == 2) {
+      numberOfBreakfastMeals = 1
+      numberOfLunchMeals = 1
+    } else if(numberOfMeals == 3) {
+      numberOfBreakfastMeals = 1
+      numberOfLunchMeals = 1
+      numberOfDinnerMeals = 1
+    } else if(numberOfMeals == 4){
+      
     }
+
+    let filteredMeals: any[] = [];
+
+    const breakfastOptions = this.filterAndSortMeals(this.breakfast, desiredCaloriesPerMeal, dietaryPreference, region);
+
+    const lunchOptions = this.filterAndSortMeals(this.lunch, desiredCaloriesPerMeal, dietaryPreference, region);
+
+    const dinnerOptions = this.filterAndSortMeals(this.dinner, desiredCaloriesPerMeal, dietaryPreference, region);
     
-    const mealCalories = totalCalories * 0.9;
-    const desiredCaloriesPerMeal = Math.round(mealCalories / numberOfMeals);
+    const breakfastMeals = this.selectItems(breakfastOptions, numberOfBreakfastMeals);
+
+    const lunchMeals = this.selectItems(lunchOptions, numberOfLunchMeals);
+
+    const dinnerMeals = this.selectItems(dinnerOptions, numberOfDinnerMeals);
     
-    let filteredMeals = this.meals;
+  
     
-    if (dietaryPreference && dietaryPreference !== 'none') {
-      filteredMeals = filteredMeals.filter((meal) => meal.dietaryPreference.includes(dietaryPreference))
-    }
-    
-    if (region && region !== 'none') {
-      filteredMeals = filteredMeals.filter((meal) => meal.region.includes(region));
-    }
-    
-    const sortedMeals = this.sortByCaloriesDifference(filteredMeals, desiredCaloriesPerMeal);
-    
-    const selectedMeals = this.selectItems(sortedMeals, numberOfMeals);
-    
-    this.filteredMeals = this.labelItems(selectedMeals, 'Meal');
-    
+    const mealPlan = breakfastMeals.concat(lunchMeals, dinnerMeals);
+    this.filteredMeals = mealPlan;
+  
     this.calculateTotals();
   }
   
-  private sortByCaloriesDifference(items: any[], desiredCalories: number): any[] {
+
+  filterAndSortMeals(meals: any[], desiredCalories: number, dietaryPreference: string, region: string): any[] {
+    let filteredMeals = meals;
+    if (dietaryPreference && dietaryPreference !== 'none') {
+      filteredMeals = filteredMeals.filter((meal) => meal.dietaryPreference.includes(dietaryPreference))
+    }
+    if (region && region !== 'none') {
+      filteredMeals = filteredMeals.filter((meal) => meal.region.includes(region));
+    }
+    const sortedMeals = this.sortByCaloriesDifference(filteredMeals, desiredCalories);
+    return sortedMeals;
+  }
+
+
+  sortByCaloriesDifference(items: any[], desiredCalories: number): any[] {
     return items.slice().sort((item1, item2) => {
-      const diff1 = Math.abs(item1.calories - desiredCalories);
-      const diff2 = Math.abs(item2.calories - desiredCalories);
+      const diff1 = Math.abs(item1.totalcal - desiredCalories);
+      const diff2 = Math.abs(item2.totalcal - desiredCalories);
       return diff1 - diff2;
     });
   }
   
-  private selectItems(items: any[], count: number): any[] {
+ selectItems(items: any[], count: number): any[] {
     return items.slice(0, count);
   }
   
-  private labelItems(meals: any[], prefix: string): any[] {
-    return meals.map((meal, index) => {
-      meal.label = `${prefix} ${index + 1}`;
-      return meal;
-    });
-  }
+ 
 
 }

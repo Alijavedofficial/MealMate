@@ -54,17 +54,7 @@
     <option value="none">None</option>
     <option value="Global">Global</option>
     <option value="Pakistani">Pakistani</option>
-    
-    <option value="Asian">Asian</option>
-    <option value="Thai">Thai</option>
-    <option value="Spanish">Spanish</option>
-    <option value="French">French</option>
-    <option value="Mexican">Mexican</option>
     <option value="Italian">Italian</option>
-    <option value="American">American</option>
-    <option value="Middle Eastern">Middle Eastern</option>
-    <option value="Japanese">Japanese</option>
-    <option value="Greek">Greek</option>
     <option value="Turkish">Turkish</option>
   </select> 
   <div
@@ -154,9 +144,11 @@
 <ng-template #loadedContent>
 <div class="flex justify-between gap-10 max-sm:flex-col mt-20 items-center" *ngIf="filteredMeals.length > 1">
   <div class="w-full max-sm:w-full">
-    <div *ngFor="let meal of filteredMeals" class="meals mb-5">
+    <div *ngFor="let meal of filteredMeals;let i = index" class="meals mb-5">
       <div class="px-4 py-2">
-      <h1>Breakfast</h1>
+      <h1 *ngIf="i === 0">Breakfast</h1>
+      <h1 *ngIf="i === 1">Lunch</h1>
+      <h1 *ngIf="i === 2">Dinner</h1>
       <h3>{{ meal.totalcal }} kcal</h3>
       <ul>
         <li *ngFor="let food of meal.foods">
@@ -195,7 +187,7 @@
       </div>
       <div class="Total-vals">
         <h2>Total Sugar</h2>
-        <span>{{TotalSugar}} g</span>
+        <span>{{TotalSugar | number}} g</span>
       </div>
       <div class="Total-vals">
         <h2>Total Fiber</h2>

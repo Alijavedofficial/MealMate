@@ -6,13 +6,22 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MealPlanService {
-  private MealapiUrl = '../../assets/foods.json'; 
+  private BreakfastapiUrl = '../../assets/Breakfast.json'; 
+  private LunchapiUrl = '../../assets/Lunch.json'; 
+  private DinnerapiUrl = '../../assets/Dinner.json'; 
+
   private SnackapiUrl = '../../assets/Snacks.json'
 
   constructor(private http: HttpClient) { }
 
-  getMeals(): Observable<any[]> {
-    return this.http.get<any[]>(this.MealapiUrl);
+  getBreakfast(): Observable<any[]> {
+    return this.http.get<any[]>(this.BreakfastapiUrl);
+  }
+  getLunch(): Observable<any[]> {
+    return this.http.get<any[]>(this.LunchapiUrl);
+  }
+  getDinner(): Observable<any[]> {
+    return this.http.get<any[]>(this.DinnerapiUrl);
   }
 
   getSnacks(): Observable<any[]> {
