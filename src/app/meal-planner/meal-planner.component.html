@@ -7,7 +7,7 @@
   <h1 class="text-[40px] font-semibold max-sm:text-[25px]">Stay In Perfect Shape With MealMate</h1>
   
 </div>
-<div class="grid grid-cols-3 gap-8">
+<div class="grid grid-cols-3 gap-8 max-sm:grid-cols-1 max-sm:px-5">
 
   <div class="field">
     <span><i class="fa-solid fa-cookie-bite"></i></span>
@@ -142,21 +142,31 @@
 
 <!--Meal are displayed here depending on user's preference-->
 <ng-template #loadedContent>
-<div class="flex justify-between gap-10 max-sm:flex-col mt-20 items-center" *ngIf="filteredMeals.length > 1">
+  <h1 class="text-[26px] font-semibold max-sm:text-[22px] pt-10 pb-5" *ngIf="filteredMeals.length > 1">Today's Meal Plan</h1>
+<div class="flex justify-between gap-10 max-sm:flex-col items-center" *ngIf="filteredMeals.length > 1">
   <div class="w-full max-sm:w-full">
     <div *ngFor="let meal of filteredMeals;let i = index" class="meals mb-5">
       <div class="px-4 py-2">
+        <div class="flex justify-between items-center pb-3">
+          <div class="font-semibold text-[18px] flex flex-col">
       <h1 *ngIf="i === 0">Breakfast</h1>
       <h1 *ngIf="i === 1">Lunch</h1>
       <h1 *ngIf="i === 2">Dinner</h1>
-      <h3>{{ meal.totalcal }} kcal</h3>
+      <h1 *ngIf="i === 3">Supper</h1>
+      <h3 class="text-[15px] font-normal">{{ meal.totalcal }} calories</h3>
+    </div>
+    <div class="flex gap-4 items-center">
+      <span class="opacity-55 hover:opacity-100 transition-opacity cursor-pointer text-[19px]"><i class="fa-solid fa-rotate"></i></span>
+      <span class="opacity-55 hover:opacity-100 transition-opacity cursor-pointer text-[14px] px-1" style="outline: 1px solid #31344b; border-radius: 50%;"><i class="fa-solid fa-ellipsis"></i></span>
+    </div>
+    </div>
       <ul>
         <li *ngFor="let food of meal.foods">
-        <div class="flex gap-4 mb-5">
+        <div class="flex gap-4 mb-4">
           <img [src]="food.image" class="rounded-xl w-[50px] h-[50px] object-cover">
           <div class="">
-          <span>{{ food.name }}</span><br>
-          <span>{{ food.perServing }}</span>
+          <span class="font-semibold text-[16px]">{{ food.name }}</span><br>
+          <span class="text-[15px] opacity-100 font-normal">{{ food.perServing }}</span>
           </div>
         </div>
         </li>
@@ -166,7 +176,7 @@
   </div>
 
 
-  <div class="flex flex-col w-[40%]">
+  <div class="flex flex-col w-[40%] max-sm:w-full px-4 py-2">
     <h1 class="text-[#000000] text-[1.5rem] font-semibold pb-4">Total Nutrition Value</h1>
     <div class="total-table">
       <div class="Total-vals">
@@ -182,7 +192,7 @@
         <span>{{totalCarbs}} g</span>
       </div>
       <div class="Total-vals">
-        <h2>Total Fat</h2>
+        <h2>Total Fat</h2> 
         <span>{{totalFat}} g</span>
       </div>
       <div class="Total-vals">
@@ -197,101 +207,5 @@
   </div>
   </div>
 </ng-template>
-  <!--
-<div *ngIf="filteredMeals.length > 0" class="mt-10 flex justify-between items-start gap-10 max-sm:flex-col" >
-  <ul class="w-[60%] flex flex-col">
-    <li *ngFor="let meal of filteredMeals;let i = index">
-       <h3 class="text-[20px] font-semibold">{{ meal.label }}:</h3>
-    <div class="flex p-4 mb-6 gap-5 justify-start meals">
-      <img
-        [src]="meal.image"
-        class="rounded-xl w-[130px] h-[130px] object-cover"
-      />
-      <div class="flex flex-col text-start w-full">
-        <div class="pb-2 flex justify-between">
-        <h1 class="pl-2 text-[20px] font-medium">{{ meal.name }}</h1>
-        
-        <h2 class="text-[16px] font-medium">{{ meal.perServing}}</h2>
-      </div>
-      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-6 2xl:grid-cols-6 3xl:grid-cols-6 w-full">
-        <div class="nutrients-Containers">
-          <h3 class="text-[16px] font-medium">Calories</h3>
-          <h2 class="text-[16px] font-medium">{{ meal.calories }}</h2>
-        </div>
-        <div class="nutrients-Containers">
-          <h3 class="text-[16px] font-medium">Proteins</h3>
-          <h2 class="text-[16px] font-medium text-green-600">{{ meal.protein }} g</h2>
-        </div>
-        <div class="nutrients-Containers">
-          <h3 class="text-[16px] font-medium">Carbs</h3>
-          <h2 class="text-[16px] font-medium text-orange-700">{{ meal.carbs }} g</h2>
-        </div>
-        <div class="nutrients-Containers">
-          <h3 class="text-[16px] font-medium">Fat</h3>
-          <h2 class="text-[16px] font-medium text-purple-600">{{ meal.fat }} g</h2>
-        </div>
-        <div class="nutrients-Containers">
-          <h3 class="text-[16px] font-medium">Sugar</h3>
-          <h2 class="text-[16px] font-medium text-red-600">{{ meal.sugar }} g</h2>
-        </div>
-        <div class="nutrients-Containers">
-          <h3 class="text-[16px] font-medium">Fibre</h3>
-          <h2 class="text-[16px] font-medium text-yellow-600">{{ meal.fiber }} g</h2>
-        </div>
-      </div>
-      <div class="pt-2 flex items-center gap-1" ><h1 class="pl-2 text-[20px] font-medium">Ingredients:</h1><p class="text-[16px] font-medium flex"> {{ showFullContent[i] ? meal.ingredients.join(', ') : (meal.ingredients.join(', ') | truncate: 30) }}<a (click)="toggleContent(i)" class="cursor-pointer">more</a></p></div>
-    </div>
-      </div>
-    </li>
-    <li *ngFor="let snack of filteredSnacks" > 
-      <h3 class="text-[20px] font-semibold">{{snack.label}}:</h3>
-      <div class="flex p-4 mb-6 gap-5 justify-start meals">
-      <img
-      [src]="snack.image"
-      class="rounded-xl w-[100px] h-[100px] object-cover"
-    />
-    <div class="flex flex-col text-start w-full">
-      <div class="pb-2 flex justify-between">
-      <h1 class="pl-2 text-[20px] font-medium">{{ snack.name }}</h1>
-      <h2 class="text-[16px] font-medium">{{ snack.servingSize}}</h2>
-    </div>
-
-    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-6 2xl:grid-cols-6 3xl:grid-cols-6 w-full">
-      <div class="nutrients-Containers">
-        <h3 class="text-[16px] font-medium">Calories</h3>
-        <h2 class="text-[16px] font-medium">{{ snack.calories }}</h2>
-      </div>
-      <div class="nutrients-Containers">
-        <h3 class="text-[16px] font-medium">Proteins</h3>
-        <h2 class="text-[16px] font-medium text-green-600">{{ snack.protein }} g</h2>
-      </div>
-      <div class="nutrients-Containers">
-        <h3 class="text-[16px] font-medium">Carbs</h3>
-        <h2 class="text-[16px] font-medium text-orange-700">{{ snack.carbs }} g</h2>
-      </div>
-      <div class="nutrients-Containers">
-        <h3 class="text-[16px] font-medium">Fat</h3>
-        <h2 class="text-[16px] font-medium text-purple-600">{{ snack.fat }} g</h2>
-      </div>
-      <div class="nutrients-Containers">
-        <h3 class="text-[16px] font-medium">Sugar</h3>
-        <h2 class="text-[16px] font-medium text-red-600">{{ snack.sugar }} g</h2>
-      </div>
-      <div class="nutrients-Containers">
-        <h3 class="text-[16px] font-medium">Fibre</h3>
-        <h2 class="text-[16px] font-medium text-yellow-600">{{ snack.fiber }} g</h2>
-      </div>
-    </div>
-    </div>
-  </div>
-    </li>  
-  </ul>
-  
-</div>-->
-
-
-
-
-
 
 </div>

@@ -14,7 +14,7 @@
        </div>
        <li routerLink="/articles"><a>Articles</a></li>
        <div class="dropdown" (mouseover)="showDropdown2 = true" (mouseleave)="showDropdown2 = false">
-         <button class="dropdown-toggle">RecipeFinder<i class="fa-solid fa-angle-down pl-1 text-[12px]" [ngClass]="{'fas fa-angle-up': showDropdown2}"></i></button>
+         <button class="dropdown-toggle">Products<i class="fa-solid fa-angle-down pl-1 text-[12px]" [ngClass]="{'fas fa-angle-up': showDropdown2}"></i></button>
          <div class="dropdown-menu" [ngClass]="{'show': showDropdown2}">
            <div class="dropdown-item border-b border-[#d1d9e6]"><li routerLink="/recipe" class="flex gap-5 items-center" ><span><i class="fa-solid fa-drumstick-bite"></i></span><a>Search Recipes</a></li></div>
            <div class="dropdown-item"><li routerLink="/ingredient" class="flex gap-5 items-center" ><span><i class="fa-solid fa-wheat-awn"></i></span><a>By Ingredients</a></li></div>

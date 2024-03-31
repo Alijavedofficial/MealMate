@@ -8,18 +8,22 @@ import { catchError } from 'rxjs/operators';
 })
 export class ArticlesService {
 
-  private apiKey = 'ab6a22a31eea48808ec7688ec9782278';
+  private apiKey = '85a7ec71c9msh2ed12097307b2e6p1efa68jsna4f453e9cc06';
+  private apiUrl = 'https://google-news13.p.rapidapi.com/v1/search';
 
   constructor(private http: HttpClient) { }
 
-  getDietArticles(): Observable<any> {
-    const apiUrl = `https://newsapi.org/v2/everything?q=diet&apiKey=${this.apiKey}`;
-    
-    return this.http.get(apiUrl).pipe(
-      catchError(error => {
-        console.error('Error fetching articles:', error);
-        return throwError('Error fetching articles. Please try again later.');
-      })
-    );
-  }
+  getArticles(query: string) {
+    return this.http.get(this.apiUrl, {
+      params: {
+        q: query,
+        lang: 'en',
+        country: 'us'
+      },
+      headers: {
+        'x-rapidapi-key': this.apiKey,
+        'x-rapidapi-host': 'google-news13.p.rapidapi.com'
+      }
+    });
+ }
 }
