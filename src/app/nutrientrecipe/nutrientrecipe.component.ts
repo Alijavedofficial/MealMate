@@ -12,6 +12,7 @@ export class NutrientrecipeComponent {
   ingredientsInput: string = '';
   suggestedRecipes: any[] = [];
   errorMessage: string = '';
+  isLoading: boolean = false;
 
   constructor(private recipeService: NutrientrecipeService) { }
   analyzeNutrition(): void {
@@ -40,5 +41,12 @@ export class NutrientrecipeComponent {
         this.errorMessage = 'Error fetching recipes';
       }
     );
+  }
+
+  showLoader() {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);
   }
 }

@@ -1,15 +1,27 @@
 <div class="container">
-    <h1>Nutrition Analyzer</h1>
+    
     <div>
-      <label for="ingredients">Enter Ingredients:</label>
-      <textarea id="ingredients" name="ingredients" [(ngModel)]="ingredientsInput" rows="4"></textarea>
-      <button (click)="analyzeNutrition()">Analyze</button>
+      
+      <textarea [(ngModel)]="ingredientsInput" rows="6" placeholder="Enter Ingredients ..."></textarea>
+      <button (click)="analyzeNutrition()" (click)="showLoader()" >Analyze</button>
     </div>
   
     <div *ngIf="errorMessage" class="error">
       {{ errorMessage }}
     </div>
   
+    <div *ngIf="isLoading; else loadedContent" class="justify-center items-center flex w-full gap-6 py-16">
+  
+      <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+        <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+      </svg>
+    </div>
+
+    <ng-template #loadedContent>
+
     <div *ngIf="suggestedRecipes.length > 0">
       <h2>Suggested Recipes</h2>
       <div *ngFor="let recipe of suggestedRecipes" class="recipe">
@@ -20,5 +32,6 @@
         
       </div>
     </div>
+  </ng-template>
   </div>
   

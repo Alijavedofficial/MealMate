@@ -68,7 +68,6 @@ select {
   width: 50px;
   margin-left: 14px;
   line-height: 50px;
-  color: #31344b;
 }
 .field span i {
   font-size: 18px;
@@ -187,5 +186,7 @@ button:focus {
   background-color: #31344b;
   color: white;
 }
+
+
 
 

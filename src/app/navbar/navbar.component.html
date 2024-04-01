@@ -1,25 +1,35 @@
-<nav class="flex w-full justify-between items-center py-4 px-6 max-sm:px-0" #navbar>
-  <div>
-     <img src="../../assets/mealmate-high-resolution-logo-transparent.png" class="w-[150px] max-sm:w-[100px]" />
+<nav class="flex w-full justify-between items-center py-4 px-8 max-sm:px-0 list-none" #navbar>
+
+  <div class="flex items-center gap-14">
+  <div class="py-2 px-3 logo ">
+     <img src="../../assets/mealmate-favicon-black.png" class="w-[25px] max-sm:w-[20px]" />
   </div>
-  <div class="flex">
-     <ul class="nav-ul">
-       <li routerLink="/planner"><a>MealPlanner</a></li>
+  <div class="flex items-center font-medium cursor-pointer max-lg:hidden">
+    <li routerLink="/planner" class="pr-3"><a>MealPlanner</a></li>
+
        <div class="dropdown" (mouseover)="showDropdown = true" (mouseleave)="showDropdown = false">
-         <button class="dropdown-toggle">Calculators<i class="fa-solid fa-angle-down pl-1 text-[12px]" [ngClass]="{'fas fa-angle-up': showDropdown}"></i></button>
+         <button class="dropdown-toggle">Calculators<i class="fa-solid fa-angle-down pl-1 text-[12px] ml-1" [ngClass]="{'fas fa-angle-up': showDropdown}"></i></button>
          <div class="dropdown-menu z-10" [ngClass]="{'show': showDropdown}">
-           <div class="dropdown-item border-b border-[#d1d9e6]"><li routerLink="/calorie" class="flex gap-5 items-center"><span><i class="fa-solid fa-cookie"></i></span><a>Calorie Calculator</a></li></div>
-           <div class="dropdown-item"><li routerLink="/fat" class="flex gap-5 items-center" ><span><i class="fa-solid fa-bowl-food"></i></span><a>Fat Calculator</a></li></div>
+           <div class="dropdown-item border-b border-[#d1d9e6]"><span><i class="fa-solid fa-cookie"></i></span><li routerLink="/calorie" class=""><a>Cal Calculator</a><p>Calculate your calories</p></li></div>
+           <div class="dropdown-item"><span><i class="fa-solid fa-bowl-food"></i></span><li routerLink="/fat" class="" ><a>Fat Calculator</a><p>Know your body's fat</p></li></div>
          </div>
        </div>
-       <li routerLink="/articles"><a>Articles</a></li>
+       <!--<li routerLink="/articles"><a>Articles</a></li> -->
+
        <div class="dropdown" (mouseover)="showDropdown2 = true" (mouseleave)="showDropdown2 = false">
-         <button class="dropdown-toggle">Products<i class="fa-solid fa-angle-down pl-1 text-[12px]" [ngClass]="{'fas fa-angle-up': showDropdown2}"></i></button>
+         <button class="dropdown-toggle">Products<i class="fa-solid fa-angle-down pl-1 text-[12px] ml-1" [ngClass]="{'fas fa-angle-up': showDropdown2}"></i></button>
          <div class="dropdown-menu" [ngClass]="{'show': showDropdown2}">
-           <div class="dropdown-item border-b border-[#d1d9e6]"><li routerLink="/recipe" class="flex gap-5 items-center" ><span><i class="fa-solid fa-drumstick-bite"></i></span><a>Search Recipes</a></li></div>
-           <div class="dropdown-item"><li routerLink="/ingredient" class="flex gap-5 items-center" ><span><i class="fa-solid fa-wheat-awn"></i></span><a>By Ingredients</a></li></div>
+           <div class="dropdown-item border-b border-[#d1d9e6]"><span><i class="fa-solid fa-drumstick-bite"></i></span><li routerLink="/recipe" class="" ><a>Search Recipes</a><p>Look out for recipes</p></li></div>
+           <div class="dropdown-item"><span><i class="fa-solid fa-wheat-awn"></i></span><li routerLink="/ingredient" class=""><a>By Ingredients</a><p>Search recipes by ingredient</p></li></div>
          </div>
        </div>
+  </div>
+
+
+</div>
+  <div class="flex max-lg:hidden" >
+     <ul class="nav-ul">
+       
        <li>
          <a><button class="btn" routerLink="/login">
            <span class="icon"><i class="fa-solid fa-user"></i></span>
@@ -28,11 +38,11 @@
        </li>
      </ul>
   </div>
-  <!-- Hamburger Menu for Smaller Screens 
-  <div class="sm:hidden">
+  
+  <div class="lg:hidden">
      <button (click)="openMenu()" class="focus:outline-none">
       <i class="fa-solid fa-bars"></i>
      </button>
-  </div>-->
+  </div>
  </nav>
  

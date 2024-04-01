@@ -11,14 +11,12 @@
     border: none;
     outline: none;
     cursor: pointer;
+    border: 1px solid #d1d9e6;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px #babecc,
-                -5px -5px 10px #ffffff73;
+    box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff!important;
   }
   
-  .btn:hover {
-    box-shadow: 0 0 20px 0px #2e2e2e3a;
-  }
+  
   
   .btn .icon {
     position: absolute;
@@ -45,8 +43,6 @@
   
   .btn:focus {
     color: #3498db;
-  box-shadow: inset 2px 2px 5px #babecc,
-              inset -5px -5px 10px #ffffff73;
   }
   
   .btn:active .icon {
@@ -73,7 +69,7 @@
 
 .dropdown-toggle {
   border: none;
-  padding: 10px 25px;
+  padding: 10px 20px;
 }
 
 .dropdown-menu {
@@ -81,12 +77,11 @@
   position: absolute;
   top: 40px;
   padding: 10px 0;
-  border: 1px solid #ccc;
   background-color: #e6e7ee;
   border-radius: 12px;
-  box-shadow: -3px -3px 7px #ffffff73,
-    2px 2px 5px rgba(94, 104, 121, 0.288);
+  border: 1px solid #d1d9e6;
     z-index: 9999;
+    box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff!important;
 }
 
 .dropdown-menu.show {
@@ -98,10 +93,16 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 15px 20px;
 }
 .dropdown-item li{
-  font-size: 14px;
+  font-size: 16px;
+  width: 130px;
+}
+.dropdown-item p{
+  font-size: 12px;
+  color: #777777;
 }
 .dropdown-item:hover {
   background: #e6e7ee;
@@ -112,3 +113,8 @@ span i{
   font-size: 22px;
 }
 
+.logo{
+  box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff!important;
+  border-radius: 5px;
+  border: 1px solid #d1d9e6;
+}

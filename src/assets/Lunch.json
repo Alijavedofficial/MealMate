@@ -16,7 +16,7 @@
             "cooktime": 0,
             "preptime": 10,   
             "price": 2.38,       
-            "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+            "image": "../assets/Lunch_Images/Banana Avocado Protein Smoothie.jpeg",
             "ingredients": ["banana"]
           },
           {
@@ -32,7 +32,7 @@
             "preptime": 10,
             "price": 1.80,
             "ingredients": ["cucumber"],
-            "image": "../assets/Meal_Images/Simple Bread.jpeg"
+            "image": "../assets/Lunch_Images/Lettuce Cucumber Walnut Salad.jpg"
           }
         ]
       },
@@ -53,7 +53,7 @@
             "cooktime": 0,
             "preptime": 5,   
             "price": 3.85,       
-            "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+            "image": "../assets/Lunch_Images/Yogurt Parfait.jpeg",
             "ingredients": ["banana"]
           },
           {
@@ -90,7 +90,7 @@
             "cooktime": 0,
             "preptime": 5,   
             "price": 2.15,       
-            "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+            "image": "../assets/Lunch_Images/Tuna Salad.jpg",
             "ingredients": ["banana"]
           },
           {
@@ -106,7 +106,7 @@
             "preptime": 3,
             "price": 2.19,
             "ingredients": ["cucumber"],
-            "image": "../assets/Meal_Images/Simple Bread.jpeg"
+            "image": "../assets/Lunch_Images/Yogurt with Almonds & Honey.jpg"
           }
         ]
       },
@@ -127,7 +127,7 @@
             "cooktime": 0,
             "preptime": 20,   
             "price": 1.14,       
-            "image": "../assets/Meal_Images/Basic Scrambled eggs.jpeg",
+            "image": "../assets/Lunch_Images/Asian Tuna Salad.jpeg",
             "ingredients": ["banana"]
           },
           {
@@ -143,7 +143,7 @@
             "preptime": 5,
             "price": 1.49,
             "ingredients": ["cucumber"],
-            "image": "../assets/Meal_Images/Simple Bread.jpeg"
+            "image": "../assets/Lunch_Images/Chocolate Avocado Smoothie.jpeg"
           }
         ]
       },
@@ -164,7 +164,7 @@
             "cooktime": 0,
             "preptime": 5,   
             "price": 5.86,       
-            "image": "../assets/Lunch_Images",
+            "image": "../assets/Lunch_Images/Blueberry Almond Butter Protein Smoothie.jpg",
             "ingredients": ["banana"]
           },
           {
@@ -180,7 +180,7 @@
             "preptime": 10,
             "price": 1.60,
             "ingredients": ["cucumber"],
-            "image": "../assets/Lunch_Images"
+            "image": "../assets/Lunch_Images/Raspberry Yogurt Parfait.jpeg"
           }
         ]
       },
@@ -201,7 +201,7 @@
             "cooktime": 0,
             "preptime": 10,   
             "price": 4.28,       
-            "image": "../assets/Lunch_Images",
+            "image": "../assets/Lunch_Images/Blackberry Yogurt Parfait.jpeg",
             "ingredients": ["banana"]
           },
           {
@@ -217,7 +217,7 @@
             "preptime": 8,
             "price": 1.86,
             "ingredients": ["cucumber"],
-            "image": "../assets/Lunch_Images"
+            "image": "../assets/Lunch_Images/Simple Avocado and Cranberry Salad.jpg"
           }
         ]
       }

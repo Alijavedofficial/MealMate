@@ -61,8 +61,7 @@ export class RecipeFinderComponent {
   showLoader() {
     this.isLoading = true;
     setTimeout(() => {
-      this.searchRecipe()
       this.isLoading = false;
-    }, 3000);
+    }, 2000);
   }
 }
