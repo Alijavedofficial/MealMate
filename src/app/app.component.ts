@@ -16,7 +16,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         transform: 'scale(0.5)'
       })),
       transition('visible => hidden', [
-        animate('2s')
+        animate('1s')
       ])
     ])
   ]

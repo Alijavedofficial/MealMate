@@ -2,10 +2,10 @@
 
 <div class="px-32 text-center m-auto max-sm:px-0">
   <h1 class="text-[40px] font-semibold max-sm:text-[25px]">Put your diet on autopilot</h1>
-  <p class="leading-7 text-[16px] max-sm:hidden px-10">Mealmate creates personalized meal plans based on your food preferences, budget, region, and schedule. Reach your diet and nutritional goals with our calorie calculator, daily meal plans,  and more. Create your meal plan right here in seconds.</p>
+  <p class="leading-7 text-[16px] max-sm:hidden px-14">Mealmate creates personalized meal plans based on your food preferences, budget, region, and schedule. Reach your diet and nutritional goals with our calorie calculator, daily meal plans,  and more. Create your meal plan right here in seconds.</p>
 </div>
 
-<div class="p-4 text-center">
+<div class="pb-4 pt-12 text-center">
   <h1 class="text-[18px] font-medium">Ready to give it a shot? Let us know your diet.</h1>
 </div>
 
@@ -13,11 +13,12 @@
 <form [formGroup]="mealform" class="px-20 py-6 max-sm:px-3" (submit)="generateMealPlan()">
   <div>
   
-<div class="grid grid-cols-3 gap-8 max-sm:grid-cols-1 max-sm:px-5">
+<div class="grid grid-cols-2 gap-8 max-sm:grid-cols-1 max-sm:px-5">
 
   <div class="field">
     <span><i class="fa-solid fa-cookie-bite"></i></span>
      <input type="number" id="maxCalories" formControlName="TotalCalories" placeholder="Calories"/>
+     
   
   <div *ngIf="(mealform.get('TotalCalories')?.invalid && mealform.get('TotalCalories')?.dirty) || mealform.get('TotalCalories')?.touched">
     <div *ngIf="mealform.get('TotalCalories')?.errors?.['required']" class="text-red-800">Enter Calories</div>
@@ -51,8 +52,8 @@
       Select Preference
     </div>
   </div>
-</div>
-
+</div> 
+<!--
 <div class="field">
   <span><i class="fa-solid fa-earth-americas"></i></span>
   <select formControlName="region"> 
@@ -77,7 +78,7 @@
       Select Region
     </div>
   </div>
-</div>
+</div>-->
 
 <div class="flex flex-col gap-2 items-start justify-start ">
   
@@ -107,27 +108,12 @@
 
 
 
-<div class="flex flex-col gap-2 items-start justify-start ">
-<label class="font-medium text-[17px]">Number of Snacks:</label>
-<div class="flex gap-6 py-2">
-  <div class="neumorphism-input">
-    <input type="radio" id="option0" value="0" formControlName="numberOfSnacks" >
-    <label for="option0" data-label="0"></label>
-</div>
 
-  <div class="neumorphism-input">
-    <input type="radio" id="option1" value="1" formControlName="numberOfSnacks" >
-    <label for="option1" data-label="1"></label>
-</div>
 
-<div class="neumorphism-input">
-    <input type="radio" id="options2" value="2" formControlName="numberOfSnacks">
-    <label for="options2" data-label="2"></label>
-</div>
-</div>
-</div>
+
 
 </div>
+
   <button class="p-3 px-5 rounded-lg" (click)="showLoader()" (click)="generateMealPlan()" type="submit">
     Generate Meals
   </button>
@@ -220,5 +206,17 @@
   
 </div>
 
+
+
+<div class="grid grid-cols-2 gap-10 justify-between items-center contact my-10 px-4 py-4">
+  <div class="px-6 flex flex-col gap-3">
+    <h1 class="text-[24px] font-semibold py-1">Get in touch</h1>
+    <p>If you need any help with our products or services, choose one of the following ways to contact us.</p>
+    <a class="cnt-btn p-2 my-2" routerLink="/login"><span class="mr-3"><i class="fa-regular fa-address-book"></i></span>Contact Us</a>
+  </div>
+  <div>
+  <img src="https://demo.themesberg.com/neumorphism-ui/assets/img/illustrations/reading-side.svg" class="w-[350px]">
+</div>
+</div>
 
 </div>

@@ -92,7 +92,6 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
   showLoader() {
     this.isLoading = true;
     setTimeout(() => {
-      this.generateMealPlan();
       this.isLoading = false;
     }, 1000);
   }
