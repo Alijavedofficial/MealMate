@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit  } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, Renderer2  } from '@angular/core';
 import gsap from 'gsap';
 @Component({
   selector: 'app-navbar',
@@ -9,8 +9,9 @@ export class NavbarComponent implements AfterViewInit{
   @ViewChild('navbar') navbar?: ElementRef;
    showDropdown: boolean = false;
   showDropdown2: boolean = false;
-  open: boolean = false
-  constructor() {}
+  isMenuOpen: boolean = false;
+  
+  constructor( private renderer:Renderer2) {}
   
 ngAfterViewInit(): void {
   this.animateNavbar()
@@ -25,8 +26,20 @@ animateNavbar():void {
 
 }
  
-openMenu():void{
-  this.open = true
+openMenu() {
+  this.isMenuOpen = true;
+
+  this.renderer.addClass(document.body, 'overflow-hidden')
+  
+}
+
+closeMenu() {
+  this.isMenuOpen = false;
+  // Close dropdown menus if they are open
+  this.showDropdown = false;
+  this.showDropdown2 = false;
+
+  this.renderer.removeClass(document.body, 'overflow-hidden')
 }
 
 }
