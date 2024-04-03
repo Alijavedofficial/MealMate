@@ -204,11 +204,31 @@ button:focus {
   font-size: 1rem;
   border-radius: 12px;
   margin-top: 10px;
-  width: 30%;
   font-weight:600;
   transition: transform 0.3s ease-in-out;
 }
 
 .cnt-btn:hover{
   box-shadow: inset 3px 3px 6px #b8b9be,inset  -3px -3px 6px #fff;
+}
+.span{
+  background: #e6e7ee;
+  border-radius: 50%;
+  font-size: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  box-shadow:  3px 3px 6px #b8b9be,  -3px -3px 6px #fff;
+}
+.copyright{
+  border-top: 1px solid #d1d9e6;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

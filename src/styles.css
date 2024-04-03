@@ -5,7 +5,7 @@
 
 body{
     background-color: #e6e7ee;
-    padding: 10px 40px;
+    padding: 10px;
     font-family: "Quicksand", sans-serif;
     color: #31344b;
  }
@@ -135,5 +135,9 @@ body { margin: 0; }
   20% {
    transform: scaleY(1);
   }
+ }
+
+ p{
+  color: #44476a;
  }
 
