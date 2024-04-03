@@ -28,6 +28,7 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
   TotalSugar: number = 0;
   TotalFiber: number = 0;
   isLoading: boolean = false;
+  errorMessage: string = '';
 
   constructor(
     private mealService: MealPlanService,
@@ -43,8 +44,7 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
         [Validators.required, Validators.min(1), Validators.max(5)],
       ],
       dietaryPreference: ['', Validators.required],
-      numberOfSnacks: [, [Validators.required, Validators.max(2)]],
-      region: ['', Validators.required],
+     
     });
    
   }
@@ -122,6 +122,9 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
   }
 
   generateMealPlan() {
+ this.errorMessage = ''
+    if(this.mealform.valid) {
+
     const totalCalories = this.mealform.get('TotalCalories')?.value;
     const numberOfMeals = this.mealform.get('numberOfMeals')?.value;
     const dietaryPreference = this.mealform.get('dietaryPreference')?.value;
@@ -172,7 +175,10 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     this.filteredMeals = mealPlan;
   
     this.calculateTotals();
+  } else {
+    this.errorMessage = 'Please fill correct info...'
   }
+}
   
 
   filterAndSortMeals(meals: any[], desiredCalories: number, dietaryPreference: string, region: string): any[] {

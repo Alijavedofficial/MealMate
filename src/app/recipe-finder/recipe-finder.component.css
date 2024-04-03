@@ -34,12 +34,6 @@
   .field input:focus{
     box-shadow: inset 4px 4px 8px #b8b9be,inset -4px -4px 8px #fff;
   }
-
-  
-  .error {
-    color: red;
-    text-align: center;
-  }
   
   .related-recipes {
     display: flex;

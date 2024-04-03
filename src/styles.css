@@ -140,4 +140,8 @@ body { margin: 0; }
  p{
   color: #44476a;
  }
+ .error {
+  color: red;
+  text-align: center;
+}
 
