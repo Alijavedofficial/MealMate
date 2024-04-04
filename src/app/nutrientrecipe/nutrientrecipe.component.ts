@@ -25,6 +25,7 @@ export class NutrientrecipeComponent {
 
     this.recipeService.searchRecipesByIngredients(ingredientsArray).subscribe(
       (response: any[]) => {
+        console.log(response)
         if (response.length > 0) {
           this.suggestedRecipes = response.map((recipe: any) => ({
             ...recipe,

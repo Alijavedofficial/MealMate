@@ -10,17 +10,16 @@
        <div class="dropdown" (mouseover)="showDropdown = true" (mouseleave)="showDropdown = false">
          <button class="dropdown-toggle">Calculators<i class="fa-solid fa-angle-down pl-1 text-[12px] ml-1" [ngClass]="{'fas fa-angle-up': showDropdown}"></i></button>
          <div class="dropdown-menu z-10" [ngClass]="{'show': showDropdown}">
-           <div class="dropdown-item border-b border-[#d1d9e6]"><span><i class="fa-solid fa-cookie"></i></span><li routerLink="/calorie" class=""><a>Cal Calculator</a><p>Calculate your calories</p></li></div>
-           <div class="dropdown-item"><span><i class="fa-solid fa-bowl-food"></i></span><li routerLink="/fat" class="" ><a>Fat Calculator</a><p>Know your body's fat</p></li></div>
+           <div class="dropdown-item border-b border-[#d1d9e6]" routerLink="/calorie"><span><i class="fa-solid fa-cookie"></i></span><li><a>Cal Calculator</a><p>Calculate your calories</p></li></div>
+           <div class="dropdown-item"  routerLink="/fat"><span><i class="fa-solid fa-bowl-food"></i></span><li><a>Fat Calculator</a><p>Know your body's fat</p></li></div>
          </div>
        </div>
-       <!--<li routerLink="/articles"><a>Articles</a></li> -->
 
        <div class="dropdown" (mouseover)="showDropdown2 = true" (mouseleave)="showDropdown2 = false">
          <button class="dropdown-toggle">Products<i class="fa-solid fa-angle-down pl-1 text-[12px] ml-1" [ngClass]="{'fas fa-angle-up': showDropdown2}"></i></button>
          <div class="dropdown-menu" [ngClass]="{'show': showDropdown2}">
-           <div class="dropdown-item border-b border-[#d1d9e6]"><span><i class="fa-solid fa-drumstick-bite"></i></span><li routerLink="/recipe" class="" ><a>Search Recipes</a><p>Look out for recipes</p></li></div>
-           <div class="dropdown-item"><span><i class="fa-solid fa-wheat-awn"></i></span><li routerLink="/ingredient" class=""><a>By Ingredients</a><p>Search recipes by ingredient</p></li></div>
+           <div class="dropdown-item border-b border-[#d1d9e6]" routerLink="/recipe"><span><i class="fa-solid fa-drumstick-bite"></i></span><li><a>Search Recipes</a><p>Look out for recipes</p></li></div>
+           <div class="dropdown-item" routerLink="/ingredient"><span><i class="fa-solid fa-wheat-awn"></i></span><li><a>By Ingredients</a><p>Search recipes by ingredient</p></li></div>
          </div>
        </div>
   </div>
@@ -58,10 +57,10 @@
     <ul class="text-center">
       
       <li class="my-6 opacity-80 hover:opacity-100 transition-opacity font-medium"><a routerLink="/planner">MealPlanner</a></li>
-      <li class="my-6 opacity-80 hover:opacity-100 transition-opacity font-medium"><a routerLink="/calorie">Calorie Calculator</a></li>
-      <li class="my-6 opacity-80 hover:opacity-100 transition-opacity font-medium"><a routerLink="/fat">Fat Calculator</a></li>
       <li class="my-6 opacity-80 hover:opacity-100 transition-opacity font-medium"><a routerLink="/recipe">Search Recipes</a></li>
-      <li class="my-6 opacity-80 hover:opacity-100 transition-opacity font-medium"><a routerLink="/ingredient">By Ingredients</a></li>  
+      <li class="my-6 opacity-80 hover:opacity-100 transition-opacity font-medium"><a routerLink="/ingredient">By Ingredients</a></li>
+      <li class="my-6 opacity-80 hover:opacity-100 transition-opacity font-medium"><a routerLink="/calorie">Calorie Calculator</a></li>
+      <li class="my-6 opacity-80 hover:opacity-100 transition-opacity font-medium"><a routerLink="/fat">Fat Calculator</a></li>  
        
       <li class="my-6">
         <a routerLink="/login">

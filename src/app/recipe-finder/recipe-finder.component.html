@@ -13,7 +13,7 @@
     <span><i class="fa-solid fa-utensils"></i></span>
      <input type="text" id="dishName" name="dishName" [(ngModel)]="dishName" placeholder="Dish Name"/>
      </div>
-      <button type="submit" (click)="searchRecipe()" (click)="showLoader()">Search</button>
+      <button type="submit" class="text-start" (click)="searchRecipe()" (click)="showLoader()">Search</button>
     </form>
 
     <div *ngIf="isLoading && !errorMessage; else loadedContent" class="justify-center items-center flex w-full gap-6 py-16">  
@@ -28,8 +28,11 @@
 
   <ng-template #loadedContent>
     <div *ngIf="recipe" >
+      <div class="flex justify-between items-center">
+      <div><img [src]="recipe.image" alt="{{ recipe.title }}"></div>
+      <div>
       <h2>{{ recipe.title }}</h2>
-      <img [src]="recipe.image" alt="{{ recipe.title }}">
+      
   
       <div *ngIf="recipe.readyInMinutes">
         <p>Ready in {{ recipe.readyInMinutes }} minutes</p>
@@ -38,13 +41,16 @@
       <div *ngIf="recipe.servings">
         <p>Servings: {{ recipe.servings }}</p>
       </div>
+
+      <p><a href="{{ recipe.sourceUrl }}" target="_blank">View Recipe</a></p>
   
       <div *ngIf="recipe.extendedIngredients">
         <h3>Ingredients:</h3>
         <ul>
           <li *ngFor="let ingredient of recipe.extendedIngredients">{{ ingredient.original }}</li>
         </ul>
-      </div>
+      </div></div>
+    </div>
   
       <div *ngIf="recipe.instructions">
         <h3>Instructions:</h3>
@@ -58,20 +64,24 @@
         </ul>
       </div>
   
-      <div *ngIf="recipe.nutrition">
-        <h3>Nutrition Facts:</h3>
-        <p>Calories: {{ recipe.nutrition.calories }}</p>
-        <p>Protein: {{ recipe.nutrition.protein }}</p>
-        <p>Fat: {{ recipe.nutrition.fat }}</p>
-        <p>Carbohydrates: {{ recipe.nutrition.carbs }}</p>
-      </div>
+      <h3>Nutrition Facts:</h3>
+  <ng-container *ngIf="recipe.nutrition">
+    <p>Calories: {{ recipe.nutrition.calories }} kcal</p>
+    <p>Protein: {{ recipe.nutrition.protein }} g</p>
+    <p>Fat: {{ recipe.nutrition.fat }} g</p>
+    <p>Carbohydrates: {{ recipe.nutrition.carbs }} g</p>
+  </ng-container>
+  <ng-container *ngIf="!recipe.nutrition">
+    <p>Nutrition information not available</p>
+  </ng-container>
+      
   
       <!-- Add more details as needed -->
   
       <h2>Related Recipes</h2>
       <ul *ngFor="let relatedRecipe of relatedRecipes">
         <li >{{ relatedRecipe.title }}</li>
-        
+        <img [src]="relatedRecipe.image" alt="{{ relatedRecipe.title }}">
           
             <p>Ready in {{ relatedRecipe.readyInMinutes }} minutes</p>
           

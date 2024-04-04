@@ -10,7 +10,7 @@
 </div>
 
   <!--Meal Form for entering calories,meals and user's preference-->
-<form [formGroup]="mealform" class="px-20 py-6 max-sm:px-3">
+<form [formGroup]="mealform" class="px-20 py-6 max-sm:px-3" (submit)="generateMealPlan()">
   <div>
   
 <div class="grid grid-cols-2 gap-8 max-sm:grid-cols-1 max-sm:px-5">
@@ -53,32 +53,6 @@
     </div>
   </div>
 </div> 
-<!--
-<div class="field">
-  <span><i class="fa-solid fa-earth-americas"></i></span>
-  <select formControlName="region"> 
-    <option value="" disabled selected>Select Region</option>
-    <option value="none">None</option>
-    <option value="Global">Global</option>
-    <option value="Pakistani">Pakistani</option>
-    <option value="Italian">Italian</option>
-    <option value="Turkish">Turkish</option>
-  </select> 
-  <div
-    *ngIf="
-      (mealform.get('region')?.invalid &&
-        mealform.get('region')?.dirty) ||
-      mealform.get('region')?.touched
-    "
-  >
-    <div
-      *ngIf="mealform.get('region')?.errors?.['required']"
-      class="text-red-800"
-    >
-      Select Region
-    </div>
-  </div>
-</div>-->
 
 <div class="flex flex-col gap-2 items-start justify-start ">
   
@@ -105,9 +79,6 @@
 </div>
 </div>
   </div>
-
-
-
 
 
 

@@ -12,8 +12,17 @@ export class NutrientrecipeService {
 
   constructor(private http: HttpClient) { }
 
-  searchRecipesByIngredients(ingredients: string[]): Observable<any> {
+  searchRecipesByIngredients(ingredients: string[], includeNutrition: boolean = false): Observable<any> {
     const query = ingredients.join(',');
-    return this.http.get<any>(`${this.API_URL}/findByIngredients?ingredients=${query}&apiKey=${this.API_KEY}`);
+    let apiUrl = `${this.API_URL}/findByIngredients?ingredients=${query}&apiKey=${this.API_KEY}`;
+  
+    // Add includeNutrition parameter if true
+    if (includeNutrition) {
+      apiUrl += '&includeNutrition=true';
+    }
+  
+    // Make the HTTP GET request with the modified URL
+    return this.http.get<any>(apiUrl);
   }
+  
 }

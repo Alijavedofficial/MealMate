@@ -28,6 +28,8 @@
         <h3>{{ recipe.title }}</h3>
         <p>Ready in: {{ recipe.readyInMinutes }} minutes</p>
         <p>Servings: {{ recipe.servings }}</p>
+        <p>Ingredients: {{recipe.ingredients}}</p>
+        <p>Instructions: {{recipe.instructions}}</p>
         <img *ngIf="recipe.image" [src]="recipe.image" alt="{{ recipe.title }}" width="150">
         
       </div>

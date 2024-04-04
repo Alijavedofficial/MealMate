@@ -56,6 +56,7 @@ export class RecipeFinderComponent {
         this.errorMessage = 'Error fetching recipes';
       }
     );
+    
   }
 
   showLoader() {

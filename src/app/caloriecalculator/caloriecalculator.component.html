@@ -49,6 +49,26 @@
       </option>
     </select>
   </div>
+  <div class="field">
+    <span><i class="fa-solid fa-person-walking"></i></span>
+    <select name="level" id="" formControlName="macros">
+      <option disabled value="" selected>Select Diet</option>
+      <option value="default">
+        Default
+      </option>
+      <option value="low-carb">Low-Carb</option>
+      <option value="low-fat">
+        Low-Fat
+      </option>
+      <option value="high-protein">
+        High-Protein
+      </option>
+      <option value="keto">
+        Keto
+      </option>
+     
+    </select>
+  </div>
   <div class="field"> 
     <span><i class="fa-solid fa-bullseye"></i></span>
     <select name="goals" id="" formControlName="goal">
@@ -76,7 +96,13 @@
   </button>
  
 </form> 
-<div  class="text-center py-5">
+
+<div class="text-center py-5">
 <h1>Total Calories: {{ lowerBound | number:'1.0-0' }} - {{ upperBound | number:'1.0-0' }}  Kcal</h1>
+<div class="flex justify-center items-center flex-col">
+ <h1>Proteins: {{proteins | number: '1.0-0'}} - {{maxproteins | number: '1.0-0'}} g</h1>
+ <h1>Carbs: {{carbs | number: '1.0-0'}} - {{maxcarbs | number: '1.0-0'}} g</h1>
+ <h1>Fat: {{fats | number: '1.0-0'}} - {{maxfats | number: '1.0-0'}} g</h1>
+</div>
 </div>
 </div>
