@@ -25,7 +25,10 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { environment } from '../environments/environment.prod';
-
+import { ProteinsComponent } from './Charts/proteins/proteins.component';
+import { CarbsComponent } from './Charts/carbs/carbs.component';
+import { FatsComponent } from './Charts/fats/fats.component';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 
 @NgModule({
@@ -40,6 +43,9 @@ import { environment } from '../environments/environment.prod';
     RecipeFinderComponent,
     NutrientrecipeComponent,
     TruncatePipe,
+    ProteinsComponent,
+    CarbsComponent,
+    FatsComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +57,7 @@ import { environment } from '../environments/environment.prod';
     MatInputModule,
     MatSelectModule,
     HttpClientModule,
+    HighchartsChartModule,
     NgxPaginationModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideAuth(() => getAuth()),

@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
-import { max } from 'rxjs';
-
 @Component({
   selector: 'app-caloriecalculator',
   templateUrl: './caloriecalculator.component.html',
@@ -17,6 +15,7 @@ export class CaloriecalculatorComponent implements OnInit {
   fats: number = 0;
   maxproteins: number = 0;
   maxcarbs: number = 0;
+  pieChartData: any[] = [];
   maxfats: number = 0;
   constructor(private fb: FormBuilder) {}
 
@@ -36,6 +35,8 @@ export class CaloriecalculatorComponent implements OnInit {
       goal: ['', Validators.required],
       macros: ['', Validators.required],
     });
+
+    
   }
 
   calculateCalories(): void {
@@ -176,7 +177,13 @@ export class CaloriecalculatorComponent implements OnInit {
 
    this.maxcarbs = carbohydrateMaxGrams;
    this.maxproteins = proteinMaxGrams;
-   this.maxfats = fatMaxGrams;
+   this.maxfats = fatMaxGrams; 
+   
+   this.pieChartData = [
+    { name: 'Carbohydrates', y: this.carbs },
+    { name: 'Protein', y: this.proteins },
+    { name: 'Fat', y: this.fats }
+  ];
 
   }
 }
