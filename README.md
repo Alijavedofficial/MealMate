@@ -1,6 +1,6 @@
 # MealMate - Your Personalized Meal Planning Companion
 
-MealMate is a comprehensive Angular application designed to revolutionize the way you plan, prepare, and enjoy your meals. Whether you're striving to lose weight, build muscle, or simply adopt a healthier lifestyle, MealMate has you covered with its array of features tailored to your dietary needs and fitness goals.
+MealMate is a comprehensive Angular application designed to revolutionize the way you plan and prepare your meals. Whether you're striving to lose weight, build muscle, or simply adopt a healthier lifestyle, MealMate has you covered with its array of features tailored to your dietary needs and fitness goals.
 
 ## Key Features
 
