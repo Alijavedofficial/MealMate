@@ -1,6 +1,6 @@
 <div class="px-20 py-10">
 
-<form [formGroup]="CalorieForm" class="px-20 py-6">
+<form [formGroup]="CalorieForm" class="px-20 py-6" (submit)="calculateCalories()">
   <div class="py-4 text-center">
     <h1 class="text-[35px] font-semibold">Unveil Your Nutritional Destiny</h1>
   </div>
@@ -91,13 +91,25 @@
     </select>
   </div>
 </div>
-  <button (click)="calculateCalories()">
+  <button (click)="calculateCalories()" (click)="showLoader()">
     Calculate Calories
   </button>
  
 </form> 
 
-<div class="text-center py-5">
+<div *ngIf="isLoading" class="justify-center items-center flex w-full gap-6 py-16">
+  
+  <div class="loading">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<div *ngIf="showSection">
+<div class="text-center py-5" >
 <h1>Total Calories: {{ lowerBound | number:'1.0-0' }} - {{ upperBound | number:'1.0-0' }}  Kcal</h1>
 <div class="flex justify-center items-center flex-col">
  <h1>Proteins: {{proteins | number: '1.0-0'}} - {{maxproteins | number: '1.0-0'}} g</h1>
@@ -105,7 +117,9 @@
  <h1>Fat: {{fats | number: '1.0-0'}} - {{maxfats | number: '1.0-0'}} g</h1>
 </div>
 <div class="flex justify-center items-center flex-col">
-  <div id="pieChart" style="width: 100%;height: 200px;"></div>
+  <app-nutrients-chart [pieChartData]="pieChartData"></app-nutrients-chart>
 </div>
+</div>
+
 </div>
 </div>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProteinsComponent } from './proteins.component';
+import { NutrientsChartComponent } from './nutrients-chart.component';
 
-describe('ProteinsComponent', () => {
-  let component: ProteinsComponent;
-  let fixture: ComponentFixture<ProteinsComponent>;
+describe('NutrientsChartComponent', () => {
+  let component: NutrientsChartComponent;
+  let fixture: ComponentFixture<NutrientsChartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ProteinsComponent]
+      declarations: [NutrientsChartComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ProteinsComponent);
+    fixture = TestBed.createComponent(NutrientsChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

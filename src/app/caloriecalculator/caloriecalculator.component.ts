@@ -1,7 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
-import * as Highcharts from 'highcharts';
+
 @Component({
   selector: 'app-caloriecalculator',
   templateUrl: './caloriecalculator.component.html',
@@ -17,8 +17,10 @@ export class CaloriecalculatorComponent implements OnInit {
   maxproteins: number = 0;
   maxcarbs: number = 0;
   pieChartData: any[] = [];
-  pieChart!: Highcharts.Chart;
+
   maxfats: number = 0;
+  isLoading: boolean = false;
+  showSection: boolean = false
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
@@ -38,7 +40,6 @@ export class CaloriecalculatorComponent implements OnInit {
       macros: ['', Validators.required],
     });
 
-    this.initializeChart()
     
   }
 
@@ -157,6 +158,9 @@ export class CaloriecalculatorComponent implements OnInit {
         break;
     }
 
+
+    
+
    // Calculate macronutrient targets based on percentage ranges
    const carbohydrateMinCalories = tdee * (carbohydrateMinPercentage / 100);
    const carbohydrateMaxCalories = tdee * (carbohydrateMaxPercentage / 100);
@@ -173,78 +177,32 @@ export class CaloriecalculatorComponent implements OnInit {
    const fatMinGrams = fatMinCalories / 9; // 9 calories per gram of fat
    const fatMaxGrams = fatMaxCalories / 9;
 
-   // Convert macronutrient calories to grams
-   this.carbs = carbohydrateMinGrams; // 4 calories per gram of carbohydrate
-   this.proteins = proteinMinGrams;
-   this.fats = fatMinGrams;
+   
+   this.carbs = parseFloat(carbohydrateMinGrams.toFixed(2)); // 4 calories per gram of carbohydrate
+this.proteins = parseFloat(proteinMinGrams.toFixed(2));
+this.fats = parseFloat(fatMinGrams.toFixed(2));
 
    this.maxcarbs = carbohydrateMaxGrams;
    this.maxproteins = proteinMaxGrams;
    this.maxfats = fatMaxGrams; 
    
-   this.pieChartData = [
-    { name: 'Carbohydrates', y: this.carbs },
-    { name: 'Protein', y: this.proteins },
-    { name: 'Fat', y: this.fats }
-  ];
-
-  this.pieChart.update({
-    series: [
-      {
-        type: 'pie',
-        data: this.pieChartData
-      }
-    ]
-  })
-
+   this.updatePieChartData()
   }
 
-
-  initializeChart() {
-    
-    this.pieChart = Highcharts.chart('pieChart', {
-      chart: {
-        type: 'pie',
-        plotShadow: false,
-      backgroundColor: 'rgba(0, 0, 0, 0)',
-      },
-      credits: {
-        enabled: false,
-      },
-      plotOptions: {
-        pie: {
-          innerSize: '0%',
-          borderWidth: 0,
-          borderColor: '',
-          slicedOffset: 0,
-          borderRadius: 0,
-          dataLabels: {
-            enabled: true,
-            format: '{point.percentage:.1f}%',
-            distance: -30, 
-            style: {
-              fontWeight: 'bold',
-              color: 'white'
-            }
-          },
-          tooltip: {
-            headerFormat: '<div style="background-color:red;"><span style="font-size: 14px; font-weight: bold;color:#4663ac;">{point.key}</span></div><br/>',
-           pointFormat: '<span style="font-weight: bold">{series.name}:</span> <span style="font-weight: bold;color:red">${point.y}</span><br/>',
-          }
-        },
-      },
-      legend: {
-        enabled: false,
-      },
-      title: {
-        text: 'Macro Distribution'
-      },
-      series: [
-      {
-        type: 'pie',
-        data: this.pieChartData
-      },
-    ],
-    })
+ updatePieChartData() {
+    this.pieChartData = [
+      { name: 'Carbs', y: this.carbs},
+      { name: 'Protein', y: this.proteins },
+      { name: 'Fat', y: this.fats }
+    ];
   }
+  showLoader() {
+    this.isLoading = true;
+    this.showSection = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);
+  }
+
+ 
 }
