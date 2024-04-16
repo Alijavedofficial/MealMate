@@ -61,13 +61,7 @@ initializeChart() {
     series: [
     {
       type: 'pie',
-      data: [
-        { name: 'Grocery', y: 200,color:'	#009bd6' },
-        { name: 'Transportation', y: 240, color: '#4663ac'},
-        { name: 'Rent', y: 1000, color: '#0000FF' },
-        { name: 'Electricity Bill', y: 250 ,color:'#007AFF'},
-        { name: 'Shopping', y: 500,color:'#00719c' },
-      ],
+      data: this.chartData
     },
   ],
   })

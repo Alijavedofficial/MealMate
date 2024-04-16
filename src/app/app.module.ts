@@ -26,8 +26,6 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { environment } from '../environments/environment.prod';
 import { ProteinsComponent } from './Charts/proteins/proteins.component';
-import { CarbsComponent } from './Charts/carbs/carbs.component';
-import { FatsComponent } from './Charts/fats/fats.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 
 
@@ -44,8 +42,6 @@ import { HighchartsChartModule } from 'highcharts-angular';
     NutrientrecipeComponent,
     TruncatePipe,
     ProteinsComponent,
-    CarbsComponent,
-    FatsComponent,
   ],
   imports: [
     BrowserModule,

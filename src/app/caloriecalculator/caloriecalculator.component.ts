@@ -1,6 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import * as Highcharts from 'highcharts';
 @Component({
   selector: 'app-caloriecalculator',
   templateUrl: './caloriecalculator.component.html',
@@ -16,6 +17,7 @@ export class CaloriecalculatorComponent implements OnInit {
   maxproteins: number = 0;
   maxcarbs: number = 0;
   pieChartData: any[] = [];
+  pieChart!: Highcharts.Chart;
   maxfats: number = 0;
   constructor(private fb: FormBuilder) {}
 
@@ -36,6 +38,7 @@ export class CaloriecalculatorComponent implements OnInit {
       macros: ['', Validators.required],
     });
 
+    this.initializeChart()
     
   }
 
@@ -185,5 +188,63 @@ export class CaloriecalculatorComponent implements OnInit {
     { name: 'Fat', y: this.fats }
   ];
 
+  this.pieChart.update({
+    series: [
+      {
+        type: 'pie',
+        data: this.pieChartData
+      }
+    ]
+  })
+
+  }
+
+
+  initializeChart() {
+    
+    this.pieChart = Highcharts.chart('pieChart', {
+      chart: {
+        type: 'pie',
+        plotShadow: false,
+      backgroundColor: 'rgba(0, 0, 0, 0)',
+      },
+      credits: {
+        enabled: false,
+      },
+      plotOptions: {
+        pie: {
+          innerSize: '0%',
+          borderWidth: 0,
+          borderColor: '',
+          slicedOffset: 0,
+          borderRadius: 0,
+          dataLabels: {
+            enabled: true,
+            format: '{point.percentage:.1f}%',
+            distance: -30, 
+            style: {
+              fontWeight: 'bold',
+              color: 'white'
+            }
+          },
+          tooltip: {
+            headerFormat: '<div style="background-color:red;"><span style="font-size: 14px; font-weight: bold;color:#4663ac;">{point.key}</span></div><br/>',
+           pointFormat: '<span style="font-weight: bold">{series.name}:</span> <span style="font-weight: bold;color:red">${point.y}</span><br/>',
+          }
+        },
+      },
+      legend: {
+        enabled: false,
+      },
+      title: {
+        text: 'Macro Distribution'
+      },
+      series: [
+      {
+        type: 'pie',
+        data: this.pieChartData
+      },
+    ],
+    })
   }
 }
