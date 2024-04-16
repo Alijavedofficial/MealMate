@@ -16,8 +16,11 @@ Search for recipes using the ingredients you have on hand, minimizing food waste
 ### 4. Health and Fitness Articles
 Stay informed and inspired with curated articles covering nutrition, exercise, wellness tips, and lifestyle advice.
 
-### 5. Calories and Fat Calculator
-Monitor your daily calorie and fat intake to maintain a balanced diet and track your progress towards your fitness objectives.
+### 5. Calories Calculator
+Monitor your daily calorie intake to maintain a balanced diet and track your progress towards your fitness objectives.
+
+### 5. Fat Calculator
+Monitor your daily fat intake to maintain a balanced diet and track your progress towards your fitness objectives.
 
 ## Feedback and Support
 
