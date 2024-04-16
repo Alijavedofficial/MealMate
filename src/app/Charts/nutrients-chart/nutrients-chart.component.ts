@@ -53,9 +53,7 @@ ngOnChanges(changes: SimpleChanges): void {
       legend: {
         enabled: false,
       },
-      title: {
-        
-      },
+      
       series: [
       {
         type: 'pie',
