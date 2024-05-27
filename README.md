@@ -26,10 +26,5 @@ Monitor your daily fat intake to maintain a balanced diet.
 
 If you have any feedback, suggestions, or encounter any issues while using MealMate, please don't hesitate to [open an issue](https://github.com/meal-mate/meal-mate/issues) on GitHub. We're here to help and improve the application based on your input.
 
-## License
-
-MealMate is licensed under the [MIT License](LICENSE), which means you're free to use, modify, and distribute the software for any purpose. Refer to the license file for more information.
-
----
 
 Thank you for choosing MealMate to embark on your journey towards better health and wellness. We hope you enjoy the experience!
