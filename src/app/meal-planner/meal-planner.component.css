@@ -227,8 +227,8 @@ button:focus {
 }
 .copyright{
   border-top: 1px solid #d1d9e6;
-  padding: 40px;
   display: flex;
+  padding-top: 40px;
   flex-direction: column;
   align-items: center;
   justify-content: center;

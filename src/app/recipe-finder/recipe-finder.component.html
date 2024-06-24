@@ -1,5 +1,5 @@
 
-<div class="px-32 pt-24 text-center m-auto max-sm:px-0">
+<div class="px-32 text-center m-auto max-sm:px-0">
   <h1 class="text-[40px] font-semibold max-sm:text-[30px]">Discover delectable delights</h1>
   <p class="leading-7 text-[16px] max-md:hidden px-24 pt-3">Unleash your culinary creativity with our Recipe Finder. Simply input the name of your desired dish, and watch as we curate a curated selection of mouthwatering recipes, along with detailed instructions and additional insights. </p>
 </div>
@@ -8,12 +8,12 @@
   <h1 class="text-[18px] font-medium max-sm:text-[16px]">Ready to give it a shot? Enter the Dish.</h1>
 </div>
 
-    <form (ngSubmit)="searchRecipe()" class="px-20 py-6">
+    <form (ngSubmit)="searchRecipe()" class="px-20 py-6 max-sm:px-4">
       <div class="field">
     <span><i class="fa-solid fa-utensils"></i></span>
      <input type="text" id="dishName" name="dishName" [(ngModel)]="dishName" placeholder="Dish Name"/>
      </div>
-      <button type="submit" class="text-start" (click)="searchRecipe()" (click)="showLoader()">Search</button>
+      <button type="submit" class="p-3 px-5 rounded-lg text-start" (click)="searchRecipe()" (click)="showLoader()">Search</button>
     </form>
 
     <div *ngIf="isLoading && !errorMessage; else loadedContent" class="justify-center items-center flex w-full gap-6 py-16">  

@@ -1,10 +1,10 @@
-<div class="px-20 py-10">
+<div class="">
 
-<form [formGroup]="CalorieForm" class="px-20 py-6" (submit)="calculateCalories()">
+<form [formGroup]="CalorieForm" class="px-20 py-6 max-sm:px-4" (submit)="calculateCalories()">
   <div class="py-4 text-center">
-    <h1 class="text-[35px] font-semibold">Unveil Your Nutritional Destiny</h1>
+    <h1 class="text-[35px] font-semibold max-sm:text-[26px]">Unveil Your Nutritional Destiny</h1>
   </div>
-  <div class="grid grid-cols-2 gap-6">
+  <div class="grid grid-cols-2 gap-6 max-sm:gap-4">
   <div class="field">
     <span><i class="fa-regular fa-calendar"></i></span>
      <input type="number" placeholder="Age" formControlName="age" />
