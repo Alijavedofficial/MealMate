@@ -14,7 +14,7 @@
         
       <textarea [(ngModel)]="ingredientsInput" rows="4" placeholder="Enter Ingredients ..."></textarea>
     </div>
-      <button (click)="analyzeNutrition()" (click)="showLoader()" class="text-start px-5" >Analyze</button>
+      <button  (click)="analyzeNutrition()" (click)="showLoader()" class="text-start px-5" >Analyze</button>
     </div>
   
     <div *ngIf="errorMessage" class="error">

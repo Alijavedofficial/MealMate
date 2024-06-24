@@ -1,5 +1,20 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="px-40 py-16">
-   <div class="grid grid-cols-2 gap-8 pb-10">
+<div class="px-40 max-sm:px-0">
+<div class="px-32 pb-6 text-center m-auto max-sm:px-0">
+   <h1 class="text-[40px] font-semibold max-sm:text-[30px]">Sign in to MealMate</h1>
+ </div>
+ 
+ 
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="px-6 py-6 max-sm:px-4 flex justify-between gap-10 max-sm:flex-col-reverse max-sm:justify-center items-center ">
+   <img class="w-72" src="../../assets/reading-side.svg">
+   
+   <div class="grid gap-5">
+      <button (click)="signInWithGoogle()"><i class="fa-brands fa-google text-orange-600 pr-2"></i>Continue With Google</button>
+      <div class="field">
+         <span><i class="fa-solid fa-face-smile"></i></span>
+         <input type="text" class="form-control" id="name" placeholder="Enter Name">
+      </div>
+      <div class="grid grid-cols-2 gap-6">
     <div class="field">
        <span><i class="fa-solid fa-envelope"></i></span>
        <input type="email" formControlName="email" class="form-control" id="email" placeholder="Enter email">
@@ -9,7 +24,8 @@
        <input type="password" formControlName="password" class="form-control" id="password" placeholder="Password">
     </div>
    </div>
-    <button type="submit" mat-stroked-button [disabled]="loginForm.invalid">Login</button>
-    <button class="" mat-stroked-button (click)="signInWithGoogle()">With Google</button>
+    <button type="submit"[disabled]="loginForm.invalid">Login</button>
+   </div> 
    </form>
 
+</div>

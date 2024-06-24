@@ -1,0 +1,25 @@
+form {
+    background: #e6e7ee;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
+    z-index: -1;
+  }
+
+  button {
+    width: 100%;
+    height: 50px;
+    color: #31344b;
+    font-size: 18px;
+    font-weight: 600;
+    background: #e6e7ee;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #fff;
+  }
+  
+  button:focus {
+    color: #3498db;
+    box-shadow: inset 4px 4px 8px #b8b9be, inset -4px -4px 8px #fff;
+  }

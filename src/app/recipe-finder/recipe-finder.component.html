@@ -13,7 +13,7 @@
     <span><i class="fa-solid fa-utensils"></i></span>
      <input type="text" id="dishName" name="dishName" [(ngModel)]="dishName" placeholder="Dish Name"/>
      </div>
-      <button type="submit" class="p-3 px-5 rounded-lg text-start" (click)="searchRecipe()" (click)="showLoader()">Search</button>
+      <button mat-stroked-button type="submit" class="p-3 px-5 rounded-lg text-start" (click)="searchRecipe()" (click)="showLoader()">Search</button>
     </form>
 
     <div *ngIf="isLoading && !errorMessage; else loadedContent" class="justify-center items-center flex w-full gap-6 py-16">  

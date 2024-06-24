@@ -85,7 +85,7 @@
 
 </div>
 
-  <button class="p-3 px-5 rounded-lg" (click)="showLoader()" (click)="generateMealPlan()" type="submit">
+  <button  class="p-3 px-5 rounded-lg" (click)="showLoader()" (click)="generateMealPlan()" type="submit">
     Generate Meals
   </button>
 </div>
@@ -103,7 +103,7 @@
   </div>
 </div>
 
-<div *ngIf="errorMessage">
+<div *ngIf="errorMessage" >
   <p class="error">{{ errorMessage }}</p>
   <div *ngIf="mealform.get('TotalCalories')?.errors?.['min']" class="error"> Calories can't be less than 1200</div>
   <div *ngIf="mealform.get('TotalCalories')?.errors?.['max']" class="error">Calories can't be more than 3000</div>
@@ -216,7 +216,7 @@
     <a class="cnt-btn p-2 my-2 w-[30%] max-md:w-full" routerLink="/login"><span class="mr-3"><i class="fa-regular fa-address-book"></i></span>Contact Us</a>
   </div>
   <div class="flex justify-center items-center">
-  <img src="https://demo.themesberg.com/neumorphism-ui/assets/img/illustrations/reading-side.svg" class="w-[350px] max-sm:w-[250px]">
+  <img src="../../assets/reading-side.svg" class="w-[350px] max-sm:w-[250px]">
 </div>
 </div>
 
