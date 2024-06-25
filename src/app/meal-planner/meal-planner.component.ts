@@ -140,6 +140,7 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     let numberOfLunchMeals: number = 0
     let numberOfDinnerMeals: number = 0
     let numberOfSupperMeals: number = 0
+    let numberOfExtraMeals: number = 0
 
     if(numberOfMeals == 2) {
       numberOfBreakfastMeals = 1
@@ -153,6 +154,12 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
       numberOfLunchMeals = 1
       numberOfDinnerMeals = 1
       numberOfSupperMeals = 1
+    } else if(numberOfMeals == 5 ) {
+      numberOfBreakfastMeals = 1
+      numberOfLunchMeals = 1
+      numberOfDinnerMeals = 1
+      numberOfSupperMeals = 1
+      numberOfExtraMeals = 1
     }
 
     let filteredMeals: any[] = [];
