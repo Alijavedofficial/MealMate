@@ -169,6 +169,11 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
     const lunchOptions = this.filterAndSortMeals(this.lunch, desiredCaloriesPerMeal, dietaryPreference, region);
 
     const dinnerOptions = this.filterAndSortMeals(this.dinner, desiredCaloriesPerMeal, dietaryPreference, region);
+
+    const SupperOptions = this.filterAndSortMeals(this.dinner, desiredCaloriesPerMeal, dietaryPreference, region);
+
+    const ExtraOptions =  this.filterAndSortMeals(this.dinner, desiredCaloriesPerMeal, dietaryPreference, region);
+
     
     const breakfastMeals = this.selectItems(breakfastOptions, numberOfBreakfastMeals);
 
@@ -176,9 +181,12 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
 
     const dinnerMeals = this.selectItems(dinnerOptions, numberOfDinnerMeals);
     
+    const SupperMeals = this.selectItems(SupperOptions,numberOfSupperMeals)
+
+    const ExtraMeals = this.selectItems(ExtraOptions,numberOfExtraMeals)
   
     
-    const mealPlan = breakfastMeals.concat(lunchMeals, dinnerMeals);
+    const mealPlan = breakfastMeals.concat(lunchMeals, dinnerMeals,SupperMeals,ExtraMeals);
     this.filteredMeals = mealPlan;
   
     this.calculateTotals();
@@ -190,9 +198,9 @@ export class MealPlannerComponent implements OnInit,AfterViewInit {
 
   filterAndSortMeals(meals: any[], desiredCalories: number, dietaryPreference: string, region: string): any[] {
     let filteredMeals = meals;
-    if (dietaryPreference && dietaryPreference !== 'none') {
+   /* if (dietaryPreference && dietaryPreference !== 'none') {
       filteredMeals = filteredMeals.filter((meal) => meal.dietaryPreference.includes(dietaryPreference))
-    }
+    } */
     if (region && region !== 'none') {
       filteredMeals = filteredMeals.filter((meal) => meal.region.includes(region));
     }
