@@ -19,12 +19,13 @@ Stay informed and inspired with curated articles covering nutrition, exercise, w
 ### 5. Calories Calculator
 Monitor your daily calorie intake to maintain a balanced diet and track your progress towards your fitness objectives.
 
-### 5. Fat Calculator
+### 6. Fat Calculator
 Monitor your daily fat intake to maintain a balanced diet and stay healthy.
+
+### Video 
+https://github.com/user-attachments/assets/bd69743c-94d4-441b-a40c-08b707731704
 
 ## Feedback and Support
 
-If you have any feedback, suggestions, or encounter any issues while using MealMate, please don't hesitate to [open an issue](https://github.com/meal-mate/meal-mate/issues) on GitHub. We're here to help and improve the application based on your input.
+If you have any feedback, suggestions, or encounter any issues while using MealMate, please don't hesitate to [open an issue](https://github.com/meal-mate/meal-mate/issues) on GitHub.I'm here to help and improve the application based on your input.
 
-
-Thank you for choosing MealMate to embark on your journey towards better health and wellness. We hope you enjoy the experience!
